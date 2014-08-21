@@ -14,16 +14,15 @@ going to be a liability in the future', identifying two main types of
 technical debt (deliberate and accidental), and identifying further
 correlations between the worlds of financial debt and technical debt.
 
-<p>
 For instance, based on the technical debt already accumulated, one team
-may have a worse 'credit rating' than another:  
+may have a worse 'credit rating' than another:
 
 > Different teams will have different technical debt credit ratings. The
 > credit rating reflects a team's ability to pay off technical debt
 > after it has been incurred.
 >
-> (McConnell, 2007)
->
+<cite>(McConnell, 2007)</cite>
+
 There is a lot of insight in McConnell's article, and I recommend you
 nip over and read it right now if you haven't already. Technical debt is
 indeed a useful and rich analogy for communicating a particular class of
@@ -37,21 +36,20 @@ shift in responsibilities.
 
 Why?
 
-<p>
 As a developer, I don't always get to make the decisions about whether
 something should be done in a quick 'n' dirty hack, or a
 properly-architected solution. Of course, I'm likely to recommend the
 latter where I can, but it's a fact of life that I will often be
 overruled, and rightly so. There are occasions when incurring technical
-debt is the right thing to do. McConnell lists a few examples, e.g:  
+debt is the right thing to do. McConnell lists a few examples, e.g:
 
 > *Time to Market*. When time to market is critical, incurring an extra
 > $1 in development might equate to a loss of $10 in revenue. Even if
 > the development cost for the same work rises to $5 later, incurring
 > the $1 debt now is a good business decision.
 >
-> (McConnell, 2007)
->
+<cite>(McConnell, 2007)</cite>
+
 This is a key issue. Software development considerations are not the
 be-all and end-all, no matter how much I (or any other developer) would
 like them to be. It's the *product teams* that make these business

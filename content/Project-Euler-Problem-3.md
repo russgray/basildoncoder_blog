@@ -5,13 +5,10 @@ Slug: Project-Euler-Problem-3
 
 Next up in the list of Project Euler problems is this one:
 
-<p>
-***[Problem
-3](http://projecteuler.net/index.php?section=problems&id=3)***  
+***[Problem 3](http://projecteuler.net/index.php?section=problems&id=3)***
 
 > The prime factors of 13195 are 5, 7, 13 and 29.
 >
-> </p>
 > What is the largest prime factor of the number 600851475143?
 
 This, obviously, is a factorisation problem. There is a colossal amount
@@ -47,13 +44,25 @@ then factorise the result to find f~2~. Continuing this process will
 result in a list of prime factors, and then it's simply a case of
 selecting the largest.
 
-<p>
 I can optimise further by not resetting the factor to the lowest prime
 number each time - since having found f~1~ I know that there aren't any
 smaller factors, so I don't have to waste time looking for them. Here's
 the implementation in python:
 
-    def primeFactors(n, factor):    factors = [] while (n % factor != 0):        factor = factor + 1    factors.append(factor) if n > factor:        factors.extend(primeFactors(n / factor, factor)) return factorsprint max(primeFactors(600851475143, 2))
+    :::python
+    def primeFactors(n, factor):
+        factors = []
+        while (n % factor != 0):
+            factor = factor + 1
+
+        factors.append(factor)
+
+        if n > factor:
+            factors.extend(primeFactors(n / factor, factor))
+
+        return factors
+
+    print max(primeFactors(600851475143, 2))
 
 Note that in the recursive call the current factor is retained, so that
 the code doesn't repeat itself.
@@ -90,7 +99,7 @@ on, until you get to the end of your list. Whatever numbers remain
 unmarked are all the primes up to your arbitrary limit.
 
 .Net lacks a built-in prime generator, so to demonstrate the algorithm
-I'll create a simple C\# implementation. The list of numbers is
+I'll create a simple C# implementation. The list of numbers is
 represented as an array of booleans, all set to true by default except
 indexes 0 and 1 (since we aren't interested in evaluating those numbers
 as prime).
@@ -101,10 +110,37 @@ things - firstly, it lets the sieve class control enumeration and thus
 skip over the marked numbers (making the calling code cleaner), and
 secondly it lets me use LINQ to query it.
 
-<p>
 So, here's the code:
 
-    public class SieveOfEratosthenes{ private bool[] m_numbers; public SieveOfEratosthenes(long limit)    {        m_numbers = new bool[limit + 1]; for (long l = 2; l < m_numbers.LongLength; ++l)        {            m_numbers[l] = true;        } for (int i = 2; i != -1;                i = Array.FindIndex(m_numbers, i + 1,                    b => b == true))        { for (int j = i * 2; j < m_numbers.Length; j += i)                m_numbers[j] = false;        }    } public IEnumerable<long> Primes()    { for (long i = 2; i < m_numbers.LongLength; ++i) if (m_numbers[i]) yield return i;    }}
+    :::csharp
+    public class SieveOfEratosthenes
+    {
+        private bool[] m_numbers;
+
+        public SieveOfEratosthenes(long limit)
+        {
+            m_numbers = new bool[limit + 1];
+            for (long l = 2; l < m_numbers.LongLength; ++l)
+            {
+                m_numbers[l] = true;
+            }
+
+            for (int i = 2; i != -1;
+                    i = Array.FindIndex(m_numbers, i + 1,
+                        b => b == true))
+            {
+                for (int j = i * 2; j < m_numbers.Length; j += i)
+                    m_numbers[j] = false;
+            }
+        }
+
+        public IEnumerable<long> Primes()
+        {
+            for (long i = 2; i < m_numbers.LongLength; ++i)
+                if (m_numbers[i])
+                    yield return i;
+        }
+    }
 
 Fairly straightforward. Basically, I start by marking 2 as prime. Then,
 an inner loop sets all multiples of 2 to false, since no (other) even
@@ -135,19 +171,19 @@ fudge-factor is needed. I've seen a solution on the Project Euler forum
 that generates primes up to sqrt(N) + 10, which solves the example of
 N=15 above, but does it solve ALL cases? Another approach might be to
 generate the list of primes such that the largest prime in the list is
-the first prime \> sqrt(N) - but now I'm completely guessing.
+the first prime > sqrt(N) - but now I'm completely guessing.
 
-<p>
 Still, for numbers that fit inside the 2GB limit, we can find the
 largest factor easily.
 
+    :::csharp
     var sieve = new SieveOfEratosthenes(15);
 
-<p>
 Now I have my IEnumerable sieve, I can craft a LINQ query to find the
 largest factor. All I need to do is filter my list of primes for those
 which divide directly into 15 and call the Max() method:
 
+    :::csharp
     return (from p in sieve.Primes() where 15 % p == 0 select p).Max();
 
 Done! And I have a handy reusable prime generator for later on.

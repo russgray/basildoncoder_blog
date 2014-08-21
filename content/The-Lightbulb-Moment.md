@@ -19,37 +19,40 @@ idioms in Java - e.g. passing around a function as a parameter - but the
 syntax is clunky and verbose (unless and until closures get confirmed in
 1.7, that is, and maybe even then).
 
-<p>
 For example, take a look at this very simple idiomatic code for spinning
 off a thread to perform an expensive operation:
 
-    new Thread (new Runnable() { public void run() {        someObj.doExpensiveOperation();    }}).start();
+    :::java
+    new Thread (new Runnable() {
+        public void run() {
+            someObj.doExpensiveOperation();
+        }
+    }).start();
 
-<p>
 Now that's not the most hideous code I've ever seen, but it's a
 bit...wordy. Compare it to this equivalent implementation in Java's
-closest mainstream relative, C\#:
+closest mainstream relative, C#:
 
+    :::csharp
     new Thread(x => someObj.DoExpensiveOperation()).Start();
 
-<p>
 I much prefer this syntax, even taking into account the throwaway lambda
 parameter that's only there to satisfy the ThreadStart signature. The
 Scala syntax is even nicer, however:
 
+    :::scala
     spawn({ someObj.doSomethingExpensive })
 
 This is the sort of thing that piques my interest about the language -
 expressive syntax and a very funky concurrency model will get my
 attention, *especially* when running on something as mainstream as the
 JVM and with full interoperability with the frankly staggeringly-vast
-Java library ecosystem. I like F\# on the
+Java library ecosystem. I like F# on the
 [CLR](http://en.wikipedia.org/wiki/Common_Language_Runtime) for similar
 reasons.
 
-<p>
 But I digress; what I wanted to talk about was a point made by Weiqi,
-when discussing the pattern-matching capabilities of Scala:  
+when discussing the pattern-matching capabilities of Scala:
 
 > Pattern matching in Scala is exactly the point at which I would spend
 > time trying to understand it, trying to master it, trying to learn to
@@ -58,7 +61,6 @@ when discussing the pattern-matching capabilities of Scala:
 > is cool." But I never get to the point where I would see a problem and
 > say "This problem is best solved with pattern matching, let me fire up
 > Scala and code the solution."
-> </p>
 
 This strikes a chord for me, as I have gone through that stage once or
 twice myself with other features in other languages and yet can't quite

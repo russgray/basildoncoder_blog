@@ -36,3 +36,4 @@ RELATIVE_URLS = True
 
 PLUGINS = ['pelican_comments']
 ARTICLE_EXCLUDES = ['comments', 'pages']
+MD_EXTENSIONS = ['codehilite(css_class=highlight)', 'extra', 'subscript']

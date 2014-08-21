@@ -17,7 +17,8 @@ so often the case, it is Haskell that provides the most elegant yet
 mind-bending alternative:
 
     :::haskell
-    fibonacci n = fib!!n  where fib = 0 : 1 : zipWith (+) fib (tail fib)
+    fibonacci n = fib!!n
+        where fib = 0 : 1 : zipWith (+) fib (tail fib)
 
 This little beauty appends a list with its own tail *while it's still
 being generated* and lazily sums the elements. On top of that, it's
@@ -30,7 +31,13 @@ and corrected from the code Scott posted) takes 28 seconds to calculate
 the 45th number, on a much more powerful Core Duo machine.
 
     :::bash
-    $ time ./Fibs.exe 1134903170 Execution time: 00:00:28.2930000      real    0m28.382s user    0m0.000s sys     0m0.031s
+    $ time ./Fibs.exe
+    1134903170
+    Execution time: 00:00:28.2930000
+
+    real    0m28.382s
+    user    0m0.000s
+    sys     0m0.031s
 
 As implemented, you can't go much higher than this since the 47th number
 in the sequence (2971215073) is too big to store in a 32-bit signed int.

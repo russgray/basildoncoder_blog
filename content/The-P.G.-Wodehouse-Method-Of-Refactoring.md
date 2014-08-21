@@ -4,7 +4,7 @@ Author: Russell Gray
 Slug: The-PG-Wodehouse-Method-Of-Refactoring
 
 I am much given to ruminating on refactoring at the moment, as one of my
-current projects is a major overhaul of a fairly large (\>31,000 lines)
+current projects is a major overhaul of a fairly large (>31,000 lines)
 application which has exactly the kind of dotted history any experienced
 developer has learned to fear - written by many different people,
 including short-term contractors, at a time in the company's life when
@@ -27,7 +27,7 @@ Now, the first mistake to avoid here is the compulsion to throw it away
 and rewrite from scratch. So often when confronted with a vast seething
 moiling spiritless mass of code a developer throws his hands into the
 air and declares it a lost cause. **How seductive is the thought that
-31,000 lines of code could be thrown away and replaced with \~15,000
+31,000 lines of code could be thrown away and replaced with ~15,000
 lines of clean, well-designed, [beautiful
 code]({filename}/Code-CAN-Be-Beautiful.md)?**
 
@@ -52,13 +52,12 @@ Code](http://www.amazon.co.uk/Working-Effectively-Legacy-Robert-Martin/dp/013117
 now has an even more firmly established place on my 'critical books'
 bookshelf than it did before.
 
-<p>
 Inspiration came from a less well-known book, however. Buried in Chapter
 10 of *[Code
 Reading](http://www.amazon.co.uk/Code-Reading-Perspective-Effective-Development/dp/0201799405)*
 is a single paragraph suggesting that it can be useful when working with
 unfamiliar code to paste it into a word processor and zoom out, getting
-a 'bird's eye' view.  
+a 'bird's eye' view.
 
 > One other interesting way to look at a whole lot of source code
 > quickly under Windows is to load it into Microsoft Word and then set
@@ -66,8 +65,8 @@ a 'bird's eye' view.
 > size of a postage stamp, and you can get a surprising amount of
 > information about the code's structure from the shape of the lines.
 >
-> (Spinellis, 2003)
->
+<cite>(Spinellis, 2003)</cite>
+
 The idea is that this lets you immediately identify potential trouble
 spots - if you see pages where the code is all bunched up on the right,
 it indicates massive nesting and over-long functions. If you see heavy
@@ -100,12 +99,11 @@ hopefully ending up with many pages actually containing readable code
 (which happens roughly when the class is small enough to fit on no more
 than 3 pages at normal size).
 
-<p>
 The first time we pinned up the printouts, I suddenly recalled a Douglas
 Adams foreword reprinted in *[The Salmon of
 Doubt](http://www.amazon.co.uk/Salmon-Doubt-Hitchhiking-Galaxy-Last/dp/0330323121)*.
 Adams was a great fan of P.G. Wodehouse, and explained Wodehouse's
-interesting drafting technique:  
+interesting drafting technique:
 
 > It is the next stage of writing—the relentless revising, refining, and
 > polishing—that turned his works into the marvels of language we know
@@ -114,9 +112,8 @@ interesting drafting technique:
 > working well would be pinned up high, and those that still needed work
 > would be lower down the wall. His aim was to get the entire manuscript
 > up to the picture rail before he handed it in.
->
-> (Adams, 2002)
->
+<cite>(Adams, 2002)</cite>
+
 Hmm, isn't redrafting a literary cousin of refactoring? In many ways, I
 think it is - so **why not apply this technique to refactoring?**
 
