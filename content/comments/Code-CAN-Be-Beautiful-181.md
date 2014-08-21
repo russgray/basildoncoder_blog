@@ -1,0 +1,7 @@
+post_id: Code-CAN-Be-Beautiful
+Author: Michael Trick's Operations Research Blog » P.G. Wodehouse approach to Modeling?
+Date: 2008-03-23 18:44:15
+Author_Email: noreply@blogger.com
+Author_IP: None
+
+[...] Unfortunately, not, but close. Refactoring in this context is “any change to a computer program's code that improves its readability or simplifies its structure without changing its results”, according to wikipedia. So when a computer program is built on over the years, at some point there is a wish to rewrite or otherwise consolidate the code so it is back looking new, ideally with the effects of all the changes intact. Of course, this is relevant to OR also. We often put together models that have been added on to, changed, and modified to within an inch of their lives. And at some point we would like to have the model “we should have written” in the first place. So there is a temptation to toss everything out and start again. In fact, I often recommend doing so in my classes. But that isn't very good practice, according to contemporary work in refactorization: Now, the first mistake to avoid here is the compulsion to throw it away and rewrite from scratch. So often when confronted with a vast seething moiling spiritless mass of code a developer throws his hands into the air and declares it a lost cause. How seductive is the thought that 31,000 lines of code could be thrown away and replaced with ~15,000 lines of clean, well-designed, beautiful code? [...]
