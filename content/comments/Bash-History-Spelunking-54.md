@@ -4,4 +4,17 @@ Date: 2008-04-19 16:43:09
 Author_Email: noreply@blogger.com
 Author_IP: None
 
-Mine came out:<br /><br />20 nethack<br />6 vi<br />5 ssh<br />5 ping<br />5 history<br />3 mount<br />3 cshore<br />2 man<br />2 find<br />2 eject<br /><br />Oh Dearie Me!
+Mine came out:
+
+`20 nethack
+6 vi
+5 ssh
+5 ping
+5 history
+3 mount
+3 cshore
+2 man
+2 find
+2 eject`
+
+Oh Dearie Me!
