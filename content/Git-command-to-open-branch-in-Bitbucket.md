@@ -3,11 +3,10 @@ Date: 2014-01-23 17:39
 Author: Russell Gray
 Slug: Git-command-to-open-branch-in-Bitbucket
 
-George Brocklehurst has a [useful little
-script](http://georgebrock.com/blog/useful-git-aliases) for opening
-GitHub at a particular commit, right from the command line. I've found
-this handy enough in the past that I've created an equivalent for
-Bitbucket, which is what I use at work.
+George Brocklehurst has a [useful little script](http://georgebrock.com/blog
+/useful-git-aliases) for opening GitHub at a particular commit, right from the
+command line. I've found this handy enough in the past that I've created an
+equivalent for Bitbucket, which is what I use at work.
 
     :::bash
     #!/bin/bash

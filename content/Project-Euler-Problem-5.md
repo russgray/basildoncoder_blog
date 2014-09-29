@@ -98,7 +98,7 @@ the numbers 1 to 3.
 
 You'll notice that s~2~ contains s~1~ in its entirety. $LCM(s_2)$ must
 therefore be a multiple of $LCM(s_1)$, so we can rewrite s~2~ as
-[$LCM(s_1)$, 3], or [2, 3] (since we know $LCM(s_1)=2$). Now we are down
+[$LCM(s_1)$, 3], or \[2, 3\] (since we know $LCM(s_1)=2$). Now we are down
 to two numbers again, so we can calculate the LCM of 2 and 3, which is
 6, so $LCM(s_2)=6$.
 

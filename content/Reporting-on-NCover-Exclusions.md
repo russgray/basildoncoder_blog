@@ -31,7 +31,7 @@ you have a very, very good reason not to, you should trust that the
 tools are doing their job and generating sane code. That's what they're
 there for. If the tools are flaky, you probably shouldn't use them at
 all - though I suppose that if you sometimes fell foul of a particular
-bug you could [write a test to detect it] [1].
+bug you could write a test to detect it[^1].
 
 The cause of my concern was that the UI and web reference code accounted
 for about 30-35% of the
@@ -40,28 +40,28 @@ application, and so any coverage report that covered the whole app would
 be way short of the targets we were set. There are a number of ways to
 deal with this:
 
-1.  Bite the bullet and write tests for *everything*. That includes
-    InitializeComponent(), drag 'n' drop handlers, and the sync and
-    async versions of every web service stub. Best of luck, and [see you
-    in 2017] [2].
-2.  Explain patiently that some code does not need testing (or at least,
-    is on the wrong side of the productivity bell curve and subject to
-    massively diminishing returns in terms of effort/value). Of course,
-    then you'll be asked to prove that you're not pulling a fast one and
-    that the delta of your target and actual coverage percentage can be
-    accounted for entirely by generated code. This will be tricky if you
-    count SLOC for the generated code and use decision points for your
-    test coverage, and maintaining this is another administrative task
-    that you probably don't want to do.
-3.  Separate your code such that some assemblies contain *only*
-    generated code, and the rest contain *only* business logic. Then
-    exclude the former from your test suite so they don't show on the
-    coverage report. This is probably achievable, though it can lead to
-    some fairly hideous contortions to maintain the boundary, and can
-    even result in sensible design decisions being discarded in favour
-    of wacky ones that have no redeeming feature other than supporting
-    your arbitrary separation rules.
-4.  Swear indiscriminately and refuse. Then clear your desk, probably.
+1. Bite the bullet and write tests for *everything*. That includes
+InitializeComponent(), drag 'n' drop handlers, and the sync and async versions
+of every web service stub. Best of luck, and see you in 2017[^2].
+
+2. Explain patiently that some code does not need testing (or at least, is on
+the wrong side of the productivity bell curve and subject to massively
+diminishing returns in terms of effort/value). Of course, then you'll be asked
+to prove that you're not pulling a fast one and that the delta of your target
+and actual coverage percentage can be accounted for entirely by generated
+code. This will be tricky if you count SLOC for the generated code and use
+decision points for your test coverage, and maintaining this is another
+administrative task that you probably don't want to do.
+
+3. Separate your code such that some assemblies contain *only* generated code,
+and the rest contain *only* business logic. Then exclude the former from your
+test suite so they don't show on the coverage report. This is probably
+achievable, though it can lead to some fairly hideous contortions to maintain
+the boundary, and can even result in sensible design decisions being discarded
+in favour of wacky ones that have no redeeming feature other than supporting
+your arbitrary separation rules.
+
+4. Swear indiscriminately and refuse. Then clear your desk, probably.
 
 None of those appealed, so we set out to find another approach. What we
 wanted was a more flexible variant of option 3, where we could exclude
@@ -74,7 +74,7 @@ techniques](http://homepage.mac.com/hey.you/lessons.html).
 It turns out that code exclusion isn't so tough -
 [NCover](http://www.ncover.com/) will ignore methods and classes tagged
 with an [attribute named CoverageExclude in the global
-namespace](http://www.ericsink.com/articles/Code_Coverage.html) [3].
+namespace](http://www.ericsink.com/articles/Code_Coverage.html)[^3].
 
 This still requires a little discipline - for example making sure that
 if Joe marks a class as excluded, Jim doesn't add some business logic to
@@ -95,9 +95,8 @@ solution would be to find a way to add the information directly to the
 coverage report, so that it's right there for all to see. So, how?
 
 The first step was to get the appropriate metadata into the code. The
-[reference
-implementation](http://weblogs.asp.net/nunitaddin/archive/2006/10/04/CoverageExclude.aspx)
-for the CoverageExclude attribute is as follows:
+[reference implementation](http://weblogs.asp.net/nunitaddin/archive/2006/10/0
+4/CoverageExclude.aspx) for the CoverageExclude attribute is as follows:
 
     :::csharp
     public class CoverageExcludeAttribute : Attribute { }
@@ -219,18 +218,18 @@ achieved by tweaking the 'exclusions summary' section as follows:
 The next step was to actually inject our custom data into the report.
 This was a two-stage process:
 
-1.  Use reflection to iterate through the application assemblies,
-    looking for anything tagged with our attribute
-2.  Open the report data file generated by NCoverExplorer and shoehorn
-    our new data into it.
+1. Use reflection to iterate through the application assemblies, looking for
+anything tagged with our attribute
 
-We created a simple little post-processor application to perform this
-work. To complete stage 1, we needed to iterate through a directory of
-assemblies, loading each one in turn. In each assembly, we iterated
-through the types contained therein, and looked for our custom attribute
-on each one. Then, we iterated through the methods on each type, and
-looked for the custom attribute there too. This is actually very simple
-- the code skeleton looks like this:
+2. Open the report data file generated by NCoverExplorer and shoehorn our new
+data into it.
+
+We created a simple little post-processor application to perform this work. To
+complete stage 1, we needed to iterate through a directory of assemblies,
+loading each one in turn. In each assembly, we iterated through the types
+contained therein, and looked for our custom attribute on each one. Then, we
+iterated through the methods on each type, and looked for the custom attribute
+there too. This is actually very simple - the code skeleton looks like this:
 
     :::csharp
     foreach (FileInfo assemblyFile in assemblies)
@@ -335,17 +334,17 @@ Since the post-processor was written as a simple command-line
 application, we could create a custom NAnt task for it and integrate the
 whole process seamlessly with our continuous integration setup.
 
-[1]: I've seen it happen a few times before, for example an XML generator
+[^1]: I've seen it happen a few times before, for example an XML generator
 (which shall remain nameless) that occasionally 'forgot' our custom
 namespace and used a default, which caused parsers of that XML to scream
 in agony. It's rare though, unless you regularly dig up tools from
 CodeProject and use them in your production code, in which case you
 deserve everything you get ;-)
 
-[2]: Written in 2008. So if you're reading this on December 31st 2016,
+[^2]: Written in 2008. So if you're reading this on December 31st 2016,
 adjust accordingly and don't come crying to me.
 
-[3]: Yes, I know that NCover 2.x has built-in regex-based exclusions that
+[^3]: Yes, I know that NCover 2.x has built-in regex-based exclusions that
 do all this, but a) not everyone has an NCover 2.x pro licence, and b)
 we weren't using NCover 2.x as it hadn't been released at the
 time.

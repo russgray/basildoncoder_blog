@@ -43,18 +43,21 @@ profile involves frequent small (<1KB) SOAP requests.
 For those who normally turn to the back of the book for answers and don't
 really care about the whys and wherefores, here's the executive summary:
 
-1.  **Switch off Expect 100 Continue**. This should be done in your
-    App.config file (see below).
-2.  **Switch off Nagle's Algorithm**. This should be done in your
-    App.config file (see below).
-3.  **Use multithreading**. Unfortunately this is not a simple
-    configuration file setting, it is a fundamental part of your
-    application design.
-4.  **Remove the maximum connection bottleneck**. This should be done in
-    your App.config file (see below). This is *vital* if your
-    application is multithreaded.
-5.  **Use gzip compression**. .Net 2 has this built-in if you switch it
-    on; .Net 1.1 needs a helping hand.
+1. **Switch off Expect 100 Continue**. This should be done in your App.config
+file (see below).
+
+2. **Switch off Nagle's Algorithm**. This should be done in your App.config
+file (see below).
+
+3. **Use multithreading**. Unfortunately this is not a simple configuration
+file setting, it is a fundamental part of your application design.
+
+4. **Remove the maximum connection bottleneck**. This should be done in your
+App.config file (see below). This is *vital* if your application is
+multithreaded.
+
+5. **Use gzip compression**. .Net 2 has this built-in if you switch it on;
+.Net 1.1 needs a helping hand.
 
 The XML snippet that configures these settings is shown below, and
 should be added to your App.config file:

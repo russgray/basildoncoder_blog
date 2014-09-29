@@ -43,31 +43,75 @@ the thread pool or creating my own threads) and, preferably, not
 blocking anywhere except when I actually need some data before
 continuing.
 
-<p>
 The two-stage process can be successfully captured asynchronously by
 combining a future and a continuation. I encapsulate the initial request
 in a Future object (which is a subclass of Task), and handle the
 check-record-count-and-get-more-records-if-required logic in the
 continuation. The code for this basically looks as follows:
 
-    public Future> GetAllItemsAsync(){ var f = Create(            ac => Service.BeginGetItems(0, ac, null),            Service.EndGetItems); var start = 200; var resultFuture = f.ContinueWith(        r =>            { // Batch retrieval here...            }); return resultFuture;}
+    :::csharp
+    public Future<List<Item>> GetAllItemsAsync()
+    {
+        var f = Create<GetItemsResponse>(
+                ac => Service.BeginGetItems(0, ac, null),
+                Service.EndGetItems);
 
-<p>
+        var start = 200;
+        var resultFuture = f.ContinueWith(
+            r => { /* Batch retrieval here... */});
+        return resultFuture;
+    }
+
 In order to support the APM pattern neatly, I'm using the following
 method [from the PFX
 blog](http://blogs.msdn.com/pfxteam/archive/2008/03/16/8272833.aspx):
 
-    private static Future Create(        Action beginFunc,        Func endFunc){ var f = Future.Create();    beginFunc(iar =>        { try            {                f.Value = endFunc(iar);            } catch (Exception e)            {                f.Exception = e;            }        }); return f;}
+    :::csharp
+    private static Future<T> Create<T>(
+            Action<AsyncCallback> beginFunc,
+            Func<IAsyncResult, T> endFunc)
+    {
+        var f = Future<T>.Create();
+        beginFunc(iar =>
+            {
+                try
+                {
+                    f.Value = endFunc(iar);
+                }
+                catch (Exception e)
+                {
+                    f.Exception = e;
+                }
+            });
+        return f;
+    }
 
 This could be coded as an extension method, though I haven't bothered
 yet as I'm hopeful this immensely useful snippet will be integrated into
 the library itself.
 
-<p>
 Now I need to make a number of calls to get the rest of the data, so I
 loop until I've made the required number of async service calls:
 
-    var resultFuture = f.ContinueWith(r =>    { var items = new ConcurrentQueue(); var handles = new List(); while (start < r.Value.TotalRecordCount)        { var asyncResult = Service.BeginGetItems(200,                ar => Service.EndGetItems(ar).Items                    .ForEach(items.Enqueue), null);            handles.Add(asyncResult.AsyncWaitHandle);            start += 200;        }        handles.ForEach(h => h.WaitOne()); return items.ToList();    });
+    :::csharp
+    var resultFuture = f.ContinueWith(r =>
+        {
+            var items = new ConcurrentQueue<Item>();
+            var handles = new List<WaitHandle>();
+
+            while (start < r.Value.TotalRecordCount)
+            {
+                var asyncResult = Service.BeginGetItems(200,
+                    ar => Service.EndGetItems(ar).Items
+                        .ForEach(items.Enqueue), null);
+
+                handles.Add(asyncResult.AsyncWaitHandle);
+                start += 200;
+            }
+
+            handles.ForEach(h => h.WaitOne());
+            return items.ToList();
+        });
 
 I'm about 85% happy with this as an approach. I'm not completely happy,
 however, because of the WaitOne calls, which mean that I'm blocking on a
