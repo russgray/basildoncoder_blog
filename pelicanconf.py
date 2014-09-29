@@ -34,6 +34,6 @@ DEFAULT_PAGINATION = 10
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
 
-PLUGINS = ['pelican_comments']
+PLUGINS = ['pelican_comments', 'render_math']
 ARTICLE_EXCLUDES = ['comments', 'pages']
 MD_EXTENSIONS = ['codehilite(css_class=highlight)', 'extra', 'subscript']

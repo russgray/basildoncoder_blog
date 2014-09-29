@@ -21,6 +21,7 @@ fi
 
 env/bin/pip install -q -r requirements.txt
 env/bin/pip pip install git+git://github.com/bstpierre/pelican-comments#egg=pelican_comments
+env/bin/pip install git+git://github.com/russgray/pelican_plugin-render_math@pip_compat#egg=math
 curl -s https://raw.githubusercontent.com/hutchison/markdown.subscript/master/subscript.py -o env/lib/python2.7/site-packages/markdown/extensions/subscript.py
 
 popd

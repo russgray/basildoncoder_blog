@@ -4,13 +4,14 @@ Author: Russell Gray
 Slug: Technical-Book-Club-Object-Oriented-Analysis-Design-Chapter-1
 Tags: book club, software engineering
 
-![image](http://ecx.images-amazon.com/images/I/51-uo4HUPCL._AA240_.jpg)So, as
-[previously mentioned]({filename}/Technical-Book-Club.md), we'll start with
-the basics. This material is probably very familiar to most coders with even a
-small amount of experience, but it never hurts to refresh the fundamentals.
-You may even find that there's some material that seems so obvious you don't
-even actively think about it any more - which is good if it has become habit,
-but may be bad if you've grown complacent in certain areas.
+![image](http://ecx.images-amazon.com/images/I/51-uo4HUPCL._AA240_.jpg)
+
+So, as [previously mentioned]({filename}/Technical-Book-Club.md), we'll start
+with the basics. This material is probably very familiar to most coders with
+even a small amount of experience, but it never hurts to refresh the
+fundamentals. You may even find that there's some material that seems so
+obvious you don't even actively think about it any more - which is good if it
+has become habit, but may be bad if you've grown complacent in certain areas.
 
 The overarching theme of the first chapter is **complexity**. Complexity
 is the enemy of the software developer, and it is vital to understand
@@ -34,16 +35,15 @@ making complexity manageable. A number of examples from nature are
 provided; for example, you can view a plant simply as a plant, or as a
 collection of structures (leaves, stem, roots).
 
-![image]({filename}/images/flower.jpg)Importantly, the
-overall hierarchical view of a plant can be broken down into many
-interacting sub-hierarchies, each of which may be considered in terms of
+Importantly, the overall hierarchical view of a plant can be broken down into
+many interacting sub-hierarchies, each of which may be considered in terms of
 its own structure and its **interactions**. This is an example of
-**decomposition**. If you want to study roots in detail, you can study
-the branch roots, the root apex, and the root cap - and break that down
-further if you like to consider roots as a collection of cells. To study
-roots in this sort of detail, however, you do not have to go to the same
-lengths with leaves and stems - it is enough to understand the
-interactions between the higher-level components.
+**decomposition**. If you want to study roots in detail, you can study the
+branch roots, the root apex, and the root cap - and break that down further if
+you like to consider roots as a collection of cells. To study roots in this
+sort of detail, however, you do not have to go to the same lengths with leaves
+and stems - it is enough to understand the interactions between the higher-
+level components.
 
 Complexity, therefore, is more manageable if it is divided into
 interacting components, each of which can be further divided into
@@ -62,12 +62,11 @@ aggregation. These interactions are key, as they form part of the
 'value' of a system - in layman's terms, the whole is greater than the
 sum of its parts.
 
-![image]({filename}/images/jetengine.jpg)Inheritance and
-aggregation are, respectively, 'is-a' and 'part-of' relationships. In
-both cases, these represent separate but overlapping hierarchies.
-Booch's example is that of an aeroplane. An aeroplane can be thought of
-as an aggregation of systems - propulsion, flight control, etc. Each of
-those can potentially be modelled as specilaised types too - for
+Inheritance and aggregation are, respectively, 'is-a' and 'part-of'
+relationships. In both cases, these represent separate but overlapping
+hierarchies. Booch's example is that of an aeroplane. An aeroplane can be
+thought of as an aggregation of systems - propulsion, flight control, etc.
+Each of those can potentially be modelled as specilaised types too - for
 instance a jet engine is a particular type of propulsion, and a turbofan
 engine is a particular type of jet engine.
 

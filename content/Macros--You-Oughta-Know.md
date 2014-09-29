@@ -57,7 +57,7 @@ trainee role or something.
 
 So, I copied the entire switch body into Notepad++ (well, vim really,
 but I'll pretend it's Notepad++ for the sake of making this post a bit
-more accessible) and set to work^[1]^.
+more accessible) and set to work[^1].
 
 Before recording my macro, I needed to do a bit of preprocessing to trim
 the code down to just the data I wanted to work with. The following
@@ -191,7 +191,7 @@ already au fait with this sort of editing :-)
     start position for the next couplet, and end the macro by hitting
     Ctrl-Shift-R again.
 
-^[1]^I could have just done this in a new file in Visual Studio, but for
+[^1]: I could have just done this in a new file in Visual Studio, but for
 some reason I find VS intolerably slow at running macros once recorded.
 So slow, in fact, that you can watch the cursor laboriously complete
 each step - I wind up thinking it would have been quicker to do it

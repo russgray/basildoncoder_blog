@@ -29,7 +29,7 @@ previous post](http://www.codinghorror.com/blog/archives/000749.html) on
 the matter (replacing the statement "comments can never be replaced by
 code alone" with "if your feel your code is too complex to understand
 without comments, your code is probably just bad") and endearingly
-veered wildly to and fro across a sensible medium^[1]^, without ever
+veered wildly to and fro across a sensible medium[^1], without ever
 quite hitting it. Coding Horror, indeed.
 
 So far, so blah; every time an argument on comments flares up we see the
@@ -99,12 +99,20 @@ what you're not supposed to do. `RunEndOfMonthReports` is probably
 sufficient. Separate interface and implementation. This is programming
 101, people, it shouldn't be beyond our grasp.
 
-<p>
-^[1]^I agree with [Dan
-Dyer](http://blog.uncommons.org/2008/07/25/no-your-code-is-not-so-great-that-it-doesnt-need-comments/)
-that the best choice is as follows:
+[^1]: I agree with [Dan Dyer](http://blog.uncommons.org/2008/07/25/no-your-code-is-not-so-great-that-it-doesnt-need-comments/) that the best choice is as follows:
 
-    /** *  Approximate the square root of n, to within the specified *  tolerance, using the Newton-Raphson method. */private double approximateSquareRoot(double n, double tolerance){ double root = n / 2; while (abs(root - (n / root)) > tolerance)    {        root = 0.5 * (root + (n / root));    } return root;}
+        :::java
+        /**
+         *  Approximate the square root of n, to within the specified
+         *  tolerance, using the Newton-Raphson method.
+         */
+        private double approximateSquareRoot(double n, double tolerance) {
+            double root = n / 2;
+            while (abs(root - (n / root)) > tolerance) {
+                root = 0.5 * (root + (n / root));
+            }
+            return root;
+        }
 
 The function name is descriptive and clear whilst remaining general
 enough to allow an alternative implementation. Anyone who cares enough
