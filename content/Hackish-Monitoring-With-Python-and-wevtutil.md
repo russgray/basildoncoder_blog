@@ -22,13 +22,11 @@ This of course rules out doing anything with the MMC snap-in, as manually
 connecting to 12 boxes every few minutes would be a full-time job in itself.
 Powershell seemingly provides a number of possibilities, but I couldn't get
 [Get-WmiObject](http://ss64.com/ps/get-wmiobject.html)
-[queries](http://www.autmon.com/learn/powershell/powershell-quicktips/learn-
-powershell-event-log/) to work, [Get-EventLog](http://ss64.com/ps/get-
-eventlog.html) wouldn't allow me to provide authentication credentials for the
+[queries](http://www.autmon.com/learn/powershell/powershell-quicktips/learn-powershell-event-log/) to work, [Get-EventLog](http://ss64.com/ps/get-eventlog.html) wouldn't allow me to provide authentication credentials for the
 remote machine, and [Get-WinEvent](http://ss64.com/ps/get-winevent.html)
-almost worked but failed to return the actual log message, even if I [fiddled
-with the locale](http://stackoverflow.com/questions/10534982/powershell-get-
-winevent-has-no-messsage-data). I want to like Powershell, I really do, but
+almost worked but failed to return the actual log message, even if I
+[fiddled with the locale](http://stackoverflow.com/questions/10534982/powershell-get-winevent-has-no-messsage-data).
+I want to like Powershell, I really do, but
 every time I want to use it I hit bugs or OS compatibility issues.
 
 Recent Windows versions come with a handy tool called
@@ -52,10 +50,7 @@ almost no time!
 Now begins the larger task of adding more detailed diagnostics to the app for
 more effective monitoring.
 
-Thanks to [http://blogs.msdn.com/b/ericfitz/archive/2008/07/16/wevtutil-
-scripting.aspx](http://blogs.msdn.com/b/ericfitz/archive/2008/07/16/wevtutil-
-scripting.aspx) and [http://chentiangemalc.wordpress.com/2011/01/25/script-to-
-collect-all-event-logs-off-a-remote-
-windows-7-server-2008-machine/](http://chentiangemalc.wordpress.com/2011/01/25
-/script-to-collect-all-event-logs-off-a-remote-windows-7-server-2008-machine/)
+Thanks to [http://blogs.msdn.com/b/ericfitz/archive/2008/07/16/wevtutil-scripting.aspx](http://blogs.msdn.com/b/ericfitz/archive/2008/07/16/wevtutil-scripting.aspx)
+and
+[http://chentiangemalc.wordpress.com/2011/01/25/script-to-collect-all-event-logs-off-a-remote-windows-7-server-2008-machine/](http://chentiangemalc.wordpress.com/2011/01/25/script-to-collect-all-event-logs-off-a-remote-windows-7-server-2008-machine/)
 for ideas on scripting wevtutil.

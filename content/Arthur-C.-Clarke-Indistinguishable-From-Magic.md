@@ -6,8 +6,7 @@ Slug: Arthur-C-Clarke-Indistinguishable-From-Magic
 Sad news - [the legendary Arthur C. Clarke has
 died](http://news.bbc.co.uk/1/hi/uk/7304004.stm). He'll be greatly
 missed; Clarke novels occupy a full shelf of my floor-to-ceiling
-bookcase, and *[Rendezvous With
-Rama](http://en.wikipedia.org/wiki/Rendezvous_with_rama)* stands proud
+bookcase, and *[Rendezvous With Rama](http://en.wikipedia.org/wiki/Rendezvous_with_rama)* stands proud
 as the finest sci-fi it has ever been my pleasure to read.
 
 Aside from his very visible mastery of sci-fi, however, there is much to
@@ -17,8 +16,7 @@ which is very important for practical global telecommunications. When
 you watch the Olympics on TV this summer, you can thank Clarke for the
 fact that you haven't had to go to China to see it.
 
-Perhaps best of all, though, is his now-infamous [Third
-Law](http://en.wikipedia.org/wiki/Clarke's_three_laws):
+Perhaps best of all, though, is his now-infamous [Third Law](http://en.wikipedia.org/wiki/Clarke's_three_laws):
 
 > Any sufficiently advanced technology is indistinguishable from magic.
 

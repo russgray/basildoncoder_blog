@@ -3,12 +3,10 @@ Date: 2008-02-21 16:07
 Author: Russell Gray
 Slug: Extending-the-Technical-Debt-Metaphor
 
-A few months ago, the inestimable Steve McConnell (he of *[Code
-Complete](http://www.amazon.co.uk/Code-Complete-Practical-Handbook-Construction/dp/0735619670/)*
+A few months ago, the inestimable Steve McConnell (he of *[Code Complete](http://www.amazon.co.uk/Code-Complete-Practical-Handbook-Construction/dp/0735619670/)*
 fame)
 [wrote](http://blogs.construx.com/blogs/stevemcc/archive/2007/11/01/technical-debt-2.aspx)
-about [technical
-debt](http://www.martinfowler.com/bliki/TechnicalDebt.html). McConnell
+about [technical debt](http://www.martinfowler.com/bliki/TechnicalDebt.html). McConnell
 looks to extend the metaphor beyond the simple idea of 'code that is
 going to be a liability in the future', identifying two main types of
 technical debt (deliberate and accidental), and identifying further

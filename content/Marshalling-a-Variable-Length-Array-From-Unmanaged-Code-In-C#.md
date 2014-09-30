@@ -3,23 +3,18 @@ Date: 2009-03-31 20:03
 Author: Russell Gray
 Slug: Marshalling-a-Variable-Length-Array-From-Unmanaged-Code-In-CSharp
 
-I recently spent time working on some C# code to interact with a simple [DNS-
-SD](http://files.dns-sd.org/draft-cheshire-dnsext-dns-sd.txt) system. This
-requires using [DNS TXT
-records](http://en.wikipedia.org/wiki/List_of_DNS_record_types), which are not
-supported in the [System.Net.Dns](http://msdn.microsoft.com/en-
-us/library/system.net.dns.aspx) class. After a few google searches failed to
-turn up a pure .Net client library that met my needs, I settled on an approach
-based around p/invoking the Win32 [DnsQuery](http://msdn.microsoft.com/en-
-us/library/ms682016(VS.85).aspx) function.
+I recently spent time working on some C# code to interact with a simple
+[DNS-SD][DNS-SD] system. This requires using [DNS TXT records][DNS TXT records],
+which are not supported in the  [System.Net.Dns][SND] class. After a few
+google searches failed to turn up a pure .Net client library that met my
+needs, I settled on an approach based around p/invoking the Win32
+[DnsQuery][DnsQuery] function.
 
 And quickly ran into problems.
 
-For DNS TXT records, DnsQuery returns a
-[DNS_TXT_DATA](http://msdn.microsoft.com/en-us/library/ms682109(VS.85).aspx)
-structure in the Data field of the [DNS_RECORD](http://msdn.microsoft.com/en-
-us/library/ms682082(VS.85).aspx) structure. DNS_TXT_DATA is declared like
-this:
+For DNS TXT records, DnsQuery returns a [DNS_TXT_DATA][DNS_TXT_DATA] structure
+in the Data field of the [DNS_RECORD][DNS_RECORD] structure. DNS_TXT_DATA is
+declared like this:
 
     :::c
     typedef struct {
@@ -28,30 +23,28 @@ this:
     } DNS_TXT_DATA,
      *PDNS_TXT_DATA;
 
-Using the very handy [P/Invoke Interop
-Assistant](http://clrinterop.codeplex.com/), we see that this struct can be
-represented like this in managed code:
+Using the very handy [P/Invoke Interop Assistant][PInvoke], we see that this
+struct can be represented like this in managed code:
 
     :::csharp
     [StructLayout(LayoutKind.Sequential)]
-    public struct DNS_TXT_DATA 
+    public struct DNS_TXT_DATA
     {
         /// DWORD->unsigned int
         public uint dwStringCount;
 
         /// PWSTR[1]
         [MarshalAs(UnmanagedType.ByValArray,
-                SizeConst=1,
-                ArraySubType=UnmanagedType.SysUInt)]
+                   SizeConst=1,
+                   ArraySubType=UnmanagedType.SysUInt)]
         public IntPtr[] pStringArray;
     }
 
 There is a problem with pStringArray, unfortunately. The
-[System.Runtime.InteropServices.Marshal](http://msdn.microsoft.com/en-
-us/library/system.runtime.interopservices.marshal.aspx) class cannot marshal a
-variable length array, as it needs to know in advance how big the array is in
-order to allocate memory. That's why the managed structure needs SizeConst
-specified in the MarshalAs attribute.
+[System.Runtime.InteropServices.Marshal][SRIM] class cannot marshal a variable
+length array, as it needs to know in advance how big the array is in order to
+allocate memory. That's why the managed structure needs SizeConst specified in
+the MarshalAs attribute.
 
 However, if the DNS TXT record data contains multiple quoted strings separated
 by whitespace, DnsQuery will return a structure with a variable number of
@@ -95,11 +88,11 @@ included a complete source program below), DnsQuery is called like so:
     var pServers = IntPtr.Zero;
     var ppQueryResultsSet = IntPtr.Zero;
     var ret = DnsQuery(domain,
-            DnsRecordType.TEXT,
-            DnsQueryType.STANDARD,
-            pServers,
-            ref ppQueryResultsSet,
-            IntPtr.Zero);
+                       DnsRecordType.TEXT,
+                       DnsQueryType.STANDARD,
+                       pServers,
+                       ref ppQueryResultsSet,
+                       IntPtr.Zero);
     if (ret != 0)
         throw new ApplicationException("DnsQuery failed: " + ret);
 
@@ -140,9 +133,9 @@ of ppQueryResultsSet plus 24 bytes, and marshalling again:
 
     :::csharp
     var ptr = new IntPtr(
-            ppQueryResultsSet.ToInt32() + Marshal.SizeOf(dnsRecord));
+        ppQueryResultsSet.ToInt32() + Marshal.SizeOf(dnsRecord));
     var txtData = (DNS_TXT_DATA) Marshal.PtrToStructure(
-            ptr, typeof (DNS_TXT_DATA));
+        ptr, typeof (DNS_TXT_DATA));
 
 Because of the definition of DNS_TXT_DATA, this only marshals 8 bytes - 4
 bytes for dwStringCount, and 4 bytes for the single element in pStringArray
@@ -156,7 +149,7 @@ length of dwStringCount:
 
     :::csharp
     ptr = new IntPtr(ptr.ToInt32() + sizeof (uint)); // move to first
-    var ptrs = new IntPtr[txtData.dwStringCount]; // dest array
+    var ptrs = new IntPtr[txtData.dwStringCount];    // dest array
     Marshal.Copy(ptr, ptrs, 0, ptrs.Length);
 
 And finally we iterate through those pointers, marshalling the string
@@ -174,3 +167,12 @@ approach should be applicable to any situation where you need to marshal a
 data structure containing a variable-length array.
 
 [Source code](https://gist.github.com/russgray/4748c3f1815f6f2f273d)
+
+[DNS-SD]: http://files.dns-sd.org/draft-cheshire-dnsext-dns-sd.txt
+[DNS TXT records]: http://en.wikipedia.org/wiki/List_of_DNS_record_types
+[SND]: http://msdn.microsoft.com/en-us/library/system.net.dns.aspx
+[DnsQuery]: http://msdn.microsoft.com/en-us/library/ms682016(VS.85).aspx
+[DNS_TEXT_DATA]: http://msdn.microsoft.com/en-us/library/ms682109(VS.85).aspx
+[DNS_RECORD]: http://msdn.microsoft.com/en-us/library/ms682082(VS.85).aspx
+[PInvoke]: http://clrinterop.codeplex.com/
+[SRIM]: http://msdn.microsoft.com/en-us/library/system.runtime.interopservices.marshal.aspx

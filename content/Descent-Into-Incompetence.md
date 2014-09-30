@@ -27,8 +27,7 @@ Still, fair enough I suppose; we live in litigious times, and not being
 a bigot I have no particular fears of transgressing.
 
 But what if the rules are changed? And what if they're changed in
-horribly unexpected ways? A [recent
-article](http://news.bbc.co.uk/1/hi/business/7187032.stm) on the BBC
+horribly unexpected ways? A [recent article](http://news.bbc.co.uk/1/hi/business/7187032.stm) on the BBC
 News site contained, quite without fanfare, some shocking intelligence.
 
 > Previously standard questions about age, length of experience and

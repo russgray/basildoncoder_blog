@@ -21,8 +21,7 @@ ConcurrentDictionary has two overloads of the GetOrAdd method, an atomic
 operation to get a value if it exists, or add it if not. In the case where the
 value does not exist, you can either provide the new value directly, or pass a
 factory delegate that ConcurrentDictionary will call if it needs the value.
-The Remarks section in the [MSDN docs](http://msdn.microsoft.com/en-
-us/library/dd287191(v=vs.110).aspx) warns that the factory delegate will be
+The Remarks section in the [MSDN docs](http://msdn.microsoft.com/en-us/library/dd287191(v=vs.110).aspx) warns that the factory delegate will be
 called outside the lock, but otherwise the two overloads appear identical
 functionally - in particular that "read operations on the dictionary are
 performed in a lock-free manner".

@@ -10,8 +10,7 @@ freedom zero". Well, my initial reaction was that surely nobody could
 care about something with such a thoroughly ridiculous name. Freedom
 Zero? Really? I know this is the
 [FSF](http://www.gnu.org/philosophy/free-sw.html)'s first freedom, and
-programmers [count from
-0](http://en.wikipedia.org/wiki/0_(number)#Numbering_from_1_or_0.3F...)
+programmers [count from 0](http://en.wikipedia.org/wiki/0_(number)#Numbering_from_1_or_0.3F...)
 don'tcha know, but it's still rubbish.
 
 But the real reason is that it simply isn't important enough to override

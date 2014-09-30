@@ -5,9 +5,7 @@ Slug: Legacy-Code-Refactoring-and-Ownership
 Tags: coding, refactoring, software engineering
 
 Refactoring is good. Everyone knows that. Since Fowler popularised the concept
-with the seminal [*Refactoring: Improving the Design of Existing
-Code*](http://www.amazon.co.uk/Refactoring-Improving-Design-Existing-
-Technology/dp/0201485672/) it's become a staple of the industry, and has pride
+with the seminal [*Refactoring: Improving the Design of Existing Code*](http://www.amazon.co.uk/Refactoring-Improving-Design-Existing-Technology/dp/0201485672/) it's become a staple of the industry, and has pride
 of place on many a bookshelf. In the many, many articles and discussions of
 the subject, the key goals and benefits of refactoring are generally taken to
 be the improvement of readability, testability, decoupling, and other similar
@@ -42,9 +40,8 @@ agile methodologies or TDD, of course, since in those cases quite often the
 code you are refactoring was written by you anyway. Working with legacy code,
 though, it's a big deal.
 
-In the preface to [*Working Effectively With Legacy
-Code*](http://www.amazon.co.uk/Working-Effectively-Legacy-Robert-
-Martin/dp/0131177052/), Feathers asks "what do you think about when you hear
+In the preface to 
+[*Working Effectively With Legacy Code*](http://www.amazon.co.uk/Working-Effectively-Legacy-Robert-Martin/dp/0131177052/), Feathers asks "what do you think about when you hear
 the term *legacy code*?" (Feathers, 2004). He answers by stating that the
 standard definition is "difficult-to-change code that we don't understand" and
 adds his own preferred definition which is, in essence, "code without tests".
