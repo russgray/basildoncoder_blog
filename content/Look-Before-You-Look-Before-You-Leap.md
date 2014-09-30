@@ -5,17 +5,12 @@ Slug: Look-Before-You-Look-Before-You-Leap
 
 Generally, I try to avoid turning this blog into some sort of
 [snark](http://www.google.co.uk/search?q=define%3Asnark)-fest about other
-programmers or blogs. I've disagreed with Jeff Atwood [once]({filename}/Code-
-CAN-Be-Beautiful.md) or [twice]({filename}/Freedom-Zero--The-All-Or-Nothing-
-Fallacy.md) though, and so by posting this I'm probably straying a little
+programmers or blogs. I've disagreed with Jeff Atwood [once]({filename}/Code-CAN-Be-Beautiful.md) or [twice]({filename}/Freedom-Zero--The-All-Or-Nothing-Fallacy.md) though, and so by posting this I'm probably straying a little
 close to the edge...but what the hell.
 
-A couple of days ago Coding Horror carried a [fluff
-piece](http://www.codinghorror.com/blog/archives/001177.html) about how all
+A couple of days ago Coding Horror carried a [fluff piece](http://www.codinghorror.com/blog/archives/001177.html) about how all
 developers should be marketers too. Predictably, the article soon got posted
-to [proggit](http://www.reddit.com/r/programming/) where it was [ripped on by
-reddit's resident Jeff-haters](http://www.reddit.com/r/programming/comments/78
-vq3/jeff_atwood_finally_jumps_the_shark/), and even more predictably the
+to [proggit](http://www.reddit.com/r/programming/) where it was [ripped on by reddit's resident Jeff-haters](http://www.reddit.com/r/programming/comments/78vq3/jeff_atwood_finally_jumps_the_shark/), and even more predictably the
 comments were a mix of interesting insight and barely-concealed hate.
 
 Apparently some of them got up Jeff's nose a bit, and today he
@@ -24,9 +19,7 @@ of his rebuttal seems to be that you shouldn't trust what you read on blogs,
 and should verify everything yourself. True enough, I guess, if perhaps a bit
 impractical given the sheer amount of information out there.
 
-Then, however, Jeff goes on to give an example by referencing a [compression
-benchmark](http://blog.madskristensen.dk/post/Compression-and-performance-
-GZip-vs-Deflate.aspx) he'd read on a blog and providing counter-analysis to
+Then, however, Jeff goes on to give an example by referencing a [compression benchmark](http://blog.madskristensen.dk/post/Compression-and-performance-GZip-vs-Deflate.aspx) he'd read on a blog and providing counter-analysis to
 show that the benchmark was wrong in claiming Deflate is faster than gzip. In
 doing so, much knowledge was gained.
 

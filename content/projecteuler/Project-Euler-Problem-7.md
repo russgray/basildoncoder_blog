@@ -13,7 +13,7 @@ Slug: Project-Euler-Problem-7
 Ah, what a nice, straightforward, unambiguous spec! If only business software
 specifications were so precise.
 
-[Way back in problem 3]({filename}/Project-Euler-Problem-3.md), I took a bit
+[Way back in problem 3]({filename}/projecteuler/Project-Euler-Problem-3.md), I took a bit
 of a wander off-topic and built a prime generator in .Net using the [Sieve of
 Eratosthenes](http://en.wikipedia.org/wiki/Sieve_of_eratosthenes). Armed with
 this, problem 7 should be easy, right? The sieve implementation generates an

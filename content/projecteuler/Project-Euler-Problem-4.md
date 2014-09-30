@@ -185,7 +185,7 @@ more natural in this case.
 
 Parameters aside, it's interesting to note the relative clumsiness of
 the twin calls to Enumerable.Range. Back when looking at [problem
-1]({filename}/Project-Euler-Problems-1-and-2.md),
+1]({filename}/projecteuler/Project-Euler-Problems-1-and-2.md),
 replacing a for loop with a more declarative alternative made the code
 considerably more expressive. In this case, however, I don't think it
 helps quite so much. Once again, it's to do with the nature of the
@@ -253,7 +253,7 @@ a longer post than expected, here's an F# solution I hacked together
 before getting sidetracked with the whole fluent thing. I read a blog
 post
 [here](http://geekswithblogs.net/Erik/archive/2008/02/18/119727.aspx)
-about problem 4 (***warning** - also contains solution to problem 6*)
+about problem 4 (**warning** - also contains solution to problem 6)
 but didn't like it too much. It seems to be quite common when reading
 F# code on the web for there to be a reliance on Seq.unfold - I'm not
 sure it's always the right tool. Then again, my F# is sketchy at best

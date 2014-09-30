@@ -73,8 +73,7 @@ should be added to your App.config file:
         </settings>
     </system.net>
 
-For those who share my distrust of [unexplained sorcery]({filename}Coding-by-
-Convention.md), here's the gory details.
+For those who share my distrust of [unexplained sorcery]({filename}Coding-by-Convention.md), here's the gory details.
 
 ***Expect-100 the Unexpected***
 

@@ -23,10 +23,9 @@ Onwards to...
 
 Bit of a disappointment, problem 6; it's too easy. [It's rated as the third-
 easiest](http://projecteuler.net/index.php?section=problems&sort=difficulty),
-i.e. easier than problems [3]({filename}/Project-Euler-Problem-3.md),
-[4]({filename}/Project-Euler-Problem-4.md), and [5]({filename}/Project-Euler-
-Problem-5.md) which I've already covered. In fact, for my money it's easier
-than problem [2]({filename}/Project-Euler-Problems-1-and-2.md) as well. Ah
+i.e. easier than problems [3]({filename}/projecteuler/Project-Euler-Problem-3.md),
+[4]({filename}/projecteuler/Project-Euler-Problem-4.md), and [5]({filename}/projecteuler/Project-Euler-Problem-5.md) which I've already covered. In fact, for my money it's easier
+than problem [2]({filename}/projecteuler/Project-Euler-Problems-1-and-2.md) as well. Ah
 well, the difficulty ramps up soon enough, trust me. Here's the very simple
 python solution:
 
