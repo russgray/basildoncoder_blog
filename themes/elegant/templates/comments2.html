@@ -1,0 +1,22 @@
+{% if article.comments %}
+    <div class="accordion" id="accordion2">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="{{ SITEURL }}/{{ article.url }}#comments">
+                Comments ({{ article.comments|length }}) </a>
+            </div>
+
+            <div id="comments" class="accordion-body collapse">
+                <div class="accordion-inner">
+                    <div class="comments">
+                        <ul>
+                        {% for comment in article.comments %}
+                            <li>{{ comment.author }} said: {{ comment.content }}</li>
+                        {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endif %}

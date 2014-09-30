@@ -2,7 +2,7 @@ Title: Coding by Convention
 Date: 2007-12-09 20:00
 Author: Russell Gray
 Slug: Coding-by-Convention
-Tags: ruby, patterns, software engineering, coding
+Tags: ruby, coding
 
 I've been meaning for a while to have a play around with [Ruby on
 Rails](http://www.rubyonrails.org/), on the basis that anything generating so

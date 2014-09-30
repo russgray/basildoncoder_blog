@@ -2,6 +2,7 @@ Title: ConcurrentDictionary: GetOrAdd vs GetOrAdd - One Of These Things Is Not L
 Date: 2014-01-13 18:00
 Author: Russell Gray
 Slug: ConcurrentDictionary-GetOrAdd-vs-GetOrAdd-One-Of-These-Things-Is-Not-Like-The-Other
+Tags: .net, coding
 
 Some recent performance profiling of a server application under load turned up
 an interesting gotcha in .Net's ConcurrentDictionary that I think is well-

@@ -2,8 +2,8 @@
 ##
 # This section should match your Makefile
 ##
-PY=${PY:-python}
-PELICAN=${PELICAN:-pelican}
+PY=${PY:-/vagrant/env/bin/python}
+PELICAN=${PELICAN:-/vagrant/env/bin/pelican}
 PELICANOPTS=
 
 BASEDIR=$(pwd)

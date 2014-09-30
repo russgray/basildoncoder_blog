@@ -11,6 +11,8 @@ if [! -d /home/vagrant/.vim/bundle ]; then
 fi
 curl -s https://dl.dropboxusercontent.com/u/490360/vim/.vimrc -o /home/vagrant/.vimrc
 
+# get plugins
+git clone https://github.com/getpelican/pelican-plugins.git /opt/pelican-plugins
 
 # do work in app directory
 pushd /vagrant
@@ -20,8 +22,7 @@ if [ ! -d env ]; then
 fi
 
 env/bin/pip install -q -r requirements.txt
-env/bin/pip pip install git+git://github.com/bstpierre/pelican-comments#egg=pelican_comments
-env/bin/pip install git+git://github.com/russgray/pelican_plugin-render_math@pip_compat#egg=math
+env/bin/pip install git+git://github.com/bstpierre/pelican-comments#egg=pelican_comments
 curl -s https://raw.githubusercontent.com/hutchison/markdown.subscript/master/subscript.py -o env/lib/python2.7/site-packages/markdown/extensions/subscript.py
 
 popd

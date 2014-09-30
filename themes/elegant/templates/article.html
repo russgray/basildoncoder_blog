@@ -38,20 +38,7 @@
             {% endif %}
 
             {{ article.content }}
-            {% include 'comments.html' %}
-
-            <!-- TODO: Re-enable comments -->
-            {% if article.comments and False %}
-                <h2>Comments</h2>
-                <ul>
-                  {% for comment in article.comments %}
-                    <li>
-                      <p>{{ comment.author }} said, on {{ comment.date }}:</p>
-                      {{ comment.content }}
-                    </li>
-                  {% endfor %}
-                </ul>
-            {% endif %}
+            {% include 'comments2.html' %}
 
             <aside>
             <hr/>
