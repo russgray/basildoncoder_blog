@@ -4,11 +4,11 @@ Author: Russell Gray
 Slug: Fab-Fib
 Tags: coding, software engineering
 
-[Scott Hanselman](http://www.hanselman.com/blog/) continues his
-[Weekly Source Code](http://www.hanselman.com/blog/CategoryView.aspx?category=Source+Code)
+[Scott Hanselman][1] continues his
+[Weekly Source Code][2]
 series with a look at algorithms for generating the
-[Fibonacci sequence](http://en.wikipedia.org/wiki/Fibonacci_number) in a
-[variety of different languages](http://www.hanselman.com/blog/TheWeeklySourceCode13FibonacciEdition.aspx).
+[Fibonacci sequence][3] in a
+[variety of different languages][4].
 He misses my favourite implementation, though fortunately a wise
 commenter has already sought to correct such an egregious error. As is
 so often the case, it is Haskell that provides the most elegant yet
@@ -72,3 +72,9 @@ always a happy combination.
             }
         }
     }
+
+
+[1]: http://www.hanselman.com/blog/
+[2]: http://www.hanselman.com/blog/CategoryView.aspx?category=Source+Code
+[3]: http://en.wikipedia.org/wiki/Fibonacci_number
+[4]: http://www.hanselman.com/blog/TheWeeklySourceCode13FibonacciEdition.aspx

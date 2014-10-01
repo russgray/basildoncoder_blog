@@ -3,7 +3,7 @@ Date: 2009-02-09 19:30
 Author: Russell Gray
 Slug: Project-Euler-Problem-8
 
-[***Problem 8***](http://projecteuler.net/index.php?section=problems&id=8)
+[***Problem 8***][1]
 
 > "Find the greatest product of five consecutive digits in the
 > 1000-digit number.
@@ -137,3 +137,6 @@ slices, so the final step is to select the largest:
 
     :::csharp
     var result = EnumerateSlices(nums, 5).Max();
+
+
+[1]: http://projecteuler.net/index.php?section=problems&id=8

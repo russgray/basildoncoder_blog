@@ -16,7 +16,7 @@ gurgled at. It seems that 'da' uttered by an infant is recognised as 'Dan'.
 Who knew?
 
 Annoyingly, Voice Control [cannot be disabled in iOS
-7.1](https://discussions.apple.com/message/25145289) - I ask you, what is the
+7.1][1] - I ask you, what is the
 point of implementing fingerprint scanners and remote wipe technology and all
 that jazz if you are going to force-enable features that a toddler can use to
 bypass everything and call my mates at 6am?
@@ -31,3 +31,6 @@ on the couch and holding down the inviting button that makes the screen light
 up on the magic box for a couple of seconds.
 
 Technology is great, no?
+
+
+[1]: https://discussions.apple.com/message/25145289

@@ -41,7 +41,7 @@ code you are refactoring was written by you anyway. Working with legacy code,
 though, it's a big deal.
 
 In the preface to 
-[*Working Effectively With Legacy Code*](http://www.amazon.co.uk/Working-Effectively-Legacy-Robert-Martin/dp/0131177052/), Feathers asks "what do you think about when you hear
+[*Working Effectively With Legacy Code*][1], Feathers asks "what do you think about when you hear
 the term *legacy code*?" (Feathers, 2004). He answers by stating that the
 standard definition is "difficult-to-change code that we don't understand" and
 adds his own preferred definition which is, in essence, "code without tests".
@@ -71,3 +71,6 @@ process, the code feels like yours. And that means that the next time you have
 to make a change there, you benefit from the double whammy of code that is not
 only well-written and tested, but recognisably *yours*; and that's the kind of
 code that you won't mind working with.
+
+
+[1]: http://www.amazon.co.uk/Working-Effectively-Legacy-Robert-Martin/dp/0131177052/

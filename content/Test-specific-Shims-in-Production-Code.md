@@ -8,8 +8,8 @@ coverage of our software. This doesn't just mean 'get the unit test
 coverage up to scratch', it also means we are working towards full
 end-to-end integration testing using, amongst other tools, some
 front-end automation tools such as
-[QTP](http://en.wikipedia.org/wiki/QuickTest_Professional) and
-[Selenium](http://selenium.openqa.org/).
+[QTP][1] and
+[Selenium][2].
 
 Of course, nothing is ever easy when trying to polish away the tarnish
 of ancient code. One particular problem we face regularly is patching up
@@ -17,11 +17,11 @@ code that breaks the fragile expectations of some of these automation
 tools.
 
 Some of our applications - including the one [I am working to
-refactor]({filename}/The-P.G.-Wodehouse-Method-Of-Refactoring.md)
+refactor][3]
 - contain UI widgets that use a lot of custom painting routines and
 conceal data pretty well. One widget, for instance, needs to display
 data with a fast refresh rate and so uses a
-[double-buffered](http://en.wikipedia.org/wiki/Double_buffering#Double_Buffering_in_Computer_Graphics)
+[double-buffered][4]
 approach to avoid flicker. The data it displays, however, is not stored
 anywhere; it is discarded as soon as it is rendered. And since the whole
 widget view is rendered as a bitmap and blitted to screen, there's no
@@ -64,3 +64,9 @@ hundred lines of QTP extension code when the same effect can be garnered
 by adding a single read-only property. It still doesn't quite sit right
 for me though, and I can't find much in the way of authoritative
 literature that argues one way or the other.
+
+
+[1]: http://en.wikipedia.org/wiki/QuickTest_Professional
+[2]: http://selenium.openqa.org/
+[3]: {filename}/The-P.G.-Wodehouse-Method-Of-Refactoring.md
+[4]: http://en.wikipedia.org/wiki/Double_buffering#Double_Buffering_in_Computer_Graphics

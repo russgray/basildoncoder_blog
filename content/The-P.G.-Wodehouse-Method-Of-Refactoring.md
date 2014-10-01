@@ -29,13 +29,13 @@ moiling spiritless mass of code a developer throws his hands into the
 air and declares it a lost cause. **How seductive is the thought that
 31,000 lines of code could be thrown away and replaced with ~15,000
 lines of clean, well-designed, [beautiful
-code]({filename}/Code-CAN-Be-Beautiful.md)?**
+code][1]?**
 
 Sadly, that's often a path to disaster. It's almost a rule of the game.
-[jwz](http://www.jwz.org/) left Netscape because he knew their decision
+[jwz][2] left Netscape because he knew their decision
 to rewrite from scratch was doomed. [Joel
-Spolsky](http://www.joelonsoftware.com/) wrote a
-[rant](http://www.joelonsoftware.com/articles/fog0000000069.html) about
+Spolsky][3] wrote a
+[rant][4] about
 the same decision - in fact, the Netscape rewrite is commonly cited as a
 major factor in Netscape losing the first browser war.
 
@@ -48,13 +48,13 @@ that a load of very old issues suddenly come back to haunt you.
 So, a total rewrite is out. This means working with the old code, and
 finding ways to wrestle it into shape. Naturally, *[Working Effectively
 With Legacy
-Code](http://www.amazon.co.uk/Working-Effectively-Legacy-Robert-Martin/dp/0131177052)*
+Code][5]*
 now has an even more firmly established place on my 'critical books'
 bookshelf than it did before.
 
 Inspiration came from a less well-known book, however. Buried in Chapter
 10 of *[Code
-Reading](http://www.amazon.co.uk/Code-Reading-Perspective-Effective-Development/dp/0201799405)*
+Reading][6]*
 is a single paragraph suggesting that it can be useful when working with
 unfamiliar code to paste it into a word processor and zoom out, getting
 a 'bird's eye' view.
@@ -77,11 +77,11 @@ Of course, you don't actually need MS Word to do this - the Print
 Preview in Open Office is more than sufficient, and no doubt most office
 suites can do the same.
 
-![image]({filename}/images/print-preview-birds-eye-view.png)
+![image][7]
 
 This 50,000ft view could be a useful tool in tracking progress. I mean
 sure, we can have our build system spit out [cyclomatic
-complexity](http://en.wikipedia.org/wiki/Cyclomatic_complexity) and code
+complexity][8] and code
 size metrics, but wouldn't it be neat if we could do a weekly bird's-eye
 printout of the source code and pin it up on the wall, giving a nice
 simple visual representation of the simplification of the code?
@@ -101,7 +101,7 @@ than 3 pages at normal size).
 
 The first time we pinned up the printouts, I suddenly recalled a Douglas
 Adams foreword reprinted in *[The Salmon of
-Doubt](http://www.amazon.co.uk/Salmon-Doubt-Hitchhiking-Galaxy-Last/dp/0330323121)*.
+Doubt][9]*.
 Adams was a great fan of P.G. Wodehouse, and explained Wodehouse's
 interesting drafting technique:
 
@@ -130,9 +130,21 @@ tracking our *subjective*satisfaction with the class. **Software quality
 tools can never completely replace the gut instinct of a developer** -
 you might have massive test coverage, but that won't help with
 subjective measures such as [code
-smells](http://en.wikipedia.org/wiki/Code_smell). With Wodehouse-style
+smells][10]. With Wodehouse-style
 refactoring, we can now easily keep track of which code we are happy
 with, and which code we remain deeply suspicious of.
 
 As an added benefit, all those pages nicely cover up the hideous wall
 colour. Bonus!
+
+
+[1]: {filename}/Code-CAN-Be-Beautiful.md
+[2]: http://www.jwz.org/
+[3]: http://www.joelonsoftware.com/
+[4]: http://www.joelonsoftware.com/articles/fog0000000069.html
+[5]: http://www.amazon.co.uk/Working-Effectively-Legacy-Robert-Martin/dp/0131177052
+[6]: http://www.amazon.co.uk/Code-Reading-Perspective-Effective-Development/dp/0201799405
+[7]: {filename}/images/print-preview-birds-eye-view.png
+[8]: http://en.wikipedia.org/wiki/Cyclomatic_complexity
+[9]: http://www.amazon.co.uk/Salmon-Doubt-Hitchhiking-Galaxy-Last/dp/0330323121
+[10]: http://en.wikipedia.org/wiki/Code_smell

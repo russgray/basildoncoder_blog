@@ -40,6 +40,7 @@ PLUGINS = ['pelican_comments', 'render_math', 'tipue_search', 'sitemap', 'extrac
 ARTICLE_EXCLUDES = ['comments', 'pages']
 MD_EXTENSIONS = ['codehilite(css_class=highlight)', 'extra', 'subscript', 'toc']
 DIRECT_TEMPLATES = (('index', 'tags', 'categories','archives', 'search', '404'))
+STATIC_PATHS = ['theme/images', 'images']
 
 SITEMAP = {
     'format': 'xml',

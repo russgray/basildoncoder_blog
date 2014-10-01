@@ -11,16 +11,16 @@ browser compatibility and suchlike.
 
 Still, I wanted it to be a decent learning experience, so after a brief
 dalliance with Rails I scrapped the idea of using any [framework
-sorcery]({filename}/Coding-by-Convention.md) and decided to write everything
-in plain ol' [PHP](http://php.net/), and lean heavily on
-[YUI](http://developer.yahoo.com/yui/) and [jQuery](http://jquery.com/) to
+sorcery][1] and decided to write everything
+in plain ol' [PHP][2], and lean heavily on
+[YUI][3] and [jQuery][4] to
 sort out the browser stuff.
 
 This probably isn't an approach I'd use in future projects, but I bet I'll
 appreciate those frameworks a lot more once I've encountered and understood
 the problems they attempt to solve.
 
-So, having strayed from the comfort of [Rails](http://rubyonrails.org/) and
+So, having strayed from the comfort of [Rails][5] and
 its clones, I had to think about lots of things like security, validation,
 data access, and how to organise my code. Just because I'd abandoned the
 training wheels I had no intention of falling over all the time - I still
@@ -31,13 +31,12 @@ odd open source project, obviously.
 It's at this point I noticed something interesting. Since I regularly read
 plenty of development websites it could scarcely have escaped my notice that
 the trendy framework players (e.g. Rails, Django, Cake, ASP.NET MVC) strongly
-advocate the [MVC](http://en.wikipedia.org/wiki/Model-view-controller) pattern
-and [class-based object-oriented design](http://en.wikipedia.org/wiki/Class-
-based_programming). What I hadn't really realised until now is how endemic
+advocate the [MVC][6] pattern
+and [class-based object-oriented design][7]. What I hadn't really realised until now is how endemic
 that viewpoint had become.
 
 In fact, beyond a few admirably out-there frameworks like
-[Seaside](http://www.seaside.st/), it's almost universal. OOD = good,
+[Seaside][8], it's almost universal. OOD = good,
 EVERYTHING ELSE = bad. MVC = good, EVERYTHING ELSE = bad. No shades of grey,
 no room for dissenting opinion.
 
@@ -54,15 +53,14 @@ classified as some weird LISPer or Schemer doing something arcane and thus
 ignored.
 
 Ironically, of course, if you grab a random Rails/Django/Cake app from
-[github](http://github.com/) or [Google
-Code](http://code.google.com/hosting/), there's a pretty fair chance that what
+[github][9] or [Google
+Code][10], there's a pretty fair chance that what
 you'll find isn't particularly object-oriented anyway. Hint - usage of the
 'class' keyword does not an object-oriented design make. And sweet zombie
 Jesus, I've never seen such abuse of the singleton pattern. That's a sure sign
 someone doesn't 'get' OO - the [singleton pattern is
-evil](http://c2.com/cgi/wiki?SingletonsAreEvil) and basically a way to
-[shoehorn globals into an application](http://steve.yegge.googlepages.com
-/singleton-considered-stupid) without admitting it to your friends.
+evil][11] and basically a way to
+[shoehorn globals into an application][12] without admitting it to your friends.
 
 So, we have massive fanatical advocacy of a technique that will allegedly
 solve all your problems, coupled with large-scale real-world misunderstandings
@@ -86,5 +84,20 @@ self-appointed geniuses ready to accuse me of inflicting yet more spaghetti
 code junk on the world just because "find . -iname '*php' | xargs grep class"
 comes up empty, but hey I'm OK with that.
 
-I'm writing my next app in [brainf*ck](http://en.wikipedia.org/wiki/Brainfuck)
+I'm writing my next app in [brainf*ck][13]
 using ed.
+
+
+[1]: {filename}/Coding-by-Convention.md
+[2]: http://php.net/
+[3]: http://developer.yahoo.com/yui/
+[4]: http://jquery.com/
+[5]: http://rubyonrails.org/
+[6]: http://en.wikipedia.org/wiki/Model-view-controller
+[7]: http://en.wikipedia.org/wiki/Class-based_programming
+[8]: http://www.seaside.st/
+[9]: http://github.com/
+[10]: http://code.google.com/hosting/
+[11]: http://c2.com/cgi/wiki?SingletonsAreEvil
+[12]: http://steve.yegge.googlepages.com/singleton-considered-stupid
+[13]: http://en.wikipedia.org/wiki/Brainfuck

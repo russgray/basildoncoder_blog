@@ -4,16 +4,16 @@ Author: Russell Gray
 Slug: Marshalling-a-Variable-Length-Array-From-Unmanaged-Code-In-CSharp
 
 I recently spent time working on some C# code to interact with a simple
-[DNS-SD][DNS-SD] system. This requires using [DNS TXT records][DNS TXT records],
-which are not supported in the  [System.Net.Dns][SND] class. After a few
+[DNS-SD][1] system. This requires using [DNS TXT records][2],
+which are not supported in the  [System.Net.Dns][3] class. After a few
 google searches failed to turn up a pure .Net client library that met my
 needs, I settled on an approach based around p/invoking the Win32
-[DnsQuery][DnsQuery] function.
+[DnsQuery][4] function.
 
 And quickly ran into problems.
 
-For DNS TXT records, DnsQuery returns a [DNS_TXT_DATA][DNS_TXT_DATA] structure
-in the Data field of the [DNS_RECORD][DNS_RECORD] structure. DNS_TXT_DATA is
+For DNS TXT records, DnsQuery returns a [DNS_TXT_DATA][5] structure
+in the Data field of the [DNS_RECORD][6] structure. DNS_TXT_DATA is
 declared like this:
 
     :::c
@@ -23,7 +23,7 @@ declared like this:
     } DNS_TXT_DATA,
      *PDNS_TXT_DATA;
 
-Using the very handy [P/Invoke Interop Assistant][PInvoke], we see that this
+Using the very handy [P/Invoke Interop Assistant][7], we see that this
 struct can be represented like this in managed code:
 
     :::csharp
@@ -41,7 +41,7 @@ struct can be represented like this in managed code:
     }
 
 There is a problem with pStringArray, unfortunately. The
-[System.Runtime.InteropServices.Marshal][SRIM] class cannot marshal a variable
+[System.Runtime.InteropServices.Marshal][8] class cannot marshal a variable
 length array, as it needs to know in advance how big the array is in order to
 allocate memory. That's why the managed structure needs SizeConst specified in
 the MarshalAs attribute.
@@ -166,13 +166,15 @@ While the example I've presented here is specific to DnsQuery, the general
 approach should be applicable to any situation where you need to marshal a
 data structure containing a variable-length array.
 
-[Source code](https://gist.github.com/russgray/4748c3f1815f6f2f273d)
+[Source code][9]
 
-[DNS-SD]: http://files.dns-sd.org/draft-cheshire-dnsext-dns-sd.txt
-[DNS TXT records]: http://en.wikipedia.org/wiki/List_of_DNS_record_types
-[SND]: http://msdn.microsoft.com/en-us/library/system.net.dns.aspx
-[DnsQuery]: http://msdn.microsoft.com/en-us/library/ms682016(VS.85).aspx
-[DNS_TEXT_DATA]: http://msdn.microsoft.com/en-us/library/ms682109(VS.85).aspx
-[DNS_RECORD]: http://msdn.microsoft.com/en-us/library/ms682082(VS.85).aspx
-[PInvoke]: http://clrinterop.codeplex.com/
-[SRIM]: http://msdn.microsoft.com/en-us/library/system.runtime.interopservices.marshal.aspx
+
+[1]: http://files.dns-sd.org/draft-cheshire-dnsext-dns-sd.txt
+[2]: http://en.wikipedia.org/wiki/List_of_DNS_record_types
+[3]: http://msdn.microsoft.com/en-us/library/system.net.dns.aspx
+[4]: http://msdn.microsoft.com/en-us/library/ms682016(VS.85).aspx
+[5]: http://msdn.microsoft.com/en-us/library/ms682109(VS.85).aspx
+[6]: http://msdn.microsoft.com/en-us/library/ms682082(VS.85).aspx
+[7]: http://clrinterop.codeplex.com/
+[8]: http://msdn.microsoft.com/en-us/library/system.runtime.interopservices.marshal.aspx
+[9]: https://gist.github.com/russgray/4748c3f1815f6f2f273d

@@ -5,10 +5,10 @@ Slug: Turbocharging-_Net-Webservice-Clients
 Tags: .net, coding, software engineering
 
 Since the first version of .Net and its associated toolset, Microsoft have
-sought to make it easy to write [SOAP](http://en.wikipedia.org/wiki/SOAP)
+sought to make it easy to write [SOAP][1]
 services and SOAP clients. And, generally, they have succeeded quite well.
 Whilst the open-source world has tended to prefer the simpler
-[REST](http://en.wikipedia.org/wiki/Representational_State_Transfer) approach,
+[REST][2] approach,
 MS (and Sun, and Apache) have done an admirable job of taking the large,
 complex SOAP protocol and making it reasonably straightforward to work with
 most of the time.
@@ -16,21 +16,19 @@ most of the time.
 One of the areas in which things get somewhat less straightforward is high
 performance. Granted, most web services don't have particularly eye-popping
 requirements in terms of hits or transactions, but occasionally you find an
-exception. [Betfair](http://www.betfair.com), for instance, have an
-[API](http://bdp.betfair.com) that has peak rates in excess of 13,000 requests
+exception. [Betfair][3], for instance, have an
+[API][4] that has peak rates in excess of 13,000 requests
 *per second*, many of which hit the database, with individual users making
 tens or even hundreds of requests per second. Betfair's data changes at a
 breathtaking rate and there is a perceived advantage to getting hold of up-to-
 the-millisecond information.
 
 To put that in context, the [Digg
-Effect](http://en.wikipedia.org/wiki/Digg_effect) is estimated to peak at
-around [6K-8K hits](http://www.ndesign-studio.com/blog/updates/the-digg-
-effect/) [per hour](http://linuxbraindump.org/2007/08/21/the-digg-
-effect-a-deconstruction/) as I write in December 2007, which translates to a
+Effect][5] is estimated to peak at
+around [6K-8K hits][6] [per hour][7] as I write in December 2007, which translates to a
 piffling couple of hits per second (8000 / 60 / 60 = 2.2). Even a more extreme
 prediction of [50K hits per
-hour](http://creativebits.org/webdev/surviving_the_digg_effect) is only around
+hour][8] is only around
 14 hits per second, so we're talking about handling three orders of magnitude
 more requests than Digg generates.
 
@@ -73,11 +71,11 @@ should be added to your App.config file:
         </settings>
     </system.net>
 
-For those who share my distrust of [unexplained sorcery]({filename}Coding-by-Convention.md), here's the gory details.
+For those who share my distrust of [unexplained sorcery][9], here's the gory details.
 
 ***Expect-100 the Unexpected***
 
-[RFC 2616](http://www.ietf.org/rfc/rfc2616.txt) (the specification for HTTP
+[RFC 2616][10] (the specification for HTTP
 1.1) includes a request header and response code that together are known as
 'Expect 100 Continue'. When using the Expect header, the client will send the
 request headers and wait for the server to respond with a response code of 100
@@ -107,13 +105,13 @@ trade on the Australian Open tennis you're subject to a round-trip time of
 about 350ms. If you allow your requests to be split into two, then you have
 two round-trips, so your request will take 700ms plus processing time.
 
-![Expect-100 on]({filename}/images/expect100_on.png)
+![Expect-100 on][11]
 
 You don't want that, so switch it off. Note that the request headers and body
 are still sent separately, but the latter is no longer dependent on the
 response to the former (so they are shown as sent together in this diagram).
 
-![Expect-100 off]({filename}/images/expect100_off.png)
+![Expect-100 off][12]
 
 The setting corresponding to this in the XML snippet above is:
 
@@ -122,7 +120,7 @@ The setting corresponding to this in the XML snippet above is:
 
 ***Nagle's Algorithm***
 
-[Nagle's algorithm](http://en.wikipedia.org/wiki/Nagle%27s_algorithm) is a
+[Nagle's algorithm][13] is a
 low-level algorithm that tries to minimise the number of TCP packets on the
 network, by trying to fill a TCP packet before sending it. TCP packets have a
 40-byte header, so if you try to send a single byte you incur a lot of
@@ -159,12 +157,12 @@ buffered for. When the requests do get sent, they too are subject to 350ms
 latency around the world, so again you end up with around 700ms added to each
 of your Australian API calls.
 
-![Nagle on]({filename}/images/nagle_on.png)
+![Nagle on][14]
 
 Without Nagle, we dispense with the buffering and send out our smaller
 packets immediately, saving a round-trip.
 
-![Nagle off]({filename}/images/nagle_off.png)
+![Nagle off][15]
 
 One word of warning - disabling Nagle can cause problems if you are on a
 highly-congested network or have overworked routers and switches, since it
@@ -206,7 +204,7 @@ Tsk, damn Microsoft for unnecessarily crippling their framework, right?
 Well no, actually, since this is an example of Microsoft following
 standards and recommendations and is to be applauded, lest they go back
 to their old ways of "embrace and extend". The recommendation in
-question is from [RFC 2616](http://www.ietf.org/rfc/rfc2616.txt) again,
+question is from [RFC 2616][16] again,
 and states:
 
 > A single-user client SHOULD NOT maintain more than 2 connections with
@@ -275,9 +273,9 @@ Great. So how do we use it? In .Net 2.0 and above it's very easy - just
 set the EnableDecompression property of your web service proxy object
 (ignore IntelliSense, which incorrectly claims the value is true by
 default; it's actually false by default, [as stated on
-MSDN](http://msdn2.microsoft.com/en-us/library/system.web.services.protocols.httpwebclientprotocol.enabledecompression.aspx)).
+MSDN][17].
 For example, to get compressed responses from Betfair's [global
-server](https://api.betfair.com/global/v3/BFGlobalService.wsdl):
+server][18]:
 
     :::csharp
     BFGlobalService service = new BFGlobalService();service.EnableDecompression = true;
@@ -410,7 +408,7 @@ has ContentEncoding 'gzip':
 
 To decompress the data, we need a decompression library since .Net 1.1
 doesn't provide one. In most cases,
-[SharpZipLib](http://www.icsharpcode.net/OpenSource/SharpZipLib/) will
+[SharpZipLib][19] will
 do the business:
 
     :::csharp
@@ -429,3 +427,24 @@ Jebus, that went on for a bit. Now, go forth and write high-performance
 clients at will - but heed the warnings about only doing this when you
 know the server is on-the-ball, because these tips really can cause
 havoc if used irresponsibly.
+
+
+[1]: http://en.wikipedia.org/wiki/SOAP
+[2]: http://en.wikipedia.org/wiki/Representational_State_Transfer
+[3]: http://www.betfair.com
+[4]: http://bdp.betfair.com
+[5]: http://en.wikipedia.org/wiki/Digg_effect
+[6]: http://www.ndesign-studio.com/blog/updates/the-digg-effect/
+[7]: http://linuxbraindump.org/2007/08/21/the-digg-effect-a-deconstruction/
+[8]: http://creativebits.org/webdev/surviving_the_digg_effect
+[9]: {filename}Coding-by-Convention.md
+[10]: http://www.ietf.org/rfc/rfc2616.txt
+[11]: {filename}/images/expect100_on.png
+[12]: {filename}/images/expect100_off.png
+[13]: http://en.wikipedia.org/wiki/Nagle%27s_algorithm
+[14]: {filename}/images/nagle_on.png
+[15]: {filename}/images/nagle_off.png
+[16]: http://www.ietf.org/rfc/rfc2616.txt
+[17]: http://msdn2.microsoft.com/en-us/library/system.web.services.protocols.httpwebclientprotocol.enabledecompression.aspx)
+[18]: https://api.betfair.com/global/v3/BFGlobalService.wsdl
+[19]: http://www.icsharpcode.net/OpenSource/SharpZipLib/

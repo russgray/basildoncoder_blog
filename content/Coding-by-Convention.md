@@ -4,19 +4,18 @@ Author: Russell Gray
 Slug: Coding-by-Convention
 Tags: ruby, coding
 
-I've been meaning for a while to have a play around with [Ruby on
-Rails](http://www.rubyonrails.org/), on the basis that anything generating so
-much hype over the last year or two deserves some level of investigation, if
-only to see whether the hype is justified. So, I spent a couple of days
-working through [*Agile Web Development with Rails*](http://www.amazon.co.uk
-/Agile-Development-Rails-Pragmatic-Programmers/dp/0977616630/) and, well, it's
-pretty nice. I can certainly appreciate a development environment that goes to
-such endearing effort to do work for you without getting in the way - a fairly
-tricky balancing act. I came to the book with a working knowledge of Ruby but
-zero practical exposure to Rails, and on top of that I'm not a web developer
-so could not bring much contextual experience to the table. Despite this, I
-worked through the book and ended up with a functional book-store application
-in about 15 hours. Not too shabby.
+I've been meaning for a while to have a play around with [Ruby on Rails][1],
+on the basis that anything generating so much hype over the last year or two
+deserves some level of investigation, if only to see whether the hype is
+justified. So, I spent a couple of days working through [*Agile Web
+Development with Rails*][2] and, well, it's pretty nice. I can certainly
+appreciate a development environment that goes to such endearing effort to do
+work for you without getting in the way - a fairly tricky balancing act. I
+came to the book with a working knowledge of Ruby but zero practical exposure
+to Rails, and on top of that I'm not a web developer so could not bring much
+contextual experience to the table. Despite this, I worked through the book
+and ended up with a functional book-store application in about 15 hours. Not
+too shabby.
 
 So how does Rails achieve such power and productivity? The answer is largely
 that Rails, more so than pretty much any other development environment I've
@@ -67,8 +66,8 @@ principles of MVC design, and everything is glued together automatically.
 Create a new data model, and your controller is immediately able to load it
 from the database along with all its relational buddies in a nice aggregated
 object structure with just one line of code (as long as you remembered to add
-all the has\_many and belongs\_to calls, of course). Store that data object in
-a controller member variable, and your views can access it for display. Use
+all the `has_many` and `belongs_to` calls, of course). Store that data object
+in a controller member variable, and your views can access it for display. Use
 one of the magical rake incantations and get a DB-backed session management
 system which will horizontally scale in a load-balanced environment. Run the
 script/console script and you are dropped into a fully interactive command-
@@ -88,29 +87,27 @@ maintenance programmer who's never heard of Rails, sitting down to tweak a
 Rails application.
 
 Wait, what? How can this happen? Surely everyone has heard of Rails by now?
-Nope, sorry, but the truth is that the [majority of
-programmers](http://www.codinghorror.com/blog/archives/001002.html) are clock-
+Nope, sorry, but the truth is that the [majority of programmers][3] are clock-
 punchers living in a single-language world who don't read blogs, or play
 around with tech in their own time, and haven't even heard of Linux, let alone
 Rails. Their single language will likely be an everyday static language like
-Java or C\#, which will leave them ill-prepared for many of the dynamic tricks
+Java or C#, which will leave them ill-prepared for many of the dynamic tricks
 in idiomatic Ruby.
 
 Ah, but surely the kind of forward-thinking proto-company that builds its
 product on RoR would never hire non-Ruby-savvy developers anyway? That might
-be the case if you drink the [37signals](http://www.37signals.com/) Kool-Aid
-and think that any RoR company is by default über-smart and infallible, but in
-the real world it doesn't work like that; there are countless tiny non-
-technical companies out there with just one or two developers - I know,
-because I spent a few years working at one - and maybe their current
-developers are cool enough to use RoR, but when they inevitably leave and the
-tech-illiterate management hire a replacement, you can guarantee that the job
-spec will not include minor details like "must have at least heard of Ruby on
-Rails".
+be the case if you drink the [37signals][4] Kool-Aid and think that any RoR
+company is by default über-smart and infallible, but in the real world it
+doesn't work like that; there are countless tiny non- technical companies out
+there with just one or two developers - I know, because I spent a few years
+working at one - and maybe their current developers are cool enough to use
+RoR, but when they inevitably leave and the tech-illiterate management hire a
+replacement, you can guarantee that the job spec will not include minor
+details like "must have at least heard of Ruby on Rails".
 
 So, our imaginary maintenance guy - let's call him Ted - hired by a non-
 technical company to look after a web application, peers for the first time
-into the 37 directories (assuming no new ones have been added) and \>45 files
+into the 37 directories (assuming no new ones have been added) and >45 files
 (since new ones will most certainly have been added), and nothing makes any
 sense. Even assuming Ted is smart enough to make reasonable guesses about Ruby
 syntax, and knows what MVC is, there's no visible link between the different
@@ -132,14 +129,12 @@ Maybe.
 I'm still uneasy about sorcery, and Rails is some of the most effective
 sorcery I've seen. The main problem is that, well, it's sorcery. A couple of
 times in the 15 hours I spent going through [*Agile Web Development with
-Rails*](http://www.amazon.co.uk/Agile-Development-Rails-Pragmatic-
-Programmers/dp/0977616630/) I hit problems. Not major ones, and always of my
-own making - some silly typo, or mistake coming from only having a working
-knowledge of Ruby rather than cosy familiarity. As is my wont, failure to spot
-the error after a cursory glance through the code led to a quick google search
-to see if I've hit a common problem, before resigning myself to going through
-the code in detail to sort it out (like all good programmers I'm a lazy
-devil).
+Rails*][5] I hit problems. Not major ones, and always of my own making - some
+silly typo, or mistake coming from only having a working knowledge of Ruby
+rather than cosy familiarity. As is my wont, failure to spot the error after a
+cursory glance through the code led to a quick google search to see if I've
+hit a common problem, before resigning myself to going through the code in
+detail to sort it out (like all good programmers I'm a lazy devil).
 
 On these periodic google jaunts I found lots and lots of forum posts and blog
 entries from people who, and let's not mince words here, hadn't the first clue
@@ -148,8 +143,7 @@ what they were doing. People that had heard the Rails hype, bought the book
 cargo cult expecting magic spells to solve all their problems. Restart
 WEBrick. rake db:sessions:clear. Roll the most recent migration back then
 forward again. None of these work? Sorry, can't help. It reminds me of [The IT
-Crowd](http://en.wikipedia.org/wiki/The_IT_Crowd)'s "have you tried turning it
-off and on again?".
+Crowd][6]'s "have you tried turning it off and on again?".
 
 I shouldn't be harsh on these folks; at least they're getting excited by Rails
 and are rolling up their sleeves and having a go, and no doubt some of them
@@ -163,7 +157,7 @@ by convention tends to encourage it.
 I'll leave it as an exercise for the reader to consider the implications of
 the fact that the sample application being conjured here by all these
 sorcerers' apprentices is an e-commerce site, at a time when online fraud is
-[skyrocketing](http://news.bbc.co.uk/1/hi/business/6298641.stm).
+[skyrocketing][7].
 
 I don't mean to single out Ruby on Rails specifically, by the way, it's just
 handy as an example due to its profile. Coding by convention is not new; if
@@ -172,14 +166,14 @@ tools that allow them to get something working - for fairly loose definitions
 of 'working' - without knowing much about what's happening under the hood,
 then look at the atrocities committed with VB and databinding over the years.
 
-Steve Yegge has a characteristically long and insightful
-[rant](http://steve.yegge.googlepages.com/practical-magic) on this subject,
-and is troubled by the difficulty of working out where to draw the line. The
-line, in this case, being the level of abstraction at which a programmer
-should understand a system - high enough not to be bogged down in insane
-detail (e.g. knowing how semiconductors work) but not so high that the role of
-programmer is reduced to that of sideshow conjurer, waving a cheap trick-shop
-wand and trusting to a higher power that everything will work out OK.
+Steve Yegge has a characteristically long and insightful [rant][8] on this
+subject, and is troubled by the difficulty of working out where to draw the
+line. The line, in this case, being the level of abstraction at which a
+programmer should understand a system - high enough not to be bogged down in
+insane detail (e.g. knowing how semiconductors work) but not so high that the
+role of programmer is reduced to that of sideshow conjurer, waving a cheap
+trick-shop wand and trusting to a higher power that everything will work out
+OK.
 
 Maybe it's just a generational disease. Maybe in ten years' time all the
 apprentices who have graduated to fully-fledged sorcerers will be looking on
@@ -196,3 +190,13 @@ required to sort out any problems is obviated, unless you are one of the very
 few Grand High Wizards who keep everything running smoothly. I don't know
 whether it's fortunate or unfortunate that such a system is unlikely to appear
 within my lifetime.
+
+
+[1]: http://www.rubyonrails.org/
+[2]: http://www.amazon.co.uk/Agile-Development-Rails-Pragmatic-Programmers/dp/0977616630/
+[3]: http://www.codinghorror.com/blog/archives/001002.html
+[4]: http://www.37signals.com/
+[5]: http://www.amazon.co.uk/Agile-Development-Rails-Pragmatic-Programmers/dp/0977616630/
+[6]: http://en.wikipedia.org/wiki/The_IT_Crowd
+[7]: http://news.bbc.co.uk/1/hi/business/6298641.stm
+[8]: http://steve.yegge.googlepages.com/practical-magic

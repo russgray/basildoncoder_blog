@@ -6,7 +6,7 @@ Slug: Project-Euler-Problem-5
 On to the next Project Euler problem (after a bit of a hiatus)...
 
 ***[Problem
-5](http://projecteuler.net/index.php?section=problems&id=5)***
+5][1]***
 
 > 2520 is the smallest number that can be divided by each of the numbers
 > from 1 to 10 without any remainder.
@@ -98,7 +98,7 @@ the numbers 1 to 3.
 
 You'll notice that s~2~ contains s~1~ in its entirety. $LCM(s_2)$ must
 therefore be a multiple of $LCM(s_1)$, so we can rewrite s~2~ as
-[$LCM(s_1)$, 3], or \[2, 3\] (since we know $LCM(s_1)=2$). Now we are down
+[$LCM(s_1)$, 3], or \[2, 3\][2]=2$). Now we are down
 to two numbers again, so we can calculate the LCM of 2 and 3, which is
 6, so $LCM(s_2)=6$.
 
@@ -120,7 +120,7 @@ filter etc can be implemented as right folds[^1].
 
 I won't inflict my pitiful Photoshop skills on anyone by trying to
 graphically represent a fold - try looking at [this Wikipedia
-article](http://en.wikipedia.org/wiki/Fold_(higher-order_function)) if
+article][3] if
 you want to try and visualise it.
 
 Broadly, the behaviour of a fold is to apply a combining function to
@@ -157,7 +157,7 @@ greatest common divisor (GCD) like so:
 $$LCM(a, b) = \frac{a\cdot b}{GCD(a, b)}$$
 
 .Net doesn't provide a GCD function either, so I'll implement it using
-[Euclid's Algorithm](http://en.wikipedia.org/wiki/Euclidean_algorithm)
+[Euclid's Algorithm][4]
 as an extension method on long ints:
 
     :::csharp
@@ -219,3 +219,9 @@ ways...)
 
 [^2]: Note that in this code LongEnumerable is just a very simple partial
 reimplementation of Enumerable, using longs instead of ints
+
+
+[1]: http://projecteuler.net/index.php?section=problems&id=5
+[2]: since we know $LCM(s_1
+[3]: http://en.wikipedia.org/wiki/Fold_(higher-order_function)
+[4]: http://en.wikipedia.org/wiki/Euclidean_algorithm

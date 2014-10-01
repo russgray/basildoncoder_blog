@@ -210,3 +210,5 @@ So slow, in fact, that you can watch the cursor laboriously complete
 each step - I wind up thinking it would have been quicker to do it
 manually. That might just be something odd about my VS installation
 though, as no-one else seems to think it's slow.
+
+

@@ -4,7 +4,7 @@ Author: Russell Gray
 Slug: Evil-Important-Apparently.
 
 OK, I know I shouldn't even *acknowledge* spam blogs, but this one amused me.
-Some filthy credit-crunch link bait site took an extract from my [previous post]({filename}/projecteuler/Project-Euler-Problem-3.md) (this is obviously what happens
+Some filthy credit-crunch link bait site took an extract from my [previous post][1] (this is obviously what happens
 when you say the phrase 'credit card' ... oops) and ran it though an automated
 word substitution program. The result is fascinating. It turned this:
 
@@ -23,3 +23,6 @@ into this:
 Let's review the highlights. 'Buy' replaced with 'take', 'evil' replaced
 with 'important', 'steal' replaced with 'advise'? Someone's book of
 synonyms is bound in human hide with a skull on the front.
+
+
+[1]: {filename}/projecteuler/Project-Euler-Problem-3.md

@@ -3,7 +3,7 @@ Date: 2008-10-26 21:58
 Author: Russell Gray
 Slug: Project-Euler-Problem-7
 
-***[Problem 7](http://projecteuler.net/index.php?section=problems&id=7)***
+***[Problem 7][1]***
 
 > By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can
 > see that the 6th prime is 13.
@@ -13,9 +13,9 @@ Slug: Project-Euler-Problem-7
 Ah, what a nice, straightforward, unambiguous spec! If only business software
 specifications were so precise.
 
-[Way back in problem 3]({filename}/projecteuler/Project-Euler-Problem-3.md), I took a bit
+[Way back in problem 3][2], I took a bit
 of a wander off-topic and built a prime generator in .Net using the [Sieve of
-Eratosthenes](http://en.wikipedia.org/wiki/Sieve_of_eratosthenes). Armed with
+Eratosthenes][3]. Armed with
 this, problem 7 should be easy, right? The sieve implementation generates an
 IEnumerable<long>, which is non-indexable (i.e. I can't just say
 Primes()[10001]), but I can take the first 10,001 and then ask for the last
@@ -45,7 +45,7 @@ simple test reveals the problem:
     var count = primes.Count();
 
 There's only 9,592 primes generated! As the [docs for
-Take()](http://msdn.microsoft.com/en-us/library/bb503062.aspx) state (emphasis
+Take()][4] state (emphasis
 mine):
 
 > Take<TSource> enumerates source and yields elements until count elements have been yielded or source contains no more elements.
@@ -71,7 +71,7 @@ generate primes up to 999,999 (all 78,498 of them!) despite only needing
 
 Fortunately, the upper bound can be calculated separately. [Where n > 8601, as
 in this case, we can use the following
-equation](http://primes.utm.edu/howmany.shtml):
+equation][5]:
 
 $$p(n) < n (log_e n + log_e \cdot log_e \cdot n - 0.9427)$$
 
@@ -83,7 +83,7 @@ accurate
 $$(n) < n \cdot log_e \cdot log_e \cdot n$$
 
 [which works for
-*n*5](http://en.wikipedia.org/wiki/Prime_number_theorem#Approximations_for_the_nth_prime_number).
+*n*5][6].
 We can easily precompute the answers for *n*<=5, or simply calculate on
 demand.
 
@@ -116,3 +116,11 @@ This leaves us with an overall solution like so:
 This generates a total 10,018 primes, cutting the wasted effort from almost
 70,000 superfluous primes to just 17, and takes around 20ms to execute on my
 machine. Plenty fast enough, I think.
+
+
+[1]: http://projecteuler.net/index.php?section=problems&id=7
+[2]: {filename}/projecteuler/Project-Euler-Problem-3.md
+[3]: http://en.wikipedia.org/wiki/Sieve_of_eratosthenes
+[4]: http://msdn.microsoft.com/en-us/library/bb503062.aspx
+[5]: http://primes.utm.edu/howmany.shtml
+[6]: http://en.wikipedia.org/wiki/Prime_number_theorem#Approximations_for_the_nth_prime_number

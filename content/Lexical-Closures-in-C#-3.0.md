@@ -3,7 +3,7 @@ Date: 2008-07-01 17:49
 Author: Russell Gray
 Slug: Lexical-Closures-in-CSharp-3_0
 
-There's a [slightly weird article](http://dobbscodetalk.com/index.php?show=The-next-big-programming-language-feature-after-closures.html) up on [Dobbs Code Talk](http://dobbscodetalk.com/) this week, speculating that aggregate
+There's a [slightly weird article][1] up on [Dobbs Code Talk][2] this week, speculating that aggregate
 functions are "the next big programming language feature" after closures. The
 slight weirdness comes from the fact that both features have been around for
 decades, and not just in dusty academic languages either.
@@ -12,8 +12,8 @@ Still, there's some interesting discussion in the comments about whether
 .Net's closures are proper first-class lexically-scoped closures. The
 answer is yes - but with a fun twist.
 
-The twist has been around for a long time - [Brad Abrams](http://blogs.msdn.com/brada/default.aspx) blogged about it 
-[way back in 2004](http://blogs.msdn.com/brada/archive/2004/08/03/207164.aspx), for
+The twist has been around for a long time - [Brad Abrams][3] blogged about it 
+[way back in 2004][4], for
 instance - but it's probably worth going over it again, since the recent
 arrival of LINQ and lambda syntax in C# 3.0 will presumably lead to more
 people being bitten by this as the use of closures becomes more mainstream.
@@ -94,3 +94,9 @@ generating code that creates multiple instances of the class generated
 to represent the closure.
 
 Simple, yes? ;-)
+
+
+[1]: http://dobbscodetalk.com/index.php?show=The-next-big-programming-language-feature-after-closures.html
+[2]: http://dobbscodetalk.com/
+[3]: http://blogs.msdn.com/brada/default.aspx
+[4]: http://blogs.msdn.com/brada/archive/2004/08/03/207164.aspx

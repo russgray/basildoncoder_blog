@@ -5,7 +5,7 @@ Slug: Killing-and-Reviving-an-Aspire-One
 
 I just spent 2 hours reviving my Aspire One netbook after inadvertently
 killing it whilst fiddling about configuring
-[dropbox](http://www.getdropbox.com). I found the whole process unnecessarily
+[dropbox][1]. I found the whole process unnecessarily
 fiddly and information on the interwebs to be a bit scarcer than I would have
 liked, so I'm documenting it here in case I need it in the future. Hopefully
 it'll be useful to someone else too.
@@ -35,8 +35,8 @@ system as a simple backup. Grr.
 
 Still, like countless thousands before me, I was saved by a live linux distro
 - in this case, a USB bootable one (since the Aspire One has no optical
-drive). Following the [instructions](http://www.pendrivelinux.com/feather-linux-on-usb/)[^1] 
-at [pendrivelinux](http://www.pendrivelinux.com/) I created
+drive). Following the [instructions][2][^1] 
+at [pendrivelinux][3] I created
 a bootable Feather Linux USB drive, and booted the netbook from it by hitting
 F12 on the post screen and selecting to boot from the USB stick.
 
@@ -48,4 +48,10 @@ frustration at the sight of a blank screen about an hour earlier, heh).
 
 [^1]: Note that I had to use a newer version of syslinux than the one
 referenced on pendrivelinux. 
-[This one](http://www.kernel.org/pub/linux/utils/boot/syslinux/Old/syslinux-3.36.zip) worked for me.
+[This one][4] worked for me.
+
+
+[1]: http://www.getdropbox.com
+[2]: http://www.pendrivelinux.com/feather-linux-on-usb/
+[3]: http://www.pendrivelinux.com/
+[4]: http://www.kernel.org/pub/linux/utils/boot/syslinux/Old/syslinux-3.36.zip

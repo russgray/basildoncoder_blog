@@ -11,14 +11,14 @@ Powers That Be embrace quality instead of fixating, limpet-like, on the
 next deadline, it can be a nightmare when that percentage figure on the
 weekly summary becomes the new focus for managerial concentration,
 especially given [how difficult it can
-be](http://www.ericsink.com/articles/Code_Coverage.html) to hit 100%.
+be][1] to hit 100%.
 
 The problem is that achieving the magical 100% is, in many cases,
 neither practical nor particularly useful. It can even be a problem, if
 the warm fuzzy feeling you get when you see "Coverage: 100%" leads to
 complacency. Even with 100% coverage and pass-rate, [you don't
 necessarily have quality
-software](http://www-128.ibm.com/developerworks/java/library/j-cq01316/).
+software][2].
 
 Our high-level project architecture involved a .Net client talking to a
 suite of web services written in Java. The .Net client, as an
@@ -35,7 +35,7 @@ bug you could write a test to detect it[^1].
 
 The cause of my concern was that the UI and web reference code accounted
 for about 30-35% of the
-[SLOC](http://en.wikipedia.org/wiki/Source_lines_of_code) in the
+[SLOC][3] in the
 application, and so any coverage report that covered the whole app would
 be way short of the targets we were set. There are a number of ways to
 deal with this:
@@ -69,12 +69,12 @@ methods or classes without having to exclude the whole assembly. If we
 could exclude code at a fairly granular level, then it became both more
 realistic and useful to aim for 100% coverage of our actual business
 code, using all the [normal
-techniques](http://homepage.mac.com/hey.you/lessons.html).
+techniques][4].
 
 It turns out that code exclusion isn't so tough -
-[NCover](http://www.ncover.com/) will ignore methods and classes tagged
+[NCover][5] will ignore methods and classes tagged
 with an [attribute named CoverageExclude in the global
-namespace](http://www.ericsink.com/articles/Code_Coverage.html)[^3].
+namespace][6][^3].
 
 This still requires a little discipline - for example making sure that
 if Joe marks a class as excluded, Jim doesn't add some business logic to
@@ -95,8 +95,7 @@ solution would be to find a way to add the information directly to the
 coverage report, so that it's right there for all to see. So, how?
 
 The first step was to get the appropriate metadata into the code. The
-[reference implementation](http://weblogs.asp.net/nunitaddin/archive/2006/10/0
-4/CoverageExclude.aspx) for the CoverageExclude attribute is as follows:
+[reference implementation][7] for the CoverageExclude attribute is as follows:
 
     :::csharp
     public class CoverageExcludeAttribute : Attribute { }
@@ -141,7 +140,7 @@ some additional data.
 
 NCover can be told to pay attention to this attribute with the
 excludeAttributes parameter, as explained
-[here](http://www.kiwidude.com/blog/2006/07/nant-and-msbuild-tasks-for-ncover.html).
+[here][8].
 
 With the easy bit out of the way, the next task was to report on these
 exclusions. Our build system, after running the test suite, used
@@ -175,7 +174,7 @@ report. Note also the exclusion nodes, which specify that we want our
 test assemblies excluded from coverage metrics. The report will include
 a table like this:
 
-![image]({filename}/images/ncoverexplorer-report-unmodified.png)
+![image][9]
 
 Our goal was to somehow get our custom properties (Author and Reason)
 into this report. To do so, firstly we needed to modify the above table
@@ -327,7 +326,7 @@ and another containing their justification for doing so. Then the
 modified XmlDocument is written out to disk, overriding the original.
 
 The end result is a report that looks something like
-[this](/TweakedCoverage.xml), with all the excluded code neatly
+[this][10], with all the excluded code neatly
 documented to keep suspicious managers happy.
 
 Since the post-processor was written as a simple command-line
@@ -348,3 +347,15 @@ adjust accordingly and don't come crying to me.
 do all this, but a) not everyone has an NCover 2.x pro licence, and b)
 we weren't using NCover 2.x as it hadn't been released at the
 time.
+
+
+[1]: http://www.ericsink.com/articles/Code_Coverage.html
+[2]: http://www-128.ibm.com/developerworks/java/library/j-cq01316/
+[3]: http://en.wikipedia.org/wiki/Source_lines_of_code
+[4]: http://homepage.mac.com/hey.you/lessons.html
+[5]: http://www.ncover.com/
+[6]: http://www.ericsink.com/articles/Code_Coverage.html
+[7]: http://weblogs.asp.net/nunitaddin/archive/2006/10/04/CoverageExclude.aspx
+[8]: http://www.kiwidude.com/blog/2006/07/nant-and-msbuild-tasks-for-ncover.html
+[9]: {filename}/images/ncoverexplorer-report-unmodified.png
+[10]: /TweakedCoverage.xml

@@ -27,7 +27,7 @@ Still, fair enough I suppose; we live in litigious times, and not being
 a bigot I have no particular fears of transgressing.
 
 But what if the rules are changed? And what if they're changed in
-horribly unexpected ways? A [recent article](http://news.bbc.co.uk/1/hi/business/7187032.stm) on the BBC
+horribly unexpected ways? A [recent article][1] on the BBC
 News site contained, quite without fanfare, some shocking intelligence.
 
 > Previously standard questions about age, length of experience and
@@ -56,10 +56,13 @@ this year I'd be whoring myself around the City applying for
 justify my rate.
 
 Rob Grant's novel
-*[Incompetence](http://www.amazon.co.uk/Incompetence-Gollancz-Rob-Grant/dp/0575074493/)*
+*[Incompetence][2]*
 just became slightly less hysterical.
 
 > Article 13199 of the Pan-European Constitution: "No person shall be
 > prejudiced from employment in any capacity, at any level, by reason of
 > age, race, creed or incompitence (*sic*).
 
+
+[1]: http://news.bbc.co.uk/1/hi/business/7187032.stm
+[2]: http://www.amazon.co.uk/Incompetence-Gollancz-Rob-Grant/dp/0575074493/

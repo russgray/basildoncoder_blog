@@ -3,8 +3,8 @@ Date: 2008-04-22 13:10
 Author: Russell Gray
 Slug: Project-Euler-Problem-4-Extra
 
-Couple of things to add to [yesterday's post]({filename}/projecteuler/Project-Euler-Problem-4.md) about [problem
-4](http://projecteuler.net/index.php?section=problems&id=4). As is so often
+Couple of things to add to [yesterday's post][1] about [problem
+4][2]. As is so often
 the case in life, no sooner had I finished the article than I realised there
 was an obvious additional step I could make, which I'd somehow failed to spot.
 
@@ -59,8 +59,14 @@ The loop now looks like this:
     }
 
 If you are interested in the Project Euler problems but craving more detailed
-analysis, [Joel Neely](http://joelneely.wordpress.com/) is [working
-through](http://joelneely.wordpress.com/category/project-euler/) at a similar
+analysis, [Joel Neely][3] is [working
+through][4] at a similar
 rate to me, but focusing his efforts on Scala and studying each problem and
 its solution in greater depth rather than flitting from language to language.
 Highly recommended.
+
+
+[1]: {filename}/projecteuler/Project-Euler-Problem-4.md
+[2]: http://projecteuler.net/index.php?section=problems&id=4
+[3]: http://joelneely.wordpress.com/
+[4]: http://joelneely.wordpress.com/category/project-euler/

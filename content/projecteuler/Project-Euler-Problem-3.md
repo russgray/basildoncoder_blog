@@ -5,7 +5,7 @@ Slug: Project-Euler-Problem-3
 
 Next up in the list of Project Euler problems is this one:
 
-***[Problem 3](http://projecteuler.net/index.php?section=problems&id=3)***
+***[Problem 3][1]***
 
 > The prime factors of 13195 are 5, 7, 13 and 29.
 >
@@ -13,7 +13,7 @@ Next up in the list of Project Euler problems is this one:
 
 This, obviously, is a factorisation problem. There is a colossal amount
 of material on the web for dealing with prime factorisation - a simple
-[google search](http://www.google.co.uk/search?q=prime+factorization)
+[google search][2]
 pulls up lots of information. Prime factorisation (and the difficulty of
 doing it with sufficiently large numbers) is at the heart of the
 cryptographic methods we currently use on the internet - every time you
@@ -88,7 +88,7 @@ the code above and you're free to get down from the table.
 ***A Random Walk Off-Topic***
 
 The simplest way to generate primes is known as the [Sieve of
-Eratosthenes](http://en.wikipedia.org/wiki/Sieve_of_Eratosthenes) after
+Eratosthenes][3] after
 the Greek mathematician who invented it. In principle it's
 straightforward - take a list of all integers up to an arbitrary limit,
 then starting from 2 (the smallest prime), mark all the numbers that are
@@ -187,3 +187,8 @@ which divide directly into 15 and call the Max() method:
     return (from p in sieve.Primes() where 15 % p == 0 select p).Max();
 
 Done! And I have a handy reusable prime generator for later on.
+
+
+[1]: http://projecteuler.net/index.php?section=problems&id=3
+[2]: http://www.google.co.uk/search?q=prime+factorization
+[3]: http://en.wikipedia.org/wiki/Sieve_of_Eratosthenes

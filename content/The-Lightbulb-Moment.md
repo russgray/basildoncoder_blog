@@ -3,12 +3,12 @@ Date: 2008-03-25 18:06
 Author: Russell Gray
 Slug: The-Lightbulb-Moment
 
-[Weiqi Gao](http://www.weiqigao.com/blog/) has a
-[post](http://www.weiqigao.com/blog/2008/03/24/scala_still_uncomfortable_after_five_years.html)
+[Weiqi Gao][1] has a
+[post][2]
 up today discussing the trials of grokking
-[Scala](http://www.scala-lang.org/). Scala is a language I want to take
+[Scala][3]. Scala is a language I want to take
 a much closer look at later this year, since I want to become current on
-the [JVM](http://en.wikipedia.org/wiki/Java_Virtual_Machine) again
+the [JVM][4] again
 (having not been on talking terms with it since using J2SE 1.4 around
 the summer of 2003) without being particularly keen on tangling with the
 Java language itself.
@@ -48,7 +48,7 @@ expressive syntax and a very funky concurrency model will get my
 attention, *especially* when running on something as mainstream as the
 JVM and with full interoperability with the frankly staggeringly-vast
 Java library ecosystem. I like F# on the
-[CLR](http://en.wikipedia.org/wiki/Common_Language_Runtime) for similar
+[CLR][5] for similar
 reasons.
 
 But I digress; what I wanted to talk about was a point made by Weiqi,
@@ -89,3 +89,10 @@ bathroom in the middle of the night, when the lights go on I squint in
 pain and stagger around just as blindly as I did before. But then I
 acclimatise, and all becomes clear. And so it is, I think, with learning
 alien concepts - you need a bit of time to adjust to the dazzling light.
+
+
+[1]: http://www.weiqigao.com/blog/
+[2]: http://www.weiqigao.com/blog/2008/03/24/scala_still_uncomfortable_after_five_years.html
+[3]: http://www.scala-lang.org/
+[4]: http://en.wikipedia.org/wiki/Java_Virtual_Machine
+[5]: http://en.wikipedia.org/wiki/Common_Language_Runtime

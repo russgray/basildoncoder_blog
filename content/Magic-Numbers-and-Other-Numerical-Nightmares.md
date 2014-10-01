@@ -15,15 +15,14 @@ consequence of the vague and squidgy limitations of our evolved monkey-brains?
 Or is well-designed code abhorred like a vacuum and naturally atrophies into
 the sort of shambles you dread seeing on your first day at a new job, unless
 well-intentioned and dedicated people actively work to clean and polish it,
-like the [Forth Bridge](http://en.wikipedia.org/wiki/Forth_Railway_Bridge#Maintenance)?
+like the [Forth Bridge][1]?
 
 I don't have the time or wit to give this subject the treatment it deserves,
 but I do want to rant a bit about another symptom of this disease, which has
 given me a couple of sleepless nights recently. I refer, as the title might
-suggest, to [magic numbers](http://en.wikipedia.org/wiki/Magic_number_(programming)).
+suggest, to [magic numbers][2].
 
-Magic numbers are constants, 
-[unnamed](http://en.wikipedia.org/wiki/Magic_number_(programming)#Unnamed_numerical_constant) in the most pathological cases,
+Magic numbers are constants, [unnamed][3] in the most pathological cases,
 that represent an assumption or a limit in a piece of code. They often cause
 problems because soon they are forgotten about or their meaning is lost - and
 then something happens to invalidate the assumption, the code breaks, and all
@@ -90,12 +89,12 @@ for many reasons, they do. For example, first-mover advantage can mean the
 opportunity cost of taking the time to do things right first time is greater
 than the cost of fixing problems later.
 
-Also, people make assumptions. The issue underlying the [Millennium Bug](http://en.wikipedia.org/wiki/Millennium_bug) hysteria was caused by well-
-meaning developers who knew that two-digit dates wouldn't work after 1999
-(effectively another magic number), but assumed the software would have been
-replaced or upgraded by then. No doubt that seemed a totally reasonable
-assumption in the 1970s, and it had genuine technical benefits (storage space
-was so tight that every byte saved was a battle won).
+Also, people make assumptions. The issue underlying the [Millennium Bug][4]
+hysteria was caused by well- meaning developers who knew that two-digit dates
+wouldn't work after 1999 (effectively another magic number), but assumed the
+software would have been replaced or upgraded by then. No doubt that seemed a
+totally reasonable assumption in the 1970s, and it had genuine technical
+benefits (storage space was so tight that every byte saved was a battle won).
 
 Anyway, I don't have a magic bullet solution for this, I'm just venting
 spleen. Unit tests can help, but won't magically eliminate this class of bug
@@ -105,3 +104,9 @@ recognise and diagnose potential magic number issues. Pay close attention to
 data types, type conversions, and current values of sequences in your
 database. Keeping a sacrifical goat on hand might pay dividends too, in case
 any blood-thirsty deities with a head for binary arithmetic are watching.
+
+
+[1]: http://en.wikipedia.org/wiki/Forth_Railway_Bridge#Maintenance
+[2]: http://en.wikipedia.org/wiki/Magic_number_(programming)
+[3]: http://en.wikipedia.org/wiki/Magic_number_(programming)#Unnamed_numerical_constant
+[4]: http://en.wikipedia.org/wiki/Millennium_bug

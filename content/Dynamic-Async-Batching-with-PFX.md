@@ -3,9 +3,9 @@ Date: 2008-08-08 17:41
 Author: Russell Gray
 Slug: Dynamic-Async-Batching-with-PFX
 
-The [PFX Team blog](http://blogs.msdn.com/pfxteam/default.aspx) has been
+The [PFX Team blog][1] has been
 posting some excellent articles recently on the subject of [task
-batching](http://blogs.msdn.com/pfxteam/archive/2008/08/05/8835612.aspx)
+batching][2]
 using the June 2008 CTP release of the Task Parallel Library. It's
 really cool to see some of these techniques abstracted properly in .Net,
 and I hope it eventually becomes part of the core libraries.
@@ -64,7 +64,7 @@ continuation. The code for this basically looks as follows:
 
 In order to support the APM pattern neatly, I'm using the following
 method [from the PFX
-blog](http://blogs.msdn.com/pfxteam/archive/2008/03/16/8272833.aspx):
+blog][3]:
 
     :::csharp
     private static Future<T> Create<T>(
@@ -122,3 +122,8 @@ consuming a threadpool thread for some period of time. So the $64,000
 question is, how do I get rid of it? I'm sure there's a way to do it,
 but my brain has gone on a protest march about all the time I'm forcing
 it to spend thinking about this stuff.
+
+
+[1]: http://blogs.msdn.com/pfxteam/default.aspx
+[2]: http://blogs.msdn.com/pfxteam/archive/2008/08/05/8835612.aspx
+[3]: http://blogs.msdn.com/pfxteam/archive/2008/03/16/8272833.aspx

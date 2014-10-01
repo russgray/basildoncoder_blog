@@ -3,12 +3,9 @@ Date: 2008-04-14 14:50
 Author: Russell Gray
 Slug: Bash-History-Spelunking
 
-Learned from
-[Weiqi](http://www.weiqigao.com/blog/2008/04/11/whats_in_your_history.html),
-who learned from
-[KageSenshi](http://blog.kagesenshi.org/2008/04/me-me.html), about a
-[Fedora Planet](http://planet.fedoraproject.org/) shell history meme -
-post the results of running the following command on your linux box:
+Learned from [Weiqi][1], who learned from [KageSenshi][2], about a [Fedora
+Planet][3] shell history meme - post the results of running the following
+command on your linux box:
 
     :::bash
     history | awk '{a[$2]++ } END{for(i in a){print a[i] " " i}}' | sort -rn | head
@@ -49,9 +46,16 @@ Here's the output from my home box:
 
 Quite similar actually, guess I'm set in my ways. The ffmpeg count is a
 bit of an anomaly, since I used it a lot recently to re-encode a bunch
-of [Futurama](http://en.wikipedia.org/wiki/Futurama) rips for my mobile.
+of [Futurama][4] rips for my mobile.
 
 Not sure what to do with this remarkable intel, however. Perhaps I'll
 use the data to generate an
-[Identicon](http://www.docuverse.com/blog/donpark/2007/01/19/identicon-explained)
+[Identicon][5]
 and use it as a favicon? Or, perhaps not.
+
+
+[1]: http://www.weiqigao.com/blog/2008/04/11/whats_in_your_history.html
+[2]: http://blog.kagesenshi.org/2008/04/me-me.html
+[3]: http://planet.fedoraproject.org/
+[4]: http://en.wikipedia.org/wiki/Futurama
+[5]: http://www.docuverse.com/blog/donpark/2007/01/19/identicon-explained

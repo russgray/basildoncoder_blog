@@ -3,7 +3,7 @@ Date: 2008-04-22 00:53
 Author: Russell Gray
 Slug: Project-Euler-Problem-4
 
-***[Problem 4](http://projecteuler.net/index.php?section=problems&id=4)*** is
+***[Problem 4][1]*** is
 as follows:
 
 > A palindromic number reads the same both ways. The largest palindrome
@@ -46,7 +46,7 @@ this is bread and butter.
     }
 
 If you can't read that, shame on you, go and pick up a copy of
-[K&R](http://www.amazon.co.uk/C-Programming-Language-2nd/dp/0131103628/)
+[K&R][2]
 and read it until you weep. In the meantime, basically what happens here
 is I set pointers to the start (s1) and end (s2) of the original string
 (s), then swap the pointed-to characters using a temporary variable (c)
@@ -185,7 +185,7 @@ more natural in this case.
 
 Parameters aside, it's interesting to note the relative clumsiness of
 the twin calls to Enumerable.Range. Back when looking at [problem
-1]({filename}/projecteuler/Project-Euler-Problems-1-and-2.md),
+1][3],
 replacing a for loop with a more declarative alternative made the code
 considerably more expressive. In this case, however, I don't think it
 helps quite so much. Once again, it's to do with the nature of the
@@ -252,7 +252,7 @@ Enough of the lousy clothes metaphor. To finish up what turned out to be
 a longer post than expected, here's an F# solution I hacked together
 before getting sidetracked with the whole fluent thing. I read a blog
 post
-[here](http://geekswithblogs.net/Erik/archive/2008/02/18/119727.aspx)
+[here][4]
 about problem 4 (**warning** - also contains solution to problem 6)
 but didn't like it too much. It seems to be quite common when reading
 F# code on the web for there to be a reliance on Seq.unfold - I'm not
@@ -297,7 +297,14 @@ that the largest is at the head of the list and easily accessible with
 List.hd.
 
     :::fsharp
-    allProducts [100..999] [100..999]
+    allProducts [100..999][5]
         |> List.filter isPalindrome
         |> List.sort (fun x y = compare y x)
         |> List.hd
+
+
+[1]: http://projecteuler.net/index.php?section=problems&id=4
+[2]: http://www.amazon.co.uk/C-Programming-Language-2nd/dp/0131103628/
+[3]: {filename}/projecteuler/Project-Euler-Problems-1-and-2.md
+[4]: http://geekswithblogs.net/Erik/archive/2008/02/18/119727.aspx
+[5]: 100..999

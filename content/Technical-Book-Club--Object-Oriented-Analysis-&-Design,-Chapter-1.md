@@ -4,9 +4,9 @@ Author: Russell Gray
 Slug: Technical-Book-Club-Object-Oriented-Analysis-Design-Chapter-1
 Tags: book club, software engineering
 
-![image](http://ecx.images-amazon.com/images/I/51-uo4HUPCL._AA240_.jpg)
+![image][1]
 
-So, as [previously mentioned]({filename}/Technical-Book-Club.md), we'll start
+So, as [previously mentioned][2], we'll start
 with the basics. This material is probably very familiar to most coders with
 even a small amount of experience, but it never hurts to refresh the
 fundamentals. You may even find that there's some material that seems so
@@ -117,3 +117,7 @@ designing a system.
 
 Next week we look at chapter 2, which covers the object model in greater
 detail.
+
+
+[1]: http://ecx.images-amazon.com/images/I/51-uo4HUPCL._AA240_.jpg
+[2]: {filename}/Technical-Book-Club.md

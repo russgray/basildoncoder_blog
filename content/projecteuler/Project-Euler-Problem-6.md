@@ -5,7 +5,7 @@ Slug: Project-Euler-Problem-6
 
 Onwards to...
 
-***[Problem 6](http://projecteuler.net/index.php?section=problems&id=6)***
+***[Problem 6][1]***
 
 > The sum of the squares of the first ten natural numbers is,
 >
@@ -22,10 +22,10 @@ Onwards to...
 > hundred natural numbers and the square of the sum.
 
 Bit of a disappointment, problem 6; it's too easy. [It's rated as the third-
-easiest](http://projecteuler.net/index.php?section=problems&sort=difficulty),
-i.e. easier than problems [3]({filename}/projecteuler/Project-Euler-Problem-3.md),
-[4]({filename}/projecteuler/Project-Euler-Problem-4.md), and [5]({filename}/projecteuler/Project-Euler-Problem-5.md) which I've already covered. In fact, for my money it's easier
-than problem [2]({filename}/projecteuler/Project-Euler-Problems-1-and-2.md) as well. Ah
+easiest][2],
+i.e. easier than problems [3][3],
+[4][4], and [5][5] which I've already covered. In fact, for my money it's easier
+than problem [2][6] as well. Ah
 well, the difficulty ramps up soon enough, trust me. Here's the very simple
 python solution:
 
@@ -53,3 +53,11 @@ straightforward. In (deliberately non-idiomatic, so don't whine at me) ruby:
     end
 
     p (sum * sum) - sum_of_squares
+
+
+[1]: http://projecteuler.net/index.php?section=problems&id=6
+[2]: http://projecteuler.net/index.php?section=problems&sort=difficulty
+[3]: {filename}/projecteuler/Project-Euler-Problem-3.md
+[4]: {filename}/projecteuler/Project-Euler-Problem-4.md
+[5]: {filename}/projecteuler/Project-Euler-Problem-5.md
+[6]: {filename}/projecteuler/Project-Euler-Problems-1-and-2.md
