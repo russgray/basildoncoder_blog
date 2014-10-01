@@ -55,4 +55,4 @@ data to generate an [Identicon][4] and use it as a favicon? Or, perhaps not.
 [1]: http://blog.kagesenshi.org/2008/04/me-me.html
 [2]: http://planet.fedoraproject.org/
 [3]: http://en.wikipedia.org/wiki/Futurama
-[4]: http://www.docuverse.com/blog/donpark/2007/01/19/identicon-explained
+[4]: http://blog.docuverse.com/2011/07/29/what-is-identicon/

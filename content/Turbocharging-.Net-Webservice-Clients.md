@@ -21,9 +21,9 @@ Betfair's data changes at a breathtaking rate and there is a perceived
 advantage to getting hold of up-to- the-millisecond information.
 
 To put that in context, the [Digg Effect][5] is estimated to peak at around
-[6K-8K hits][6] per hour as I write in December 2007, which translates to
+6K-8K hits per hour as I write in December 2007, which translates to
 a piffling couple of hits per second (8000 / 60 / 60 = 2.2). Even a more
-extreme prediction of [50K hits per hour][7] is only around 14 hits per
+extreme prediction of [50K hits per hour][6] is only around 14 hits per
 second, so we're talking about handling three orders of magnitude more
 requests than Digg generates.
 
@@ -66,12 +66,12 @@ should be added to your App.config file:
         </settings>
     </system.net>
 
-For those who share my distrust of [unexplained sorcery][8], here's the gory
+For those who share my distrust of [unexplained sorcery][7], here's the gory
 details.
 
 ***Expect-100 the Unexpected***
 
-[RFC 2616][9] (the specification for HTTP 1.1) includes a request header and
+[RFC 2616][8] (the specification for HTTP 1.1) includes a request header and
 response code that together are known as 'Expect 100 Continue'. When using the
 Expect header, the client will send the request headers and wait for the
 server to respond with a response code of 100 *before* sending the request
@@ -101,13 +101,13 @@ trade on the Australian Open tennis you're subject to a round-trip time of
 about 350ms. If you allow your requests to be split into two, then you have
 two round-trips, so your request will take 700ms plus processing time.
 
-![Expect-100 on][10]
+![Expect-100 on][9]
 
 You don't want that, so switch it off. Note that the request headers and body
 are still sent separately, but the latter is no longer dependent on the
 response to the former (so they are shown as sent together in this diagram).
 
-![Expect-100 off][11]
+![Expect-100 off][10]
 
 The setting corresponding to this in the XML snippet above is:
 
@@ -116,7 +116,7 @@ The setting corresponding to this in the XML snippet above is:
 
 ***Nagle's Algorithm***
 
-[Nagle's algorithm][12] is a low-level algorithm that tries to minimise the
+[Nagle's algorithm][11] is a low-level algorithm that tries to minimise the
 number of TCP packets on the network, by trying to fill a TCP packet before
 sending it. TCP packets have a 40-byte header, so if you try to send a single
 byte you incur a lot of overhead as you are sending 41 bytes to represent 1
@@ -152,12 +152,12 @@ buffered for. When the requests do get sent, they too are subject to 350ms
 latency around the world, so again you end up with around 700ms added to each
 of your Australian API calls.
 
-![Nagle on][13]
+![Nagle on][12]
 
 Without Nagle, we dispense with the buffering and send out our smaller
 packets immediately, saving a round-trip.
 
-![Nagle off][14]
+![Nagle off][13]
 
 One word of warning - disabling Nagle can cause problems if you are on a
 highly-congested network or have overworked routers and switches, since it
@@ -199,7 +199,7 @@ Tsk, damn Microsoft for unnecessarily crippling their framework, right?
 Well no, actually, since this is an example of Microsoft following
 standards and recommendations and is to be applauded, lest they go back
 to their old ways of "embrace and extend". The recommendation in
-question is from [RFC 2616][15] again,
+question is from [RFC 2616][14] again,
 and states:
 
 > A single-user client SHOULD NOT maintain more than 2 connections with
@@ -267,8 +267,8 @@ manageable 100KB per second.
 Great. So how do we use it? In .Net 2.0 and above it's very easy - just set
 the EnableDecompression property of your web service proxy object (ignore
 IntelliSense, which incorrectly claims the value is true by default; it's
-actually false by default, [as stated on MSDN][16]. For example, to get
-compressed responses from Betfair's [global server][17]:
+actually false by default, [as stated on MSDN][15]. For example, to get
+compressed responses from Betfair's [global server][16]:
 
     :::csharp
     BFGlobalService service = new BFGlobalService();service.EnableDecompression = true;
@@ -400,7 +400,7 @@ has ContentEncoding 'gzip':
     }
 
 To decompress the data, we need a decompression library since .Net 1.1 doesn't
-provide one. In most cases, [SharpZipLib][18] will do the business:
+provide one. In most cases, [SharpZipLib][17] will do the business:
 
     :::csharp
     using ICSharpCode.SharpZipLib.GZip;
@@ -425,16 +425,15 @@ havoc if used irresponsibly.
 [3]: http://www.betfair.com
 [4]: http://bdp.betfair.com
 [5]: http://en.wikipedia.org/wiki/Digg_effect
-[6]: http://www.ndesign-studio.com/blog/updates/the-digg-effect/
-[7]: http://creativebits.org/webdev/surviving_the_digg_effect
-[8]: {filename}Coding-by-Convention.md
-[9]: http://www.ietf.org/rfc/rfc2616.txt
-[10]: {filename}/images/expect100_on.png
-[11]: {filename}/images/expect100_off.png
-[12]: http://en.wikipedia.org/wiki/Nagle%27s_algorithm
-[13]: {filename}/images/nagle_on.png
-[14]: {filename}/images/nagle_off.png
-[15]: http://www.ietf.org/rfc/rfc2616.txt
-[16]: http://msdn2.microsoft.com/en-us/library/system.web.services.protocols.httpwebclientprotocol.enabledecompression.aspx
-[17]: https://api.betfair.com/global/v3/BFGlobalService.wsdl
-[18]: http://www.icsharpcode.net/OpenSource/SharpZipLib/
+[6]: http://creativebits.org/webdev/surviving_the_digg_effect
+[7]: {filename}Coding-by-Convention.md
+[8]: http://www.ietf.org/rfc/rfc2616.txt
+[9]: {filename}/images/expect100_on.png
+[10]: {filename}/images/expect100_off.png
+[11]: http://en.wikipedia.org/wiki/Nagle%27s_algorithm
+[12]: {filename}/images/nagle_on.png
+[13]: {filename}/images/nagle_off.png
+[14]: http://www.ietf.org/rfc/rfc2616.txt
+[15]: http://msdn2.microsoft.com/en-us/library/system.web.services.protocols.httpwebclientprotocol.enabledecompression.aspx
+[16]: https://api.betfair.com/global/v3/BFGlobalService.wsdl
+[17]: http://www.icsharpcode.net/OpenSource/SharpZipLib/
