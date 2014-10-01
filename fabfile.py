@@ -20,6 +20,9 @@ def reflinks(f):
 def checklinks():
     local('linklint -no_anchors -doc linkdoc -root output -net /@')
 
+def checklocallinks():
+    local('linklint -no_anchors -doc linkdoc -root output /@')
+
 def clean():
     if os.path.isdir(DEPLOY_PATH):
         local('rm -rf {deploy_path}'.format(**env))
@@ -27,6 +30,7 @@ def clean():
 
 def build():
     local('env/bin/pelican -s pelicanconf.py content')
+    checklocallinks()
 
 def rebuild():
     clean()

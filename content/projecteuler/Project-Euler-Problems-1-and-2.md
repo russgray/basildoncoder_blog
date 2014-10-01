@@ -3,18 +3,16 @@ Date: 2008-03-22 17:33
 Author: Russell Gray
 Slug: Project-Euler-Problems-1-and-2
 
-Browsing through [Nate Hoellein's
-blog][1] recently led me to [Project
-Euler][2]. This is a problem - I have a
-horrendous feeling I'm about to get addicted to it, to the cost of just
-about everything else that normally occupies my free time. Ack.
+Browsing through [Nate Hoellein's blog][1] recently led me to [Project
+Euler][2]. This is a problem - I have a horrendous feeling I'm about to get
+addicted to it, to the cost of just about everything else that normally
+occupies my free time. Ack.
 
 Still, at least it provides some blogging material. I'm going to start working
 my way through the list, and try to create idiomatic solutions in a number of
 languages. I won't always look for the most efficient solution, since I'm also
-interested in expressiveness (see [here][3] and
-[here][4] for previous posts on the
-subject).
+interested in expressiveness (see [here][3] and [here][4] for previous posts
+on the subject).
 
 To start with, here's some code and thoughts for problems 1 and 2.
 
@@ -22,11 +20,10 @@ To start with, here's some code and thoughts for problems 1 and 2.
 
 > Add all the natural numbers below 1000 that are multiples of 3 or 5.
 
-This is generally regarded as the easiest Euler problem, so shouldn't
-present too many problems. Mainstream software development is still
-dominated by imperative languages and styles, so the most recognisable
-solution to this would be a straightforward for-loop. Here is an
-imperative C# solution:
+This is generally regarded as the easiest Euler problem, so shouldn't present
+too many problems. Mainstream software development is still dominated by
+imperative languages and styles, so the most recognisable solution to this
+would be a straightforward for-loop. Here is an imperative C# solution:
 
     :::csharp
     int result = 0;
@@ -36,10 +33,10 @@ imperative C# solution:
             result += i;
     }
 
-Simple enough, but as with all for-loops the guts are a little too
-visible. I have to explicitly declare and increment an accumulator
-variable as well as the loop counter. A functional style (Haskell in
-this case) allows a more declarative solution:
+Simple enough, but as with all for-loops the guts are a little too visible. I
+have to explicitly declare and increment an accumulator variable as well as
+the loop counter. A functional style (Haskell in this case) allows a more
+declarative solution:
 
     :::haskell
     sum $ filter (\n -> n `mod` 3 == 0 || n `mod` 5 == 0) $ [1..999]
@@ -49,39 +46,37 @@ Or, with list comprehensions:
     :::haskell
     sum [n | n <- [1..999], n `mod` 3 == 0 || n `mod` 5 == 0]
 
-In both cases, the loop is replaced by a list generated from Haskell's
-range operator. [1..999] creates a list containing every integer between
-1 and 999 inclusive. The modulo test is basically the same, though
-Haskell lacks a modulo operator (% in most C-family languages) so the
-mod function is used instead.
+In both cases, the loop is replaced by a list generated from Haskell's range
+operator. [1..999] creates a list containing every integer between 1 and 999
+inclusive. The modulo test is basically the same, though Haskell lacks a
+modulo operator (% in most C-family languages) so the mod function is used
+instead.
 
 Just for fun, here's an F# solution too:
 
     :::fsharp
     let sum = List.fold_left (+) 0let mod35 = fun x -> x % 3 = 0 || x % 5 = 0List.filter mod35 [1..999] |> sum
 
-This could be compressed into a one-liner like the Haskell solutions,
-but it would be a bit long for my taste. Also note F# is slightly
-hamstrung by the lack of a built-in sum function, so I have to define my
-own using fold. Another F# solution is
-[here][6],
-but I prefer mine. There's a very nice snippet in the comments of that
-page, though, which I like even more:
+This could be compressed into a one-liner like the Haskell solutions, but it
+would be a bit long for my taste. Also note F# is slightly hamstrung by the
+lack of a built-in sum function, so I have to define my own using fold.
+Another F# solution is [here][6], but I prefer mine. There's a very nice
+snippet in the comments of that page, though, which I like even more:
 
     :::fsharp
     Seq.fold1 (+) {for i in 1..999 when i % 3 * i % 5 = 0 -> i}
 
 Interestingly, C# is gaining some fairly powerful functional techniques
-lately, in particular LINQ. I can use the new Enumerable class to mimic
-range syntax and filter functionality from other languages, and lambdas
-to keep the code concise.
+lately, in particular LINQ. I can use the new Enumerable class to mimic range
+syntax and filter functionality from other languages, and lambdas to keep the
+code concise.
 
     :::csharp
     Enumerable.Range(1, 999).Where(f => f % 3 == 0 || f % 5 == 0).Sum();
 
-Note the similarity between F#/Haskell's lambda syntax and that of C#.
-It's very cool that a mainstream C-derivative language is getting this
-sort of syntax added to it.
+Note the similarity between F#/Haskell's lambda syntax and that of C#. It's
+very cool that a mainstream C-derivative language is getting this sort of
+syntax added to it.
 
 Alternatively, I could use LINQ query expressions for a different
 approach:
@@ -94,14 +89,12 @@ approach:
 
 Fun!
 
-It should be noted that all the Project Euler problems I've seen so far
-have mathematical solutions, meaning if you are able to classify the
-problem correctly it is straightforward to work out the answer with pen
-and paper. In this case, the problem is based around an arithmetic
-progression, and there are powerful formulae for reasoning about those.
-If you're interested, check out the
-[forum][7] for
-problem 1.
+It should be noted that all the Project Euler problems I've seen so far have
+mathematical solutions, meaning if you are able to classify the problem
+correctly it is straightforward to work out the answer with pen and paper. In
+this case, the problem is based around an arithmetic progression, and there
+are powerful formulae for reasoning about those. If you're interested, check
+out the [forum][7] for problem 1.
 
 [***Problem 2***][8]
 
@@ -114,26 +107,26 @@ problem 1.
 > Find the sum of all the even-valued terms in the sequence which do not
 > exceed four million.
 
-Ooh, Fibonacci. I've [been here before][9]. Using the
-Haskell code from that post makes problem 2 a snip:
+Ooh, Fibonacci. I've [been here before][9]. Using the Haskell code from that
+post makes problem 2 a snip:
 
     :::haskell
     fib = 0 : 1 : zipWith (+) fib (tail fib)
     sum $ filter even $ takeWhile (<4000000) fib
 
-Given the lazy Fibonacci generator in the first line, this just uses
-standard Haskell functions from the Prelude to do all the work - reading
-right to left, takeWhile pulls data from the fib sequence until the test
-fails (i.e. we've reached 4,000,000), filter even does exactly what it
-says on the tin, and sum does the business on the result.
+Given the lazy Fibonacci generator in the first line, this just uses standard
+Haskell functions from the Prelude to do all the work - reading right to left,
+takeWhile pulls data from the fib sequence until the test fails (i.e. we've
+reached 4,000,000), filter even does exactly what it says on the tin, and sum
+does the business on the result.
 
-C# could solve problem 1 very neatly - can it keep up the pace in
-problem 2? Actually, yes it can, after a fashion. The lazy Fibonacci
-generator can be implemented using the yield statement added in C# 2.0.
-This is much more efficient than the naive recursive solution I looked
-at in my previous post about Fibonacci sequences. Once I have the
-generator, the LINQ statement is very concise and quite similar to the
-Haskell code - C# 3.0 even has TakeWhile!
+C# could solve problem 1 very neatly - can it keep up the pace in problem 2?
+Actually, yes it can, after a fashion. The lazy Fibonacci generator can be
+implemented using the yield statement added in C# 2.0. This is much more
+efficient than the naive recursive solution I looked at in my previous post
+about Fibonacci sequences. Once I have the generator, the LINQ statement is
+very concise and quite similar to the Haskell code - C# 3.0 even has
+TakeWhile!
 
     :::csharp
     IEnumerable<long> Fibs()
@@ -151,24 +144,23 @@ Haskell code - C# 3.0 even has TakeWhile!
 
     Fibs().TakeWhile(f => f < 4000000).Where(f => f % 2 == 0).Sum();
 
-The more I use C# 3.0, the more I like it - there's quite a bit of
-power in there.
+The more I use C# 3.0, the more I like it - there's quite a bit of power in
+there.
 
-As with problem 1, there are some fascinating mathematical tricks that
-can be utilised when solving problem 2, and I recommend you check out
-the [forum][10]. It's
-particularly cool to see how the Golden Ratio can be brought into play
-when working with Fibonacci sequences - I had no idea these techniques
-existed. So much to learn!
+As with problem 1, there are some fascinating mathematical tricks that can be
+utilised when solving problem 2, and I recommend you check out the
+[forum][10]. It's particularly cool to see how the Golden Ratio can be brought
+into play when working with Fibonacci sequences - I had no idea these
+techniques existed. So much to learn!
 
 
 [1]: http://natehoellein.blogspot.com/
 [2]: http://projecteuler.net/
-[3]: {filename}/Fab-Fib.md
-[4]: {filename}/Code-CAN-Be-Beautiful.md
+[3]: {filename}/commentary/Fab-Fib.md
+[4]: {filename}/commentary/Code-CAN-Be-Beautiful.md
 [5]: http://projecteuler.net/index.php?section=problems&id=1
 [6]: http://blogs.msdn.com/chrsmith/archive/2007/10/23/Project-Euler-in-F_2300_-_2D00_-Problem-1.aspx
 [7]: http://projecteuler.net/index.php?section=forum&id=1
 [8]: http://projecteuler.net/index.php?section=problems&id=2
-[9]: {filename}/Fab-Fib.md
+[9]: {filename}/commentary/Fab-Fib.md
 [10]: http://projecteuler.net/index.php?section=forum&id=2

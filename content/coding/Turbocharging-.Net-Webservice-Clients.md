@@ -426,7 +426,7 @@ havoc if used irresponsibly.
 [4]: http://bdp.betfair.com
 [5]: http://en.wikipedia.org/wiki/Digg_effect
 [6]: http://creativebits.org/webdev/surviving_the_digg_effect
-[7]: {filename}Coding-by-Convention.md
+[7]: {filename}/development/Coding-by-Convention.md
 [8]: http://www.ietf.org/rfc/rfc2616.txt
 [9]: {filename}/images/expect100_on.png
 [10]: {filename}/images/expect100_off.png

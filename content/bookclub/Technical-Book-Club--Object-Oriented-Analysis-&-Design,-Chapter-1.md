@@ -6,12 +6,12 @@ Tags: book club, software engineering
 
 ![image][1]
 
-So, as [previously mentioned][2], we'll start
-with the basics. This material is probably very familiar to most coders with
-even a small amount of experience, but it never hurts to refresh the
-fundamentals. You may even find that there's some material that seems so
-obvious you don't even actively think about it any more - which is good if it
-has become habit, but may be bad if you've grown complacent in certain areas.
+So, as [previously mentioned][2], we'll start with the basics. This material
+is probably very familiar to most coders with even a small amount of
+experience, but it never hurts to refresh the fundamentals. You may even find
+that there's some material that seems so obvious you don't even actively think
+about it any more - which is good if it has become habit, but may be bad if
+you've grown complacent in certain areas.
 
 The overarching theme of the first chapter is **complexity**. Complexity
 is the enemy of the software developer, and it is vital to understand
@@ -120,4 +120,4 @@ detail.
 
 
 [1]: http://ecx.images-amazon.com/images/I/51-uo4HUPCL._AA240_.jpg
-[2]: {filename}/Technical-Book-Club.md
+[2]: {filename}/bookclub/Technical-Book-Club.md
