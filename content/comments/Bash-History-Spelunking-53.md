@@ -9,4 +9,5 @@ Author_IP: None
 I just learned about a Bash History Meme originated at Planet Fedora from a blog I read regularly.
 In short, you run the following command in bash, and show your results.
 
-history | awk &#39;{a[$2]++ } END{for(i in a){print a[i] &quot; &quot; i}}&#39;|sort -...
+    :::bash
+    history | awk '{a[$2]++ } END{for(i in a){print a[i] " " i}}'|sort -...

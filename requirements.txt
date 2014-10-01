@@ -15,3 +15,5 @@ python-dateutil==2.2
 pytz==2014.4
 six==1.7.3
 wsgiref==0.1.2
+requests
+fabric

@@ -2,5 +2,6 @@ env
 output
 cache
 .vagrant
+linkdoc
 
 *.pyc

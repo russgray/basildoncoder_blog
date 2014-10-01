@@ -70,12 +70,12 @@ PROJECTS = [{
             },
             {
                 'name': 'Balanced News',
-                'url': 'https://www.balancednews.co.uk/',
+                'url': 'http://www.balancednews.co.uk/',
                 'description': 'Your unbiased UK news source'
             },
             {
                 'name': 'Essex Backups',
-                'url': 'https://www.essexbackup.co.uk/',
+                'url': 'http://www.essexbackup.co.uk/',
                 'description': 'Zero-tech backup service'
             },
         ]
@@ -108,12 +108,6 @@ LANDING_PAGE_ABOUT = {
         languages or frameworks. A good developer is receptive and has the ability to
         learn new technologies. I also often contribute to open source projects and
         beta test startup products. </p>
-
-            <p>Besides programming, I <a href="https://www.fitocracy.com/profile
-        /Andrew-Dufresne/" title="My Fitocracy profile" itemprop="url">exercise</a>
-        and <a href="http://www.goodreads.com/talha131" title="My GoodReads profile"
-        itemprop="url">read books</a> regularly. To be a stronger and better version
-        of myself!</p>
 
             <p>English is my second language. I am also learning <a
         href="http://www.duolingo.com/talha131" title="My Duolingo profile"

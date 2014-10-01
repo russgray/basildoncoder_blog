@@ -6,15 +6,15 @@ Author_IP: None
 
 Mine came out:
 
-`20 nethack
-6 vi
-5 ssh
-5 ping
-5 history
-3 mount
-3 cshore
-2 man
-2 find
-2 eject`
+    20 nethack
+    6 vi
+    5 ssh
+    5 ping
+    5 history
+    3 mount
+    3 cshore
+    2 man
+    2 find
+    2 eject
 
 Oh Dearie Me!

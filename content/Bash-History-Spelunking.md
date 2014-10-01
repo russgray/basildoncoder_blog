@@ -3,16 +3,16 @@ Date: 2008-04-14 14:50
 Author: Russell Gray
 Slug: Bash-History-Spelunking
 
-Learned from [Weiqi][1], who learned from [KageSenshi][2], about a [Fedora
-Planet][3] shell history meme - post the results of running the following
+Learned from Weiqi, who learned from [KageSenshi][1], about a [Fedora
+Planet][2] shell history meme - post the results of running the following
 command on your linux box:
 
     :::bash
     history | awk '{a[$2]++ } END{for(i in a){print a[i] " " i}}' | sort -rn | head
 
-I won't bother repeating the inevitable warning about the dangers of
-executing random shell scripts you find on the Internet, because I'm
-lazy and mean. Anyway, here's the results from my webhosting box:
+I won't bother repeating the inevitable warning about the dangers of executing
+random shell scripts you find on the Internet, because I'm lazy and mean.
+Anyway, here's the results from my webhosting box:
 
     :::bash
     231 ll
@@ -44,18 +44,15 @@ Here's the output from my home box:
     72 vim
     60 find
 
-Quite similar actually, guess I'm set in my ways. The ffmpeg count is a
-bit of an anomaly, since I used it a lot recently to re-encode a bunch
-of [Futurama][4] rips for my mobile.
+Quite similar actually, guess I'm set in my ways. The ffmpeg count is a bit of
+an anomaly, since I used it a lot recently to re-encode a bunch of
+[Futurama][3] rips for my mobile.
 
-Not sure what to do with this remarkable intel, however. Perhaps I'll
-use the data to generate an
-[Identicon][5]
-and use it as a favicon? Or, perhaps not.
+Not sure what to do with this remarkable intel, however. Perhaps I'll use the
+data to generate an [Identicon][4] and use it as a favicon? Or, perhaps not.
 
 
-[1]: http://www.weiqigao.com/blog/2008/04/11/whats_in_your_history.html
-[2]: http://blog.kagesenshi.org/2008/04/me-me.html
-[3]: http://planet.fedoraproject.org/
-[4]: http://en.wikipedia.org/wiki/Futurama
-[5]: http://www.docuverse.com/blog/donpark/2007/01/19/identicon-explained
+[1]: http://blog.kagesenshi.org/2008/04/me-me.html
+[2]: http://planet.fedoraproject.org/
+[3]: http://en.wikipedia.org/wiki/Futurama
+[4]: http://www.docuverse.com/blog/donpark/2007/01/19/identicon-explained

@@ -3,15 +3,11 @@ Date: 2008-03-25 18:06
 Author: Russell Gray
 Slug: The-Lightbulb-Moment
 
-[Weiqi Gao][1] has a
-[post][2]
-up today discussing the trials of grokking
-[Scala][3]. Scala is a language I want to take
-a much closer look at later this year, since I want to become current on
-the [JVM][4] again
-(having not been on talking terms with it since using J2SE 1.4 around
-the summer of 2003) without being particularly keen on tangling with the
-Java language itself.
+Weiqi Gao has a post up today discussing the trials of grokking
+[Scala][1]. Scala is a language I want to take a much closer look at later
+this year, since I want to become current on the [JVM][2] again (having not
+been on talking terms with it since using J2SE 1.4 around the summer of 2003)
+without being particularly keen on tangling with the Java language itself.
 
 One of the key features of Scala is the functional programming style it
 brings to the JVM. It's actually quite common to use certain functional
@@ -48,7 +44,7 @@ expressive syntax and a very funky concurrency model will get my
 attention, *especially* when running on something as mainstream as the
 JVM and with full interoperability with the frankly staggeringly-vast
 Java library ecosystem. I like F# on the
-[CLR][5] for similar
+[CLR][3] for similar
 reasons.
 
 But I digress; what I wanted to talk about was a point made by Weiqi,
@@ -91,8 +87,6 @@ acclimatise, and all becomes clear. And so it is, I think, with learning
 alien concepts - you need a bit of time to adjust to the dazzling light.
 
 
-[1]: http://www.weiqigao.com/blog/
-[2]: http://www.weiqigao.com/blog/2008/03/24/scala_still_uncomfortable_after_five_years.html
-[3]: http://www.scala-lang.org/
-[4]: http://en.wikipedia.org/wiki/Java_Virtual_Machine
-[5]: http://en.wikipedia.org/wiki/Common_Language_Runtime
+[1]: http://www.scala-lang.org/
+[2]: http://en.wikipedia.org/wiki/Java_Virtual_Machine
+[3]: http://en.wikipedia.org/wiki/Common_Language_Runtime
