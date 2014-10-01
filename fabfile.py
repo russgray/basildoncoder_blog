@@ -11,17 +11,18 @@ env.deploy_path = 'output'
 DEPLOY_PATH = env.deploy_path
 
 # Remote server configuration
-production = 'root@localhost:22'
-dest_path = '/var/www'
+production = 'russgray@188.226.200.128:22'
+env.key_filename = 'C:/Users/rgray/id_dsa_digitalocean.pem'
+dest_path = '/apps/basildoncoder-blog'
 
 def reflinks(f):
     local('formd -r < {0} | sponge {0}'.format(f))
 
-def checklinks():
-    local('linklint -no_anchors -doc linkdoc -root output -net /@')
+def links():
+    local('linklint -quiet -no_anchors -doc linkdoc -root output -net /@')
 
-def checklocallinks():
-    local('linklint -no_anchors -doc linkdoc -root output /@')
+def locallinks():
+    local('linklint -quiet -no_anchors -doc linkdoc -root output /@')
 
 def clean():
     if os.path.isdir(DEPLOY_PATH):
@@ -30,7 +31,11 @@ def clean():
 
 def build():
     local('env/bin/pelican -s pelicanconf.py content')
-    checklocallinks()
+    locallinks()
+
+def buildfullcheck():
+    local('env/bin/pelican -s pelicanconf.py content')
+    links()
 
 def rebuild():
     clean()
@@ -65,3 +70,7 @@ def publish():
         delete=True,
         extra_opts='-c',
     )
+
+@hosts(production)
+def r_uname():
+    run('uname -a')

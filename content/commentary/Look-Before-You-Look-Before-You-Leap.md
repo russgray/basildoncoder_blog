@@ -42,7 +42,7 @@ additional computation.
 > -   an 8-byte footer, containing a CRC-32 checksum and the length of
 >     the original uncompressed data
 >
-<cite>([Wikipedia][10]</cite>
+<cite>([Wikipedia][10])</cite>
 
 With the benchmarking code fixed, we see that Deflate is indeed slightly
 faster than gzip.
@@ -85,5 +85,5 @@ shortly.
 [7]: http://www.codinghorror.com/blog/archives/001178.html
 [8]: http://blog.madskristensen.dk/post/Compression-and-performance-GZip-vs-Deflate.aspx
 [9]: http://en.wikipedia.org/wiki/Gzip
-[10]: http://en.wikipedia.org/wiki/Gzip)
+[10]: http://en.wikipedia.org/wiki/Gzip
 [11]: {filename}/images/codinghorror01.png
