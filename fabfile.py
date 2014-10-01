@@ -32,9 +32,6 @@ def rebuild():
     clean()
     build()
 
-def regenerate():
-    local('env/bin/pelican -r -s pelicanconf.py')
-
 def serve():
     os.chdir(env.deploy_path)
 
