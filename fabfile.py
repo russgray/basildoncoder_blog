@@ -18,7 +18,7 @@ def reflinks(f):
     local('formd -r < {0} | sponge {0}'.format(f))
 
 def checklinks():
-    local('linklint -doc linkdoc -root output -net /@')
+    local('linklint -no_anchors -doc linkdoc -root output -net /@')
 
 def clean():
     if os.path.isdir(DEPLOY_PATH):
