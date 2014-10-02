@@ -10,4 +10,6 @@ Author_IP: None
 Quicksort: divide is interesting, conquer is trivial.
 Mergesort: divide is trivial, conquer is interesting.
 
-In other words, the algorithm presented in the post is not mergesort or an equivalent of it. It&#39;s entirely fine to call it quicksort even though it&#39;s not in-place.
+In other words, the algorithm presented in the post is not mergesort or an
+equivalent of it. It's entirely fine to call it quicksort even though it's not
+in-place.

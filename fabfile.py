@@ -62,7 +62,7 @@ def preview():
 
 @hosts(production)
 def publish():
-    local('pelican -s publishconf.py')
+    # local('pelican -s publishconf.py')
     project.rsync_project(
         remote_dir=dest_path,
         exclude=".DS_Store",

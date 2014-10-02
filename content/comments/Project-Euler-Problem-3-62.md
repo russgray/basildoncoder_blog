@@ -4,4 +4,18 @@ Date: 2010-08-02 14:43:30
 Author_Email: noreply@blogger.com
 Author_IP: None
 
-sorry a correction <br />def primeFactors(n,factor):<br />factors=[]<br />newn=n<br />while(factor*factor <= newn):<br />while(newn % factor !=0):<br />factor=factor+1<br /><br />factors.append(factor)<br />newn=newn/factor<br />if(newn!=1):<br />factors.append(newn)<br />return factors
+sorry a correction
+
+    :::python
+    def primeFactors(n,factor):
+        factors=[]
+        newn=n
+        while(factor*factor <= newn):
+            while(newn % factor !=0):
+                factor=factor+1
+
+        factors.append(factor)
+        newn=newn/factor
+        if(newn!=1):
+            factors.append(newn)
+        return factors

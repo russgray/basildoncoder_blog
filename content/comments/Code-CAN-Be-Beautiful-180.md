@@ -8,4 +8,6 @@ Author_IP: None
 > See the inplace quicksort in c++ compared to haskell's not-inplace one.
 > taken from: http://erikhaugen.blogspot.com/
 
-Nice all right.  I&#39;m not too sure about the entirely in-place bit though.  When I looked up stable_partition to see what it did,  it seems that most implementation partition through allocating a temporary buffer...
+Nice all right.  'm not too sure about the entirely in-place bit though.  When
+I looked up stable_partition to see what it did,  it seems that most
+implementation partition through allocating a temporary buffer...

@@ -10,6 +10,9 @@ Author_IP: None
 	qsort [] = []
 	qsort (x:xs) = qsort (filter (= x) xs)
 
->is a far more elegant implementation of quicksort, which essentially does the same things as your list comprehensions, but in a more succinct way (list comprehensions are implemented using filter and map anyway).
+>is a far more elegant implementation of quicksort, which essentially does the
+>same things as your list comprehensions, but in a more succinct way (list
+>comprehensions are implemented using filter and map anyway).
 
-I don&#39;t see how this will return anything except an empty list.  Is there something missing?
+I don't see how this will return anything except an empty list.  Is there
+something missing?

@@ -181,7 +181,7 @@ With GCD defined, LCM can be implemented as above:
     }
 
 With this in place, it's a simple matter to use .Net's equivalent of
-fold - a method on IEnumerable<T> called Aggregate - to get the
+fold - a method on IEnumerable<T\> called Aggregate - to get the
 answer[^2]:
 
     :::csharp

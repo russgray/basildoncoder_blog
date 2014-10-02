@@ -4,4 +4,19 @@ Date: 2010-08-02 14:37:41
 Author_Email: noreply@blogger.com
 Author_IP: None
 
-A slightly modified version. I have avoided the use of recursion.<br />def primeFactors(n,factor):<br /> factors=[]<br /> newn=n<br /> while(factor*factor <= newn):<br />  while(newn % factor !=0):<br />   factor=factor+1<br /><br />  factors.append(factor)<br />  newn=newn/factor<br /> if(factor!=1):<br />  factors.append(newn)<br /> return factors
+A slightly modified version. I have avoided the use of recursion.
+
+    :::python
+    def primeFactors(n,factor):
+        factors=[]
+        newn=n
+        while(factor*factor <= newn):
+            while(newn % factor !=0):
+                factor=factor+1
+
+            factors.append(factor)
+            newn=newn/factor
+            if(factor!=1):
+                factors.append(newn)
+
+            return factors

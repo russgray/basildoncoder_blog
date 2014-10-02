@@ -4,4 +4,6 @@ Date: 2010-02-05 01:12:47
 Author_Email: noreply@blogger.com
 Author_IP: None
 
-<strong>Joe...</strong><br /><br />Check out my domain sometime....
+*Joe...*
+
+Check out my domain sometime....
