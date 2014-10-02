@@ -1,4 +1,4 @@
-post_id: Comment-Discontent
+post_id: comment-discontent
 Author: Thomas Eyde
 Date: 2008-08-24 20:37:17
 Author_Email: noreply@blogger.com

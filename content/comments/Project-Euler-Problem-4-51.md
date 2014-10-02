@@ -1,4 +1,4 @@
-post_id: Project-Euler-Problem-4
+post_id: project-euler-problem-4
 Author: sseraph
 Date: 2010-10-19 01:38:12
 Author_Email: noreply@blogger.com

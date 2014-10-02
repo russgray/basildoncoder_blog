@@ -1,7 +1,7 @@
 Title: Bash History Spelunking
 Date: 2008-04-14 14:50
 Author: Russell Gray
-Slug: Bash-History-Spelunking
+Slug: bash-history-spelunking
 
 Learned from Weiqi, who learned from [KageSenshi][1], about a [Fedora
 Planet][2] shell history meme - post the results of running the following

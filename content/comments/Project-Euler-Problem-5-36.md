@@ -1,4 +1,4 @@
-post_id: Project-Euler-Problem-5
+post_id: project-euler-problem-5
 Author: Torleif
 Date: 2009-09-15 20:48:14
 Author_Email: noreply@blogger.com

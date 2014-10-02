@@ -1,32 +1,33 @@
 Title: Lexical Closures in C# 3.0
 Date: 2008-07-01 17:49
 Author: Russell Gray
-Slug: Lexical-Closures-in-CSharp-3_0
+Slug: lexical-closures-in-c-30
 
-There's a [slightly weird article][1] up on [Dobbs Code Talk][2] this week, speculating that aggregate
-functions are "the next big programming language feature" after closures. The
-slight weirdness comes from the fact that both features have been around for
-decades, and not just in dusty academic languages either.
+There's a [slightly weird article][1] up on [Dobbs Code Talk][2] this week,
+speculating that aggregate functions are "the next big programming language
+feature" after closures. The slight weirdness comes from the fact that both
+features have been around for decades, and not just in dusty academic
+languages either.
 
 Still, there's some interesting discussion in the comments about whether
-.Net's closures are proper first-class lexically-scoped closures. The
-answer is yes - but with a fun twist.
+.Net's closures are proper first-class lexically-scoped closures. The answer
+is yes - but with a fun twist.
 
-The twist has been around for a long time - [Brad Abrams][3] blogged about it 
-[way back in 2004][4], for
-instance - but it's probably worth going over it again, since the recent
-arrival of LINQ and lambda syntax in C# 3.0 will presumably lead to more
-people being bitten by this as the use of closures becomes more mainstream.
+The twist has been around for a long time - [Brad Abrams][3] blogged about it
+[way back in 2004][4], for instance - but it's probably worth going over it
+again, since the recent arrival of LINQ and lambda syntax in C# 3.0 will
+presumably lead to more people being bitten by this as the use of closures
+becomes more mainstream.
 
-A key thing to remember is that C# lambdas are just anonymous delegates
-in skimpy syntax. Behind the scenes the compiler turns them into classes
-- if you were looking at disassembled MSIL you wouldn't be able to tell
-whether the code was written with lambda syntax or anonymous delegate
-syntax. Therefore, the issue discussed by Brad has not gone anywhere.
+A key thing to remember is that C# lambdas are just anonymous delegates in
+skimpy syntax. Behind the scenes the compiler turns them into classes - if you
+were looking at disassembled MSIL you wouldn't be able to tell whether the
+code was written with lambda syntax or anonymous delegate syntax. Therefore,
+the issue discussed by Brad has not gone anywhere.
 
-Lets revisit the problem, with a 2008 sheen applied (i.e. I'll use
-lambda syntax rather than anonymous delegate syntax). What does the
-following code display?
+Lets revisit the problem, with a 2008 sheen applied (i.e. I'll use lambda
+syntax rather than anonymous delegate syntax). What does the following code
+display?
 
     :::csharp
     Func<int>[] funcs = new Func<int>[10];

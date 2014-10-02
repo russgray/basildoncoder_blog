@@ -1,4 +1,4 @@
-post_id: Magic-Numbers-and-Other-Numerical-Nightmares
+post_id: magic-numbers-and-other-numerical
 Author: My Domain
 Date: 2010-02-05 01:12:47
 Author_Email: noreply@blogger.com

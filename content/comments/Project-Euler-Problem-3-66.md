@@ -1,4 +1,4 @@
-post_id: Project-Euler-Problem-3
+post_id: project-euler-problem-3
 Author: nfb7
 Date: 2010-11-15 05:58:57
 Author_Email: noreply@blogger.com

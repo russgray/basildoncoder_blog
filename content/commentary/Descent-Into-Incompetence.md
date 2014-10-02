@@ -1,7 +1,7 @@
 Title: Descent Into Incompetence
 Date: 2008-02-02 16:10
 Author: Russell Gray
-Slug: Descent-Into-Incompetence
+Slug: descent-into-incompetence
 
 I am fairly heavily involved with recruitment where I work, being the
 author of the technical test and phone screen questions we use for
@@ -55,9 +55,7 @@ this year I'd be whoring myself around the City applying for
 £500-per-day contracting gigs and suing any bank that dared ask me to
 justify my rate.
 
-Rob Grant's novel
-*[Incompetence][2]*
-just became slightly less hysterical.
+Rob Grant's novel *[Incompetence][2]* just became slightly less hysterical.
 
 > Article 13199 of the Pan-European Constitution: "No person shall be
 > prejudiced from employment in any capacity, at any level, by reason of

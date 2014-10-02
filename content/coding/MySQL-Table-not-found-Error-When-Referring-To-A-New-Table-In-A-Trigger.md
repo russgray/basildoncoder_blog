@@ -1,7 +1,7 @@
 Title: MySQL 'Table not found' Error When Referring To A New Table In A Trigger
 Date: 2012-12-18 11:31
 Author: Russell Gray
-Slug: MySQL-Table-not-found-Error-When-Referring-To-A-New-Table-In-A-Trigger
+Slug: mysql-table-not-found-error-when
 
 Note to self - the following bullet point from the MySQL docs applies to new
 tables as well as modified tables.

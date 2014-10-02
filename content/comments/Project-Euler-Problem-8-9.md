@@ -1,4 +1,4 @@
-post_id: Project-Euler-Problem-8
+post_id: project-euler-problem-8
 Author: Solution for Problem 8 of Project Euler in C# | Geekfun
 Date: 2010-11-07 08:05:01
 Author_Email: noreply@blogger.com

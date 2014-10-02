@@ -1,7 +1,7 @@
 Title: Project Euler Problems 1 and 2
 Date: 2008-03-22 17:33
 Author: Russell Gray
-Slug: Project-Euler-Problems-1-and-2
+Slug: project-euler-problems-1-and-2
 
 Browsing through [Nate Hoellein's blog][1] recently led me to [Project
 Euler][2]. This is a problem - I have a horrendous feeling I'm about to get

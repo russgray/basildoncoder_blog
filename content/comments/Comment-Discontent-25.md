@@ -1,4 +1,4 @@
-post_id: Comment-Discontent
+post_id: comment-discontent
 Author: Daniel Pietraru
 Date: 2008-07-31 00:03:27
 Author_Email: noreply@blogger.com

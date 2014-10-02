@@ -1,0 +1,478 @@
+http://basildoncoder.com/blog/
+HTTP/1.1 200 OK
+Server: nginx/1.4.1 (Ubuntu)
+Date: Thu, 02 Oct 2014 16:23:05 GMT
+Content-Type: text/html
+Content-Length: 11846
+Last-Modified: Thu, 02 Oct 2014 16:12:28 GMT
+Connection: keep-alive
+ETag: "542d796c-2e46"
+Accept-Ranges: bytes
+
+http://basildoncoder.com/blog/2014/07/disabling-voice-control-on-ios-71.html
+HTTP/1.1 200 OK
+Server: nginx/1.4.1 (Ubuntu)
+Date: Thu, 02 Oct 2014 16:23:05 GMT
+Content-Type: text/html
+Content-Length: 8925
+Last-Modified: Thu, 02 Oct 2014 16:12:28 GMT
+Connection: keep-alive
+ETag: "542d796c-22dd"
+Accept-Ranges: bytes
+
+http://basildoncoder.com/blog/2014/01/git-command-to-open-branch-in-bitbucket.html
+HTTP/1.1 200 OK
+Server: nginx/1.4.1 (Ubuntu)
+Date: Thu, 02 Oct 2014 16:23:05 GMT
+Content-Type: text/html
+Content-Length: 9333
+Last-Modified: Thu, 02 Oct 2014 16:12:28 GMT
+Connection: keep-alive
+ETag: "542d796c-2475"
+Accept-Ranges: bytes
+
+http://basildoncoder.com/blog/2014/01/concurrentdictionary-getoradd-vs.html
+HTTP/1.1 200 OK
+Server: nginx/1.4.1 (Ubuntu)
+Date: Thu, 02 Oct 2014 16:23:06 GMT
+Content-Type: text/html
+Content-Length: 10421
+Last-Modified: Thu, 02 Oct 2014 16:12:28 GMT
+Connection: keep-alive
+ETag: "542d796c-28b5"
+Accept-Ranges: bytes
+
+http://basildoncoder.com/blog/2012/12/mysql-table-not-found-error-when.html
+HTTP/1.1 200 OK
+Server: nginx/1.4.1 (Ubuntu)
+Date: Thu, 02 Oct 2014 16:23:06 GMT
+Content-Type: text/html
+Content-Length: 8242
+Last-Modified: Thu, 02 Oct 2014 16:12:28 GMT
+Connection: keep-alive
+ETag: "542d796c-2032"
+Accept-Ranges: bytes
+
+http://basildoncoder.com/blog/2012/09/hackish-monitoring-with-python-and.html
+HTTP/1.1 200 OK
+Server: nginx/1.4.1 (Ubuntu)
+Date: Thu, 02 Oct 2014 16:23:06 GMT
+Content-Type: text/html
+Content-Length: 11393
+Last-Modified: Thu, 02 Oct 2014 16:12:28 GMT
+Connection: keep-alive
+ETag: "542d796c-2c81"
+Accept-Ranges: bytes
+
+http://basildoncoder.com/blog/2009/03/marshalling-variable-length-array-from.html
+HTTP/1.1 200 OK
+Server: nginx/1.4.1 (Ubuntu)
+Date: Thu, 02 Oct 2014 16:23:06 GMT
+Content-Type: text/html
+Content-Length: 25255
+Last-Modified: Thu, 02 Oct 2014 16:12:28 GMT
+Connection: keep-alive
+ETag: "542d796c-62a7"
+Accept-Ranges: bytes
+
+http://basildoncoder.com/blog/2009/02/project-euler-problem-8.html
+HTTP/1.1 200 OK
+Server: nginx/1.4.1 (Ubuntu)
+Date: Thu, 02 Oct 2014 16:23:06 GMT
+Content-Type: text/html
+Content-Length: 20093
+Last-Modified: Thu, 02 Oct 2014 16:12:28 GMT
+Connection: keep-alive
+ETag: "542d796c-4e7d"
+Accept-Ranges: bytes
+
+http://basildoncoder.com/blog/2009/02/killing-and-reviving-aspire-one.html
+HTTP/1.1 200 OK
+Server: nginx/1.4.1 (Ubuntu)
+Date: Thu, 02 Oct 2014 16:23:06 GMT
+Content-Type: text/html
+Content-Length: 10392
+Last-Modified: Thu, 02 Oct 2014 16:12:28 GMT
+Connection: keep-alive
+ETag: "542d796c-2898"
+Accept-Ranges: bytes
+
+http://basildoncoder.com/blog/2009/02/macros-you-oughta-know.html
+HTTP/1.1 200 OK
+Server: nginx/1.4.1 (Ubuntu)
+Date: Thu, 02 Oct 2014 16:23:07 GMT
+Content-Type: text/html
+Content-Length: 21984
+Last-Modified: Thu, 02 Oct 2014 16:12:28 GMT
+Connection: keep-alive
+ETag: "542d796c-55e0"
+Accept-Ranges: bytes
+
+http://basildoncoder.com/blog/2009/01/ood-second-coming.html
+HTTP/1.1 200 OK
+Server: nginx/1.4.1 (Ubuntu)
+Date: Thu, 02 Oct 2014 16:23:07 GMT
+Content-Type: text/html
+Content-Length: 15482
+Last-Modified: Thu, 02 Oct 2014 16:12:28 GMT
+Connection: keep-alive
+ETag: "542d796c-3c7a"
+Accept-Ranges: bytes
+
+http://basildoncoder.com/blog/2008/10/project-euler-problem-7.html
+HTTP/1.1 200 OK
+Server: nginx/1.4.1 (Ubuntu)
+Date: Thu, 02 Oct 2014 16:23:07 GMT
+Content-Type: text/html
+Content-Length: 17425
+Last-Modified: Thu, 02 Oct 2014 16:12:28 GMT
+Connection: keep-alive
+ETag: "542d796c-4411"
+Accept-Ranges: bytes
+
+http://basildoncoder.com/blog/2008/10/look-before-you-look-before-you-leap.html
+HTTP/1.1 200 OK
+Server: nginx/1.4.1 (Ubuntu)
+Date: Thu, 02 Oct 2014 16:23:07 GMT
+Content-Type: text/html
+Content-Length: 11796
+Last-Modified: Thu, 02 Oct 2014 16:12:28 GMT
+Connection: keep-alive
+ETag: "542d796c-2e14"
+Accept-Ranges: bytes
+
+http://basildoncoder.com/blog/2008/08/project-euler-problem-6.html
+HTTP/1.1 200 OK
+Server: nginx/1.4.1 (Ubuntu)
+Date: Thu, 02 Oct 2014 16:23:07 GMT
+Content-Type: text/html
+Content-Length: 15286
+Last-Modified: Thu, 02 Oct 2014 16:12:28 GMT
+Connection: keep-alive
+ETag: "542d796c-3bb6"
+Accept-Ranges: bytes
+
+http://basildoncoder.com/blog/2008/08/magic-numbers-and-other-numerical.html
+HTTP/1.1 200 OK
+Server: nginx/1.4.1 (Ubuntu)
+Date: Thu, 02 Oct 2014 16:23:08 GMT
+Content-Type: text/html
+Content-Length: 15699
+Last-Modified: Thu, 02 Oct 2014 16:12:28 GMT
+Connection: keep-alive
+ETag: "542d796c-3d53"
+Accept-Ranges: bytes
+
+http://basildoncoder.com/blog/2008/08/ubuntu-xmonad-and-ode-to-apt.html
+HTTP/1.1 200 OK
+Server: nginx/1.4.1 (Ubuntu)
+Date: Thu, 02 Oct 2014 16:23:08 GMT
+Content-Type: text/html
+Content-Length: 10993
+Last-Modified: Thu, 02 Oct 2014 16:12:28 GMT
+Connection: keep-alive
+ETag: "542d796c-2af1"
+Accept-Ranges: bytes
+
+http://basildoncoder.com/blog/2008/08/dynamic-async-batching-with-pfx.html
+HTTP/1.1 200 OK
+Server: nginx/1.4.1 (Ubuntu)
+Date: Thu, 02 Oct 2014 16:23:08 GMT
+Content-Type: text/html
+Content-Length: 17537
+Last-Modified: Thu, 02 Oct 2014 16:12:28 GMT
+Connection: keep-alive
+ETag: "542d796c-4481"
+Accept-Ranges: bytes
+
+http://basildoncoder.com/blog/2008/07/comment-discontent.html
+HTTP/1.1 200 OK
+Server: nginx/1.4.1 (Ubuntu)
+Date: Thu, 02 Oct 2014 16:23:08 GMT
+Content-Type: text/html
+Content-Length: 19479
+Last-Modified: Thu, 02 Oct 2014 16:12:28 GMT
+Connection: keep-alive
+ETag: "542d796c-4c17"
+Accept-Ranges: bytes
+
+http://basildoncoder.com/blog/2008/07/lexical-closures-in-c-30.html
+HTTP/1.1 200 OK
+Server: nginx/1.4.1 (Ubuntu)
+Date: Thu, 02 Oct 2014 16:23:08 GMT
+Content-Type: text/html
+Content-Length: 16925
+Last-Modified: Thu, 02 Oct 2014 16:12:28 GMT
+Connection: keep-alive
+ETag: "542d796c-421d"
+Accept-Ranges: bytes
+
+http://basildoncoder.com/blog/2008/06/project-euler-problem-5.html
+HTTP/1.1 200 OK
+Server: nginx/1.4.1 (Ubuntu)
+Date: Thu, 02 Oct 2014 16:23:09 GMT
+Content-Type: text/html
+Content-Length: 33014
+Last-Modified: Thu, 02 Oct 2014 16:12:28 GMT
+Connection: keep-alive
+ETag: "542d796c-80f6"
+Accept-Ranges: bytes
+
+http://basildoncoder.com/blog/2008/04/project-euler-problem-4-extra.html
+HTTP/1.1 200 OK
+Server: nginx/1.4.1 (Ubuntu)
+Date: Thu, 02 Oct 2014 16:23:09 GMT
+Content-Type: text/html
+Content-Length: 13604
+Last-Modified: Thu, 02 Oct 2014 16:12:28 GMT
+Connection: keep-alive
+ETag: "542d796c-3524"
+Accept-Ranges: bytes
+
+http://basildoncoder.com/blog/2008/04/project-euler-problem-4.html
+HTTP/1.1 200 OK
+Server: nginx/1.4.1 (Ubuntu)
+Date: Thu, 02 Oct 2014 16:23:09 GMT
+Content-Type: text/html
+Content-Length: 50255
+Last-Modified: Thu, 02 Oct 2014 16:12:28 GMT
+Connection: keep-alive
+ETag: "542d796c-c44f"
+Accept-Ranges: bytes
+
+http://basildoncoder.com/blog/2008/04/test-specific-shims-in-production-code.html
+HTTP/1.1 200 OK
+Server: nginx/1.4.1 (Ubuntu)
+Date: Thu, 02 Oct 2014 16:23:09 GMT
+Content-Type: text/html
+Content-Length: 10885
+Last-Modified: Thu, 02 Oct 2014 16:12:28 GMT
+Connection: keep-alive
+ETag: "542d796c-2a85"
+Accept-Ranges: bytes
+
+http://basildoncoder.com/blog/2008/04/bash-history-spelunking.html
+HTTP/1.1 200 OK
+Server: nginx/1.4.1 (Ubuntu)
+Date: Thu, 02 Oct 2014 16:23:09 GMT
+Content-Type: text/html
+Content-Length: 10836
+Last-Modified: Thu, 02 Oct 2014 16:12:28 GMT
+Connection: keep-alive
+ETag: "542d796c-2a54"
+Accept-Ranges: bytes
+
+http://basildoncoder.com/blog/2008/04/evil-important-apparently.html
+HTTP/1.1 200 OK
+Server: nginx/1.4.1 (Ubuntu)
+Date: Thu, 02 Oct 2014 16:23:10 GMT
+Content-Type: text/html
+Content-Length: 8605
+Last-Modified: Thu, 02 Oct 2014 16:12:28 GMT
+Connection: keep-alive
+ETag: "542d796c-219d"
+Accept-Ranges: bytes
+
+http://basildoncoder.com/blog/2008/04/project-euler-problem-3.html
+HTTP/1.1 200 OK
+Server: nginx/1.4.1 (Ubuntu)
+Date: Thu, 02 Oct 2014 16:23:10 GMT
+Content-Type: text/html
+Content-Length: 33391
+Last-Modified: Thu, 02 Oct 2014 16:12:28 GMT
+Connection: keep-alive
+ETag: "542d796c-826f"
+Accept-Ranges: bytes
+
+http://basildoncoder.com/blog/2008/03/lightbulb-moment.html
+HTTP/1.1 200 OK
+Server: nginx/1.4.1 (Ubuntu)
+Date: Thu, 02 Oct 2014 16:23:10 GMT
+Content-Type: text/html
+Content-Length: 12541
+Last-Modified: Thu, 02 Oct 2014 16:12:28 GMT
+Connection: keep-alive
+ETag: "542d796c-30fd"
+Accept-Ranges: bytes
+
+http://basildoncoder.com/blog/2008/03/project-euler-problems-1-and-2.html
+HTTP/1.1 200 OK
+Server: nginx/1.4.1 (Ubuntu)
+Date: Thu, 02 Oct 2014 16:23:10 GMT
+Content-Type: text/html
+Content-Length: 30654
+Last-Modified: Thu, 02 Oct 2014 16:12:28 GMT
+Connection: keep-alive
+ETag: "542d796c-77be"
+Accept-Ranges: bytes
+
+http://basildoncoder.com/blog/2008/03/pg-wodehouse-method-of-refactoring.html
+HTTP/1.1 200 OK
+Server: nginx/1.4.1 (Ubuntu)
+Date: Thu, 02 Oct 2014 16:23:10 GMT
+Content-Type: text/html
+Content-Length: 48017
+Last-Modified: Thu, 02 Oct 2014 16:12:28 GMT
+Connection: keep-alive
+ETag: "542d796c-bb91"
+Accept-Ranges: bytes
+
+http://basildoncoder.com/blog/2008/03/arthur-c-clarke-16121917-18032008.html
+HTTP/1.1 404 Not Found
+Server: nginx/1.4.1 (Ubuntu)
+Date: Thu, 02 Oct 2014 16:23:11 GMT
+Content-Type: text/html
+Content-Length: 177
+Connection: keep-alive
+
+http://basildoncoder.com/blog/2008/02/c-30-parallel-linq-and-betfair-api.html
+HTTP/1.1 200 OK
+Server: nginx/1.4.1 (Ubuntu)
+Date: Thu, 02 Oct 2014 16:23:11 GMT
+Content-Type: text/html
+Content-Length: 33593
+Last-Modified: Thu, 02 Oct 2014 16:12:28 GMT
+Connection: keep-alive
+ETag: "542d796c-8339"
+Accept-Ranges: bytes
+
+http://basildoncoder.com/blog/2008/02/code-can-be-beautiful.html
+HTTP/1.1 200 OK
+Server: nginx/1.4.1 (Ubuntu)
+Date: Thu, 02 Oct 2014 16:23:11 GMT
+Content-Type: text/html
+Content-Length: 30317
+Last-Modified: Thu, 02 Oct 2014 16:12:28 GMT
+Connection: keep-alive
+ETag: "542d796c-766d"
+Accept-Ranges: bytes
+
+http://basildoncoder.com/blog/2008/02/extending-technical-debt-metaphor.html
+HTTP/1.1 200 OK
+Server: nginx/1.4.1 (Ubuntu)
+Date: Thu, 02 Oct 2014 16:23:11 GMT
+Content-Type: text/html
+Content-Length: 13629
+Last-Modified: Thu, 02 Oct 2014 16:12:28 GMT
+Connection: keep-alive
+ETag: "542d796c-353d"
+Accept-Ranges: bytes
+
+http://basildoncoder.com/blog/2008/02/reporting-on-ncover-exclusions.html
+HTTP/1.1 200 OK
+Server: nginx/1.4.1 (Ubuntu)
+Date: Thu, 02 Oct 2014 16:23:11 GMT
+Content-Type: text/html
+Content-Length: 35124
+Last-Modified: Thu, 02 Oct 2014 16:12:28 GMT
+Connection: keep-alive
+ETag: "542d796c-8934"
+Accept-Ranges: bytes
+
+http://basildoncoder.com/blog/2008/02/descent-into-incompetence.html
+HTTP/1.1 200 OK
+Server: nginx/1.4.1 (Ubuntu)
+Date: Thu, 02 Oct 2014 16:23:12 GMT
+Content-Type: text/html
+Content-Length: 10712
+Last-Modified: Thu, 02 Oct 2014 16:12:28 GMT
+Connection: keep-alive
+ETag: "542d796c-29d8"
+Accept-Ranges: bytes
+
+http://basildoncoder.com/blog/2008/01/freedom-zero-all-or-nothing-fallacy.html
+HTTP/1.1 200 OK
+Server: nginx/1.4.1 (Ubuntu)
+Date: Thu, 02 Oct 2014 16:23:12 GMT
+Content-Type: text/html
+Content-Length: 11146
+Last-Modified: Thu, 02 Oct 2014 16:12:28 GMT
+Connection: keep-alive
+ETag: "542d796c-2b8a"
+Accept-Ranges: bytes
+
+http://basildoncoder.com/blog/2008/01/technical-book-club-object-oriented.html
+HTTP/1.1 200 OK
+Server: nginx/1.4.1 (Ubuntu)
+Date: Thu, 02 Oct 2014 16:23:12 GMT
+Content-Type: text/html
+Content-Length: 14353
+Last-Modified: Thu, 02 Oct 2014 16:12:28 GMT
+Connection: keep-alive
+ETag: "542d796c-3811"
+Accept-Ranges: bytes
+
+http://basildoncoder.com/blog/2008/01/fab-fib.html
+HTTP/1.1 200 OK
+Server: nginx/1.4.1 (Ubuntu)
+Date: Thu, 02 Oct 2014 16:23:12 GMT
+Content-Type: text/html
+Content-Length: 16685
+Last-Modified: Thu, 02 Oct 2014 16:12:28 GMT
+Connection: keep-alive
+ETag: "542d796c-412d"
+Accept-Ranges: bytes
+
+http://basildoncoder.com/blog/2007/12/turbocharging-net-webservice-clients.html
+HTTP/1.1 200 OK
+Server: nginx/1.4.1 (Ubuntu)
+Date: Thu, 02 Oct 2014 16:23:12 GMT
+Content-Type: text/html
+Content-Length: 47757
+Last-Modified: Thu, 02 Oct 2014 16:12:28 GMT
+Connection: keep-alive
+ETag: "542d796c-ba8d"
+Accept-Ranges: bytes
+
+http://basildoncoder.com/blog/2007/12/legacy-code-refactoring-and-ownership.html
+HTTP/1.1 200 OK
+Server: nginx/1.4.1 (Ubuntu)
+Date: Thu, 02 Oct 2014 16:23:13 GMT
+Content-Type: text/html
+Content-Length: 16564
+Last-Modified: Thu, 02 Oct 2014 16:12:28 GMT
+Connection: keep-alive
+ETag: "542d796c-40b4"
+Accept-Ranges: bytes
+
+http://basildoncoder.com/blog/2007/12/coding-by-convention.html
+HTTP/1.1 200 OK
+Server: nginx/1.4.1 (Ubuntu)
+Date: Thu, 02 Oct 2014 16:23:13 GMT
+Content-Type: text/html
+Content-Length: 20865
+Last-Modified: Thu, 02 Oct 2014 16:12:28 GMT
+Connection: keep-alive
+ETag: "542d796c-5181"
+Accept-Ranges: bytes
+
+http://basildoncoder.com/blog/2007/12/reindenting-file-in-vim.html
+HTTP/1.1 200 OK
+Server: nginx/1.4.1 (Ubuntu)
+Date: Thu, 02 Oct 2014 16:23:13 GMT
+Content-Type: text/html
+Content-Length: 10075
+Last-Modified: Thu, 02 Oct 2014 16:12:28 GMT
+Connection: keep-alive
+ETag: "542d796c-275b"
+Accept-Ranges: bytes
+
+http://basildoncoder.com/blog/2007/12/technical-book-club.html
+HTTP/1.1 200 OK
+Server: nginx/1.4.1 (Ubuntu)
+Date: Thu, 02 Oct 2014 16:23:13 GMT
+Content-Type: text/html
+Content-Length: 12450
+Last-Modified: Thu, 02 Oct 2014 16:12:28 GMT
+Connection: keep-alive
+ETag: "542d796c-30a2"
+Accept-Ranges: bytes
+
+http://basildoncoder.com/blog/2007/12/hello-world.html
+HTTP/1.1 404 Not Found
+Server: nginx/1.4.1 (Ubuntu)
+Date: Thu, 02 Oct 2014 16:23:13 GMT
+Content-Type: text/html
+Content-Length: 177
+Connection: keep-alive
+

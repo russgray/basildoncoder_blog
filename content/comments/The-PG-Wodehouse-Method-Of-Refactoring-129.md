@@ -1,4 +1,4 @@
-post_id: The-PG-Wodehouse-Method-Of-Refactoring
+post_id: pg-wodehouse-method-of-refactoring
 Author: Sp3w » Blog Archive » Linkage 2008.03.24
 Date: 2008-03-24 18:33:31
 Author_Email: noreply@blogger.com

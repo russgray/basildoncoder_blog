@@ -1,4 +1,4 @@
-post_id: Project-Euler-Problem-3
+post_id: project-euler-problem-3
 Author: Thebigcheeze
 Date: 2011-04-15 16:58:08
 Author_Email: noreply@blogger.com

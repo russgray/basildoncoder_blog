@@ -1,7 +1,7 @@
 Title: Macros: You Oughta Know
 Date: 2009-02-06 15:03
 Author: Russell Gray
-Slug: Macros-You-Oughta-Know
+Slug: macros-you-oughta-know
 
 One of the most useful tools available in any decent text editor is the macro
 recorder, but it's criminally underused. It seems most people either don't

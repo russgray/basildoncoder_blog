@@ -1,4 +1,4 @@
-post_id: Project-Euler-Problem-3
+post_id: project-euler-problem-3
 Author: UltraL0rd
 Date: 2010-05-18 19:34:28
 Author_Email: noreply@blogger.com

@@ -1,7 +1,7 @@
 Title: The P.G. Wodehouse Method Of Refactoring
 Date: 2008-03-21 23:01
 Author: Russell Gray
-Slug: The-PG-Wodehouse-Method-Of-Refactoring
+Slug: pg-wodehouse-method-of-refactoring
 
 I am much given to ruminating on refactoring at the moment, as one of my
 current projects is a major overhaul of a fairly large (>31,000 lines)

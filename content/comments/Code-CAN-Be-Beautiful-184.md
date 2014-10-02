@@ -1,4 +1,4 @@
-post_id: Code-CAN-Be-Beautiful
+post_id: code-can-be-beautiful
 Author: vFiles
 Date: 2008-04-01 07:32:36
 Author_Email: noreply@blogger.com

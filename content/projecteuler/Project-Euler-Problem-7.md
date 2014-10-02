@@ -1,7 +1,7 @@
 Title: Project Euler Problem 7
 Date: 2008-10-26 21:58
 Author: Russell Gray
-Slug: Project-Euler-Problem-7
+Slug: project-euler-problem-7
 
 ***[Problem 7][1]***
 
@@ -13,11 +13,10 @@ Slug: Project-Euler-Problem-7
 Ah, what a nice, straightforward, unambiguous spec! If only business software
 specifications were so precise.
 
-[Way back in problem 3][2], I took a bit
-of a wander off-topic and built a prime generator in .Net using the [Sieve of
-Eratosthenes][3]. Armed with
-this, problem 7 should be easy, right? The sieve implementation generates an
-IEnumerable<long>, which is non-indexable (i.e. I can't just say
+[Way back in problem 3][2], I took a bit of a wander off-topic and built a
+prime generator in .Net using the [Sieve of Eratosthenes][3]. Armed with this,
+problem 7 should be easy, right? The sieve implementation generates an
+IEnumerable<long\>, which is non-indexable (i.e. I can't just say
 Primes()[10001]), but I can take the first 10,001 and then ask for the last
 element, which will be the answer to the problem.
 
@@ -44,11 +43,11 @@ simple test reveals the problem:
     var primes = sieve.Primes().Take(10001);
     var count = primes.Count();
 
-There's only 9,592 primes generated! As the [docs for
-Take()][4] state (emphasis
-mine):
+There's only 9,592 primes generated! As the [docs for Take()][4] state
+(emphasis mine):
 
-> Take<TSource> enumerates source and yields elements until count elements have been yielded or source contains no more elements.
+> Take<TSourceenumerates source and yields elements until count elements have
+> been yielded or source contains no more elements.
 
 Damn. So, looks like my 99,999 guess was too small - with that as an upper
 bound, the sieve only finds 9,592 primes, and I need the 10,001st. OK, I'll
@@ -70,8 +69,7 @@ generate primes up to 999,999 (all 78,498 of them!) despite only needing
 10,001. Not very efficient.
 
 Fortunately, the upper bound can be calculated separately. [Where n > 8601, as
-in this case, we can use the following
-equation][5]:
+in this case, we can use the following equation][5]:
 
 $$p(n) < n (log_e n + log_e \cdot log_e \cdot n - 0.9427)$$
 

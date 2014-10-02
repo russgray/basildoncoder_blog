@@ -1,4 +1,4 @@
-post_id: Project-Euler-Problems-1-and-2
+post_id: project-euler-problems-1-and-2
 Author: Hugh Redelmeier
 Date: 2008-03-24 19:03:28
 Author_Email: noreply@blogger.com

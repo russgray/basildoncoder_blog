@@ -1,4 +1,4 @@
-post_id: The-PG-Wodehouse-Method-Of-Refactoring
+post_id: pg-wodehouse-method-of-refactoring
 Author: Basildon Coder » Blog Archive » The P.G. Wodehouse Method Of Refactoring | TechnoPrimitive
 Date: 2008-04-06 23:25:59
 Author_Email: noreply@blogger.com

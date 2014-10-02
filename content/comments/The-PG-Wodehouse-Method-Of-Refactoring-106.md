@@ -1,4 +1,4 @@
-post_id: The-PG-Wodehouse-Method-Of-Refactoring
+post_id: pg-wodehouse-method-of-refactoring
 Author: Michael Trick's Operations Research Blog » P.G. Wodehouse approach to Modeling?
 Date: 2008-03-23 18:32:43
 Author_Email: noreply@blogger.com

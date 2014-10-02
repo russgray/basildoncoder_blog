@@ -1,4 +1,4 @@
-post_id: Extending-the-Technical-Debt-Metaphor
+post_id: extending-technical-debt-metaphor
 Author: Siobhan Brauner
 Date: 2010-06-14 10:39:40
 Author_Email: noreply@blogger.com

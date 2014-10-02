@@ -1,7 +1,7 @@
 Title: Git command to open branch in Bitbucket
 Date: 2014-01-23 17:39
 Author: Russell Gray
-Slug: Git-command-to-open-branch-in-Bitbucket
+Slug: git-command-to-open-branch-in-bitbucket
 
 George Brocklehurst has a [useful little script][1] for opening GitHub at a particular commit, right from the
 command line. I've found this handy enough in the past that I've created an

@@ -1,7 +1,7 @@
 Title: Disabling Voice Control on iOS 7.1
 Date: 2014-07-10 21:08
 Author: Russell Gray
-Slug: Disabling-Voice-Control-on-iOS-7_1
+Slug: disabling-voice-control-on-ios-71
 
 I'm one of those people who feels irredeemably stupid if I try to talk to any
 piece of technology, so I duly turn off Siri on any iOS device I own.

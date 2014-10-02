@@ -1,4 +1,4 @@
-post_id: Extending-the-Technical-Debt-Metaphor
+post_id: extending-technical-debt-metaphor
 Author: hans
 Date: 2008-03-23 17:40:36
 Author_Email: noreply@blogger.com

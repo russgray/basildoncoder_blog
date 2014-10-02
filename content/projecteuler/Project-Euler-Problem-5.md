@@ -1,12 +1,11 @@
 Title: Project Euler Problem 5
 Date: 2008-06-10 12:47
 Author: Russell Gray
-Slug: Project-Euler-Problem-5
+Slug: project-euler-problem-5
 
 On to the next Project Euler problem (after a bit of a hiatus)...
 
-***[Problem
-5][1]***
+***[Problem 5][1]***
 
 > 2520 is the smallest number that can be divided by each of the numbers
 > from 1 to 10 without any remainder.

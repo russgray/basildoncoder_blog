@@ -1,4 +1,4 @@
-post_id: Project-Euler-Problem-5
+post_id: project-euler-problem-5
 Author: Loocie
 Date: 2008-07-02 06:58:48
 Author_Email: noreply@blogger.com

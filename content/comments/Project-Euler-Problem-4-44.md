@@ -1,4 +1,4 @@
-post_id: Project-Euler-Problem-4
+post_id: project-euler-problem-4
 Author: russ
 Date: 2008-04-22 09:58:33
 Author_Email: noreply@blogger.com

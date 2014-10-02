@@ -1,4 +1,4 @@
-post_id: Project-Euler-Problem-5
+post_id: project-euler-problem-5
 Author: Shaun Abram » Blog Archive » Project Euler: Problem 5 (in Java)
 Date: 2010-03-15 02:34:26
 Author_Email: noreply@blogger.com

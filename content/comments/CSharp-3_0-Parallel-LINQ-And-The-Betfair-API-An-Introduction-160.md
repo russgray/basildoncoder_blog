@@ -1,4 +1,4 @@
-post_id: CSharp-3_0-Parallel-LINQ-And-The-Betfair-API-An-Introduction
+post_id: c-30-parallel-linq-and-betfair-api
 Author: russ
 Date: 2008-10-15 17:12:48
 Author_Email: noreply@blogger.com

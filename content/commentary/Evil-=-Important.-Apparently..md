@@ -1,12 +1,13 @@
 Title: Evil = Important. Apparently.
 Date: 2008-04-08 16:34
 Author: Russell Gray
-Slug: Evil-Important-Apparently.
+Slug: evil-important-apparently
 
 OK, I know I shouldn't even *acknowledge* spam blogs, but this one amused me.
-Some filthy credit-crunch link bait site took an extract from my [previous post][1] (this is obviously what happens
-when you say the phrase 'credit card' ... oops) and ran it though an automated
-word substitution program. The result is fascinating. It turned this:
+Some filthy credit-crunch link bait site took an extract from my [previous
+post][1] (this is obviously what happens when you say the phrase 'credit card'
+... oops) and ran it though an automated word substitution program. The result
+is fascinating. It turned this:
 
 > … you buy something from Amazon, you are protected by the fact that
 > evil black-hats can't find the prime factors of your encryption key

@@ -1,7 +1,7 @@
 Title: Project Euler Problem 8
 Date: 2009-02-09 19:30
 Author: Russell Gray
-Slug: Project-Euler-Problem-8
+Slug: project-euler-problem-8
 
 [***Problem 8***][1]
 

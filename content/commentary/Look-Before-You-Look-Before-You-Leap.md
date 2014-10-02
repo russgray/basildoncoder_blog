@@ -1,7 +1,7 @@
 Title: Look Before You Look Before You Leap
 Date: 2008-10-24 15:32
 Author: Russell Gray
-Slug: Look-Before-You-Look-Before-You-Leap
+Slug: look-before-you-look-before-you-leap
 
 Generally, I try to avoid turning this blog into some sort of [snark][1]-fest
 about other programmers or blogs. I've disagreed with Jeff Atwood [once][2] or
@@ -33,7 +33,7 @@ Another commenter pointed out that [gzip][9] cannot possibly be faster than
 Deflate, since the gzip algorithm IS the Deflate algorithm plus some
 additional computation.
 
-> “gzip” is often also used to refer to the gzip file format, which is:
+> "gzip" is often also used to refer to the gzip file format, which is:
 >
 > -   a 10-byte header, containing a magic number, a version number and
 >     a timestamp

@@ -1,4 +1,4 @@
-post_id: Project-Euler-Problem-4
+post_id: project-euler-problem-4
 Author: NiMuSi
 Date: 2010-08-03 21:00:04
 Author_Email: noreply@blogger.com

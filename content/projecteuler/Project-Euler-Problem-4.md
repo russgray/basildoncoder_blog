@@ -1,10 +1,9 @@
 Title: Project Euler Problem 4
 Date: 2008-04-22 00:53
 Author: Russell Gray
-Slug: Project-Euler-Problem-4
+Slug: project-euler-problem-4
 
-***[Problem 4][1]*** is
-as follows:
+***[Problem 4][1]*** is as follows:
 
 > A palindromic number reads the same both ways. The largest palindrome
 > made from the product of two 2-digit numbers is 9009 = 91 × 99.
@@ -45,25 +44,23 @@ this is bread and butter.
         return s;
     }
 
-If you can't read that, shame on you, go and pick up a copy of
-[K&R][2]
-and read it until you weep. In the meantime, basically what happens here
-is I set pointers to the start (s1) and end (s2) of the original string
-(s), then swap the pointed-to characters using a temporary variable (c)
-and move both pointers 1 character towards each other. Repeat until they
-meet in the middle.
+If you can't read that, shame on you, go and pick up a copy of [K&R][2] and
+read it until you weep. In the meantime, basically what happens here is I set
+pointers to the start (s1) and end (s2) of the original string (s), then swap
+the pointed-to characters using a temporary variable (c) and move both
+pointers 1 character towards each other. Repeat until they meet in the middle.
 
-In this day and age of immutable strings, this old friend now feels a
-little weird - although I retain (and eventually return) the original
-pointer, I have in fact modified the actual string that was passed in.
-Contrast this with C's trendy modern progeny, where you can't change a
-string at all and have to use a StringB[uilder|uffer] when mutating
-strings (unless lousy performance makes you smile, of course).
+In this day and age of immutable strings, this old friend now feels a little
+weird - although I retain (and eventually return) the original pointer, I have
+in fact modified the actual string that was passed in. Contrast this with C's
+trendy modern progeny, where you can't change a string at all and have to use
+a StringB[uilder|uffer] when mutating strings (unless lousy performance makes
+you smile, of course).
 
-Still, now it is fairly simple to solve the problem. A nested for loop
-will let me calculate all the products, and then I just need to convert
-the results to strings and do the palindrome test. I keep track of the
-largest palindromic number found so far, and print it at the end.
+Still, now it is fairly simple to solve the problem. A nested for loop will
+let me calculate all the products, and then I just need to convert the results
+to strings and do the palindrome test. I keep track of the largest palindromic
+number found so far, and print it at the end.
 
     :::c
     int main() {

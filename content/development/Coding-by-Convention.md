@@ -1,7 +1,7 @@
 Title: Coding by Convention
 Date: 2007-12-09 20:00
 Author: Russell Gray
-Slug: Coding-by-Convention
+Slug: coding-by-convention
 Tags: ruby, coding
 
 I've been meaning for a while to have a play around with [Ruby on Rails][1],

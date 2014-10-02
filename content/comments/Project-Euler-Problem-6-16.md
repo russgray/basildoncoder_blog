@@ -1,4 +1,4 @@
-post_id: Project-Euler-Problem-6
+post_id: project-euler-problem-6
 Author: ASk
 Date: 2008-08-14 19:32:18
 Author_Email: noreply@blogger.com

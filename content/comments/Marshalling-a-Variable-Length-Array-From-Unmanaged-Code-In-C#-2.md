@@ -1,4 +1,4 @@
-post_id: Marshalling-a-Variable-Length-Array-From-Unmanaged-Code-In-CSharp
+post_id: marshalling-variable-length-array-from
 Author: flashy
 Date: 2009-12-03 15:15:11
 Author_Email: noreply@blogger.com

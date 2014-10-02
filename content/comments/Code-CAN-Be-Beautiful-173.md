@@ -1,4 +1,4 @@
-post_id: Code-CAN-Be-Beautiful
+post_id: code-can-be-beautiful
 Author: Jonathan Ville
 Date: 2008-02-23 01:30:36
 Author_Email: noreply@blogger.com

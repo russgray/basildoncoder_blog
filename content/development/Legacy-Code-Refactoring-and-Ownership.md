@@ -1,7 +1,7 @@
 Title: Legacy Code, Refactoring, and Ownership
 Date: 2007-12-13 17:26
 Author: Russell Gray
-Slug: Legacy-Code-Refactoring-and-Ownership
+Slug: legacy-code-refactoring-and-ownership
 Tags: coding, refactoring, software engineering
 
 Refactoring is good. Everyone knows that. Since Fowler popularised the concept

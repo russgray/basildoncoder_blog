@@ -1,4 +1,4 @@
-post_id: The-PG-Wodehouse-Method-Of-Refactoring
+post_id: pg-wodehouse-method-of-refactoring
 Author: Tim Daly
 Date: 2008-03-23 20:32:55
 Author_Email: noreply@blogger.com

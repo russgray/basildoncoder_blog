@@ -1,16 +1,14 @@
 Title: Extending the Technical Debt Metaphor
 Date: 2008-02-21 16:07
 Author: Russell Gray
-Slug: Extending-the-Technical-Debt-Metaphor
+Slug: extending-technical-debt-metaphor
 
 A few months ago, the inestimable Steve McConnell (he of *[Code Complete][1]*
-fame)
-[wrote][2]
-about [technical debt][3]. McConnell
-looks to extend the metaphor beyond the simple idea of 'code that is
-going to be a liability in the future', identifying two main types of
-technical debt (deliberate and accidental), and identifying further
-correlations between the worlds of financial debt and technical debt.
+fame) [wrote][2] about [technical debt][3]. McConnell looks to extend the
+metaphor beyond the simple idea of 'code that is going to be a liability in
+the future', identifying two main types of technical debt (deliberate and
+accidental), and identifying further correlations between the worlds of
+financial debt and technical debt.
 
 For instance, based on the technical debt already accumulated, one team
 may have a worse 'credit rating' than another:

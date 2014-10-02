@@ -1,7 +1,7 @@
 Title: Reindenting a File in Vim
 Date: 2007-12-07 18:19
 Author: Russell Gray
-Slug: Reindenting-a-File-in-Vim
+Slug: reindenting-file-in-vim
 Tags: vim, software engineering
 
 I'm going to post a series of helpful Vim snippets here, particularly for

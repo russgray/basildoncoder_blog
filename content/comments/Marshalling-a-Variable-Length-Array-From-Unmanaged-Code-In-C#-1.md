@@ -1,4 +1,4 @@
-post_id: Marshalling-a-Variable-Length-Array-From-Unmanaged-Code-In-CSharp
+post_id: marshalling-variable-length-array-from
 Author: emergency cell phone chargers
 Date: 2009-04-29 02:27:05
 Author_Email: noreply@blogger.com

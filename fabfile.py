@@ -12,8 +12,8 @@ DEPLOY_PATH = env.deploy_path
 
 # Remote server configuration
 production = 'russgray@188.226.200.128:22'
-env.key_filename = 'C:/Users/rgray/id_dsa_digitalocean.pem'
-dest_path = '/apps/basildoncoder-blog'
+env.key_filename = '/home/vagrant/.ssh/id_dsa_digitalocean.pem'
+dest_path = '/apps/basildoncoder/blog'
 
 def reflinks(f):
     local('formd -r < {0} | sponge {0}'.format(f))
@@ -26,8 +26,7 @@ def locallinks():
 
 def clean():
     if os.path.isdir(DEPLOY_PATH):
-        local('rm -rf {deploy_path}'.format(**env))
-        local('mkdir {deploy_path}'.format(**env))
+        local('rm -rf {deploy_path}/*'.format(**env))
 
 def build():
     local('env/bin/pelican -s pelicanconf.py content')
@@ -62,14 +61,20 @@ def preview():
 
 @hosts(production)
 def publish():
-    # local('pelican -s publishconf.py')
+    local('env/bin/pelican -s publishconf.py content')
+
+    tmp_dir = '/home/russgray/apps/basildoncoder/blog'
     project.rsync_project(
-        remote_dir=dest_path,
+        remote_dir=tmp_dir,
         exclude=".DS_Store",
         local_dir=DEPLOY_PATH.rstrip('/') + '/',
         delete=True,
         extra_opts='-c',
     )
+    run('sudo -u www-data rm -rf {}/*'.format(dest_path))
+    run('sudo -u www-data cp -r {}/* {}'.format(tmp_dir, dest_path))
+    run('sudo -u www-data chmod -R 744 {}'.format(dest_path))
+    run('sudo -u www-data chmod -R +X {}'.format(dest_path))
 
 @hosts(production)
 def r_uname():

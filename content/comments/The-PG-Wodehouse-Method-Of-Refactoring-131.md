@@ -1,4 +1,4 @@
-post_id: The-PG-Wodehouse-Method-Of-Refactoring
+post_id: pg-wodehouse-method-of-refactoring
 Author: Will Bickford
 Date: 2008-03-25 23:51:35
 Author_Email: noreply@blogger.com

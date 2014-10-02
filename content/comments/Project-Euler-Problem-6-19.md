@@ -1,4 +1,4 @@
-post_id: Project-Euler-Problem-6
+post_id: project-euler-problem-6
 Author: 10 one-line solutions for project euler | united-coders.com
 Date: 2010-12-29 10:46:12
 Author_Email: noreply@blogger.com

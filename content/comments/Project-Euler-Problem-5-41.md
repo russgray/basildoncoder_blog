@@ -1,4 +1,4 @@
-post_id: Project-Euler-Problem-5
+post_id: project-euler-problem-5
 Author: Project Euler: #5 « euler.bobarnott.com
 Date: 2011-01-12 23:22:18
 Author_Email: noreply@blogger.com

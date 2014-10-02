@@ -1,4 +1,4 @@
-post_id: Project-Euler-Problem-3
+post_id: project-euler-problem-3
 Author: Project Euler - Problem 3 - Javascript | alt42
 Date: 2009-05-20 12:46:03
 Author_Email: noreply@blogger.com

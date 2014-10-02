@@ -1,4 +1,4 @@
-post_id: The-PG-Wodehouse-Method-Of-Refactoring
+post_id: pg-wodehouse-method-of-refactoring
 Author: Bold Lentil
 Date: 2008-03-22 05:33:00
 Author_Email: noreply@blogger.com

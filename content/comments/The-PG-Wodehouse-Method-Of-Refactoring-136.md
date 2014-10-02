@@ -1,4 +1,4 @@
-post_id: The-PG-Wodehouse-Method-Of-Refactoring
+post_id: pg-wodehouse-method-of-refactoring
 Author: Hanging your code out to dry - AgileJoe
 Date: 2008-03-27 23:29:22
 Author_Email: noreply@blogger.com

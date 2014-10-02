@@ -1,4 +1,4 @@
-post_id: Project-Euler-Problems-1-and-2
+post_id: project-euler-problems-1-and-2
 Author: Path To Nirvana
 Date: 2008-07-18 19:31:20
 Author_Email: noreply@blogger.com

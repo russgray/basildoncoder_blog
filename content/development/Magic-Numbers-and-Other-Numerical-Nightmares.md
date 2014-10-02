@@ -1,7 +1,7 @@
 Title: Magic Numbers and Other Numerical Nightmares
 Date: 2008-08-13 13:48
 Author: Russell Gray
-Slug: Magic-Numbers-and-Other-Numerical-Nightmares
+Slug: magic-numbers-and-other-numerical
 
 There are many coding practices that are near-universally regarded as 'bad',
 yet somehow keep cropping up over and over again. Conditional-branch abuse

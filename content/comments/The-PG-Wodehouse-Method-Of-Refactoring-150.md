@@ -1,4 +1,4 @@
-post_id: The-PG-Wodehouse-Method-Of-Refactoring
+post_id: pg-wodehouse-method-of-refactoring
 Author: Guidelines For Working With External Code Libraries | Ruturaj Pradeep Kohok | Your Web Advisor
 Date: 2011-06-21 12:29:39
 Author_Email: noreply@blogger.com

@@ -1,4 +1,4 @@
-post_id: Code-CAN-Be-Beautiful
+post_id: code-can-be-beautiful
 Author: Thomas
 Date: 2008-03-23 23:15:15
 Author_Email: noreply@blogger.com

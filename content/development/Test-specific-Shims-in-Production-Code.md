@@ -1,7 +1,7 @@
 Title: Test-specific Shims in Production Code
 Date: 2008-04-21 13:51
 Author: Russell Gray
-Slug: Test-specific-Shims-in-Production-Code
+Slug: test-specific-shims-in-production-code
 
 We're currently on a fairly major kick to increase automated test coverage of
 our software. This doesn't just mean 'get the unit test coverage up to

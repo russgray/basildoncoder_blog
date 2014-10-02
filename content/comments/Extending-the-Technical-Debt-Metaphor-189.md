@@ -1,4 +1,4 @@
-post_id: Extending-the-Technical-Debt-Metaphor
+post_id: extending-technical-debt-metaphor
 Author: Freud
 Date: 2009-02-20 23:22:26
 Author_Email: noreply@blogger.com

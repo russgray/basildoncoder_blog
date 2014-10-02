@@ -1,4 +1,4 @@
-post_id: Lexical-Closures-in-CSharp-3_0
+post_id: lexical-closures-in-c-30
 Author: Russ Gray
 Date: 2013-06-11 14:55:20
 Author_Email: noreply@blogger.com

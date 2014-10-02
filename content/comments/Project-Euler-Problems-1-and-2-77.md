@@ -1,4 +1,4 @@
-post_id: Project-Euler-Problems-1-and-2
+post_id: project-euler-problems-1-and-2
 Author: The Great VB vs F# Euler Shootout Problem 1 | Do Loop Until You Die
 Date: 2008-09-24 04:09:54
 Author_Email: noreply@blogger.com

@@ -1,7 +1,7 @@
 Title: Project Euler Problem 6
 Date: 2008-08-14 01:00
 Author: Russell Gray
-Slug: Project-Euler-Problem-6
+Slug: project-euler-problem-6
 
 Onwards to...
 
@@ -22,12 +22,10 @@ Onwards to...
 > hundred natural numbers and the square of the sum.
 
 Bit of a disappointment, problem 6; it's too easy. [It's rated as the third-
-easiest][2],
-i.e. easier than problems [3][3],
-[4][4], and [5][5] which I've already covered. In fact, for my money it's easier
-than problem [2][6] as well. Ah
-well, the difficulty ramps up soon enough, trust me. Here's the very simple
-python solution:
+easiest][2], i.e. easier than problems [3][3], [4][4], and [5][5] which I've
+already covered. In fact, for my money it's easier than problem [2][6] as
+well. Ah well, the difficulty ramps up soon enough, trust me. Here's the very
+simple python solution:
 
     :::python
     sum_sq = sum([ x*x for x in xrange(1, 101)])

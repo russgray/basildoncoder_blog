@@ -1,4 +1,4 @@
-post_id: The-PG-Wodehouse-Method-Of-Refactoring
+post_id: pg-wodehouse-method-of-refactoring
 Author: Fortran IV
 Date: 2008-03-24 21:04:56
 Author_Email: noreply@blogger.com

@@ -1,7 +1,7 @@
 Title: Project Euler Problem 3
 Date: 2008-04-07 13:38
 Author: Russell Gray
-Slug: Project-Euler-Problem-3
+Slug: project-euler-problem-3
 
 Next up in the list of Project Euler problems is this one:
 
@@ -11,16 +11,14 @@ Next up in the list of Project Euler problems is this one:
 >
 > What is the largest prime factor of the number 600851475143?
 
-This, obviously, is a factorisation problem. There is a colossal amount
-of material on the web for dealing with prime factorisation - a simple
-[google search][2]
-pulls up lots of information. Prime factorisation (and the difficulty of
-doing it with sufficiently large numbers) is at the heart of the
-cryptographic methods we currently use on the internet - every time you
-buy something from Amazon, you are protected by the fact that evil
-black-hats can't find the prime factors of your encryption key fast
-enough to steal your credit card number (OK, bit of a generalisation,
-but that's the gist).
+This, obviously, is a factorisation problem. There is a colossal amount of
+material on the web for dealing with prime factorisation - a simple [google
+search][2] pulls up lots of information. Prime factorisation (and the
+difficulty of doing it with sufficiently large numbers) is at the heart of the
+cryptographic methods we currently use on the internet - every time you buy
+something from Amazon, you are protected by the fact that evil black-hats
+can't find the prime factors of your encryption key fast enough to steal your
+credit card number (OK, bit of a generalisation, but that's the gist).
 
 One of the key phrases in the above paragraph is 'sufficiently large
 numbers'. For a computer, 600851475143 is not a particularly big number,

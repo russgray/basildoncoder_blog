@@ -1,4 +1,4 @@
-post_id: Comment-Discontent
+post_id: comment-discontent
 Author: DaStormyBlood
 Date: 2008-07-30 18:03:00
 Author_Email: noreply@blogger.com

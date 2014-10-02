@@ -1,7 +1,7 @@
 Title: ConcurrentDictionary: GetOrAdd vs GetOrAdd - One Of These Things Is Not Like The Other
 Date: 2014-01-13 18:00
 Author: Russell Gray
-Slug: ConcurrentDictionary-GetOrAdd-vs-GetOrAdd-One-Of-These-Things-Is-Not-Like-The-Other
+Slug: concurrentdictionary-getoradd-vs
 Tags: .net, coding
 
 Some recent performance profiling of a server application under load turned up

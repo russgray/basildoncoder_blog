@@ -1,4 +1,4 @@
-post_id: Project-Euler-Problem-3
+post_id: project-euler-problem-3
 Author: Meenakshi Sundaram
 Date: 2010-08-02 14:43:30
 Author_Email: noreply@blogger.com

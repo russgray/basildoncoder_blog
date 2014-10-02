@@ -1,7 +1,7 @@
 Title: Hackish Monitoring With Python and wevtutil
 Date: 2012-09-27 11:06
 Author: Russell Gray
-Slug: Hackish-Monitoring-With-Python-and-wevtutil
+Slug: hackish-monitoring-with-python-and
 
 I recently started at a new role and was asked, as a way to get a handle on
 part of the codebase, to add some logging and monitoring to a key service that

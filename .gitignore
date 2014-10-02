@@ -5,3 +5,4 @@ cache
 linkdoc
 
 *.pyc
+id_dsa_digitalocean.pem

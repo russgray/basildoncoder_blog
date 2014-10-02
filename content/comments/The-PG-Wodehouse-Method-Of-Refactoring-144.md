@@ -1,4 +1,4 @@
-post_id: The-PG-Wodehouse-Method-Of-Refactoring
+post_id: pg-wodehouse-method-of-refactoring
 Author: Guidelines For Working With External Code Libraries - Smashing Magazine
 Date: 2011-06-20 15:35:16
 Author_Email: noreply@blogger.com

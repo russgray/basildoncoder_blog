@@ -1,0 +1,7 @@
+    # general purpose rewrite of old urls
+    rewrite "^/blog/\d{4}/\d{2}/(.*)$" /blog/$1 last ;
+
+    # specific rewrites of old urls
+    location /blog/2008/03/arthur-c-clarke-16121917-18032008.html {
+        return 301 /blog/Arthur-C-Clarke-Indistinguishable-From-Magic.html;
+    }

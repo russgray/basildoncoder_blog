@@ -1,4 +1,4 @@
-post_id: Fab-Fib
+post_id: fab-fib
 Author: Don Stewart
 Date: 2008-01-26 18:19:53
 Author_Email: noreply@blogger.com

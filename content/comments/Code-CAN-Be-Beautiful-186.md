@@ -1,4 +1,4 @@
-post_id: Code-CAN-Be-Beautiful
+post_id: code-can-be-beautiful
 Author: -= Linkage 2007.02.25 =-
 Date: 2009-01-26 15:38:32
 Author_Email: noreply@blogger.com

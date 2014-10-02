@@ -1,4 +1,4 @@
-post_id: Bash-History-Spelunking
+post_id: bash-history-spelunking
 Author: Random Musings
 Date: 2008-04-16 16:50:15
 Author_Email: noreply@blogger.com

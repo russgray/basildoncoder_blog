@@ -1,7 +1,7 @@
 Title: Technical Book Club: Object Oriented Analysis & Design, Chapter 1
 Date: 2008-01-27 23:31
 Author: Russell Gray
-Slug: Technical-Book-Club-Object-Oriented-Analysis-Design-Chapter-1
+Slug: technical-book-club-object-oriented
 Tags: book club, software engineering
 
 ![image][1]

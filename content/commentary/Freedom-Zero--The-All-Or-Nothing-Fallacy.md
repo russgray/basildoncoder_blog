@@ -1,7 +1,7 @@
 Title: Freedom Zero: The All-Or-Nothing Fallacy
 Date: 2008-01-29 13:10
 Author: Russell Gray
-Slug: Freedom-Zero-The-All-Or-Nothing-Fallacy
+Slug: freedom-zero-all-or-nothing-fallacy
 
 [Jeff Atwood][1] has an [article][2] up today bemoaning the fact that
 seemingly nobody "gives a crap about freedom zero". Well, my initial reaction

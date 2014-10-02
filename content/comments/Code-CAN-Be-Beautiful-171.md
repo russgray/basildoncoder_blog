@@ -1,4 +1,4 @@
-post_id: Code-CAN-Be-Beautiful
+post_id: code-can-be-beautiful
 Author: Georgi Y. Dimitrov
 Date: 2008-02-22 23:50:58
 Author_Email: noreply@blogger.com

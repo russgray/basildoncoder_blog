@@ -1,4 +1,4 @@
-post_id: Legacy-Code-Refactoring-and-Ownership
+post_id: legacy-code-refactoring-and-ownership
 Author: JS
 Date: 2007-12-14 07:05:41
 Author_Email: noreply@blogger.com

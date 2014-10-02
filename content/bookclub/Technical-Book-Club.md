@@ -1,7 +1,7 @@
 Title: Technical Book Club
 Date: 2007-12-05 18:27
 Author: Russell Gray
-Slug: Technical-Book-Club
+Slug: technical-book-club
 Tags: patterns, software engineering, coding, book club
 
 Back in October, personal finance blogger Trent at [The Simple Dollar][1]

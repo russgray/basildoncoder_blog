@@ -1,4 +1,4 @@
-post_id: The-PG-Wodehouse-Method-Of-Refactoring
+post_id: pg-wodehouse-method-of-refactoring
 Author: Mike Crowl
 Date: 2008-03-24 07:27:05
 Author_Email: noreply@blogger.com

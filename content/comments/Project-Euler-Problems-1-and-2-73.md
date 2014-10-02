@@ -1,4 +1,4 @@
-post_id: Project-Euler-Problems-1-and-2
+post_id: project-euler-problems-1-and-2
 Author: The burden of FP « Sliding up the banister
 Date: 2008-04-06 17:58:33
 Author_Email: noreply@blogger.com

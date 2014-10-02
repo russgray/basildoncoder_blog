@@ -1,4 +1,4 @@
-post_id: Project-Euler-Problem-5
+post_id: project-euler-problem-5
 Author: progra
 Date: 2010-07-20 23:08:07
 Author_Email: noreply@blogger.com

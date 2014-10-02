@@ -1,7 +1,7 @@
 Title: The Lightbulb Moment
 Date: 2008-03-25 18:06
 Author: Russell Gray
-Slug: The-Lightbulb-Moment
+Slug: lightbulb-moment
 
 Weiqi Gao has a post up today discussing the trials of grokking
 [Scala][1]. Scala is a language I want to take a much closer look at later

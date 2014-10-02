@@ -1,4 +1,4 @@
-post_id: Project-Euler-Problems-1-and-2
+post_id: project-euler-problems-1-and-2
 Author: Jer
 Date: 2011-01-27 20:40:24
 Author_Email: noreply@blogger.com

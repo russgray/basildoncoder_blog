@@ -1,4 +1,4 @@
-post_id: Project-Euler-Problem-3
+post_id: project-euler-problem-3
 Author: pyNewb
 Date: 2010-03-19 23:19:24
 Author_Email: noreply@blogger.com

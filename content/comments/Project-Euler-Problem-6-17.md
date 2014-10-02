@@ -1,4 +1,4 @@
-post_id: Project-Euler-Problem-6
+post_id: project-euler-problem-6
 Author: wrf3
 Date: 2008-08-30 16:07:30
 Author_Email: noreply@blogger.com

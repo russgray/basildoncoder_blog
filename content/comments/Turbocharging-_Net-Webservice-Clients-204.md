@@ -1,4 +1,4 @@
-post_id: Turbocharging-_Net-Webservice-Clients
+post_id: turbocharging-net-webservice-clients
 Author: feed
 Date: 2008-08-11 07:16:06
 Author_Email: noreply@blogger.com

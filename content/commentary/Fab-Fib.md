@@ -1,7 +1,7 @@
 Title: Fab Fib
 Date: 2008-01-26 15:49
 Author: Russell Gray
-Slug: Fab-Fib
+Slug: fab-fib
 Tags: coding, software engineering
 
 [Scott Hanselman][1] continues his [Weekly Source Code][2] series with a look

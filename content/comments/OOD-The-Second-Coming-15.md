@@ -1,4 +1,4 @@
-post_id: OOD-The-Second-Coming
+post_id: ood-second-coming
 Author: eti
 Date: 2009-08-03 16:26:07
 Author_Email: noreply@blogger.com

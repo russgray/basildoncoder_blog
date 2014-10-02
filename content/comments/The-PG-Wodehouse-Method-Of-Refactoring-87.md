@@ -1,4 +1,4 @@
-post_id: The-PG-Wodehouse-Method-Of-Refactoring
+post_id: pg-wodehouse-method-of-refactoring
 Author: Manne Laukkanen
 Date: 2008-03-23 08:47:12
 Author_Email: noreply@blogger.com

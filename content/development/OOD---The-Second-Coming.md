@@ -1,7 +1,7 @@
 Title: OOD - The Second Coming
 Date: 2009-01-16 16:00
 Author: Russell Gray
-Slug: OOD-The-Second-Coming
+Slug: ood-second-coming
 
 Over the last couple of months I've been burning up my free time on a pet
 project (hence the scarcity of posting here). This particular project is a web

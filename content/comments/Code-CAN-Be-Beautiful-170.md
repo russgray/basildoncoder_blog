@@ -1,4 +1,4 @@
-post_id: Code-CAN-Be-Beautiful
+post_id: code-can-be-beautiful
 Author: Weave Jester
 Date: 2008-02-22 23:39:45
 Author_Email: noreply@blogger.com

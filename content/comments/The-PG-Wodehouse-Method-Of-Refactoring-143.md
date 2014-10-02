@@ -1,4 +1,4 @@
-post_id: The-PG-Wodehouse-Method-Of-Refactoring
+post_id: pg-wodehouse-method-of-refactoring
 Author: Mental Trackmarks » Just ask jeeves
 Date: 2010-05-31 23:43:39
 Author_Email: noreply@blogger.com

@@ -1,7 +1,7 @@
 Title: Marshalling a Variable-Length Array From Unmanaged Code In C#
 Date: 2009-03-31 20:03
 Author: Russell Gray
-Slug: Marshalling-a-Variable-Length-Array-From-Unmanaged-Code-In-CSharp
+Slug: marshalling-variable-length-array-from
 
 I recently spent time working on some C# code to interact with a simple
 [DNS-SD][1] system. This requires using [DNS TXT records][2],

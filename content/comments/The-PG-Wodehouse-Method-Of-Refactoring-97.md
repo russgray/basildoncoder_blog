@@ -1,4 +1,4 @@
-post_id: The-PG-Wodehouse-Method-Of-Refactoring
+post_id: pg-wodehouse-method-of-refactoring
 Author: battis.net » Blog Archive » Multiple Intelligences About Coding
 Date: 2008-03-23 15:55:30
 Author_Email: noreply@blogger.com

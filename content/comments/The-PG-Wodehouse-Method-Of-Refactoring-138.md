@@ -1,4 +1,4 @@
-post_id: The-PG-Wodehouse-Method-Of-Refactoring
+post_id: pg-wodehouse-method-of-refactoring
 Author: Beauty of Code » Blog Archive » Ideas for analysing legacy code
 Date: 2008-05-31 10:14:03
 Author_Email: noreply@blogger.com

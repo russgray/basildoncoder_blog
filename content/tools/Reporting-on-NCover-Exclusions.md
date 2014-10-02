@@ -1,7 +1,7 @@
 Title: Reporting on NCover Exclusions
 Date: 2008-02-20 19:54
 Author: Russell Gray
-Slug: Reporting-on-NCover-Exclusions
+Slug: reporting-on-ncover-exclusions
 Tags: .net, coding, software engineering
 
 On a recent project, my team was set the task of achieving 100% unit test

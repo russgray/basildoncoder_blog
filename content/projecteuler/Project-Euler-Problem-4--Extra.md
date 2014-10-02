@@ -1,12 +1,12 @@
 Title: Project Euler Problem 4: Extra
 Date: 2008-04-22 13:10
 Author: Russell Gray
-Slug: Project-Euler-Problem-4-Extra
+Slug: project-euler-problem-4-extra
 
-Couple of things to add to [yesterday's post][1] about [problem
-4][2]. As is so often
-the case in life, no sooner had I finished the article than I realised there
-was an obvious additional step I could make, which I'd somehow failed to spot.
+Couple of things to add to [yesterday's post][1] about [problem 4][2]. As is
+so often the case in life, no sooner had I finished the article than I
+realised there was an obvious additional step I could make, which I'd somehow
+failed to spot.
 
 Regarding the C# solution, an easy win having implemented the Reverse
 extension method would be to add an IsPalindrome extension to the string class
@@ -59,11 +59,10 @@ The loop now looks like this:
     }
 
 If you are interested in the Project Euler problems but craving more detailed
-analysis, [Joel Neely][3] is [working
-through][4] at a similar
-rate to me, but focusing his efforts on Scala and studying each problem and
-its solution in greater depth rather than flitting from language to language.
-Highly recommended.
+analysis, [Joel Neely][3] is [working through][4] at a similar rate to me, but
+focusing his efforts on Scala and studying each problem and its solution in
+greater depth rather than flitting from language to language. Highly
+recommended.
 
 
 [1]: {filename}/projecteuler/Project-Euler-Problem-4.md

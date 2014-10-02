@@ -1,4 +1,4 @@
-post_id: The-PG-Wodehouse-Method-Of-Refactoring
+post_id: pg-wodehouse-method-of-refactoring
 Author: Poul-Henning Kamp
 Date: 2008-03-23 20:49:09
 Author_Email: noreply@blogger.com

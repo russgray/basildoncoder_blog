@@ -1,4 +1,4 @@
-post_id: Project-Euler-Problems-1-and-2
+post_id: project-euler-problems-1-and-2
 Author: Gipsy Gopinathan
 Date: 2010-08-21 03:05:06
 Author_Email: noreply@blogger.com

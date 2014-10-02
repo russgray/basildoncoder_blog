@@ -1,4 +1,4 @@
-post_id: Code-CAN-Be-Beautiful
+post_id: code-can-be-beautiful
 Author: Michael Trick's Operations Research Blog » P.G. Wodehouse approach to Modeling?
 Date: 2008-03-23 18:44:15
 Author_Email: noreply@blogger.com

@@ -1,7 +1,7 @@
 Title: Code CAN Be Beautiful
 Date: 2008-02-22 17:57
 Author: Russell Gray
-Slug: Code-CAN-Be-Beautiful
+Slug: code-can-be-beautiful
 
 In his [review][1] of *[Code Is Beautiful][2]*, Jeff Atwood decides that no,
 actually it isn't. He's fairly adamant about it too:

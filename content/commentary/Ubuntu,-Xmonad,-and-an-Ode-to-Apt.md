@@ -1,22 +1,20 @@
 Title: Ubuntu, Xmonad, and an Ode to Apt
 Date: 2008-08-10 23:34
 Author: Russell Gray
-Slug: Ubuntu-Xmonad-and-an-Ode-to-Apt
+Slug: ubuntu-xmonad-and-ode-to-apt
 
 This weekend I finally got around to updating my main Linux box from Ubuntu
 7.10 to 8.04 (yes, I know, 4 months late - but moving fast!). The highly
-excellent [xmonad][1] has made it into the main Ubuntu
-repositories, so I discarded my own build and grabbed the packaged version -
-which promptly didn't work as expected on my dual-head setup. Gah.
+excellent [xmonad][1] has made it into the main Ubuntu repositories, so I
+discarded my own build and grabbed the packaged version - which promptly
+didn't work as expected on my dual-head setup. Gah.
 
-[A bit of googling
-suggested][2]
-that the problem lay with the upstream debian package, which contained a build
-of libghc6-x11-dev that was compiled without xinerama support. This left me
-with a choice of either waiting for the package to get sorted out, or to do
-the build myself again. I decided to do my own build rather than live without
-xmonad, but rather than mucking about with tarballs I could at least now get
-the source from the package repository.
+[A bit of googling suggested][2] that the problem lay with the upstream debian
+package, which contained a build of libghc6-x11-dev that was compiled without
+xinerama support. This left me with a choice of either waiting for the package
+to get sorted out, or to do the build myself again. I decided to do my own
+build rather than live without xmonad, but rather than mucking about with
+tarballs I could at least now get the source from the package repository.
 
 The appropriate steps, for anyone interested or having the same problem,
 are:

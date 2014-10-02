@@ -1,7 +1,7 @@
 Title: Turbocharging .Net Webservice Clients
 Date: 2007-12-15 19:51
 Author: Russell Gray
-Slug: Turbocharging-_Net-Webservice-Clients
+Slug: turbocharging-net-webservice-clients
 Tags: .net, coding, software engineering
 
 Since the first version of .Net and its associated toolset, Microsoft have
