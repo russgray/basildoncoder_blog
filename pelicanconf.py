@@ -30,7 +30,7 @@ DEFAULT_PAGINATION = 10
 RELATIVE_URLS = True
 
 PLUGIN_PATHS = ['/opt/pelican-plugins']
-PLUGINS = ['pelican_comments', 'render_math', 'tipue_search', 'sitemap', 'extract_toc']
+PLUGINS = ['pelican_comments', 'render_math', 'tipue_search', 'sitemap', 'extract_toc', 'neighbors']
 ARTICLE_EXCLUDES = ['comments', 'pages']
 MD_EXTENSIONS = ['codehilite(css_class=highlight)', 'extra', 'subscript', 'toc']
 
@@ -60,8 +60,11 @@ SITEMAP = {
 SOCIAL = (
         ('Twitter', 'http://twitter.com/russgray'),
         ('Github', 'http://github.com/russgray'),
+        ('LinkedIn', 'http://uk.linkedin.com/in/russgray/'),
         ('Email', 'mailto:russgray@gmail.com'),
           )
+
+GOOGLE_PLUS_PROFILE_URL = 'https://plus.google.com/u/0/102559471807447493728'
 
 # Landing Page
 PROJECTS = [{
@@ -80,6 +83,7 @@ PROJECTS = [{
                 'description': 'Zero-tech backup service'
             },
         ]
+
 LANDING_PAGE_ABOUT = {
         'title': '.Net by day, python come nightfall',
         'details': """
