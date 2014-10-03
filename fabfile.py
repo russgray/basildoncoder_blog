@@ -57,11 +57,12 @@ def reserve():
     serve()
 
 def preview():
-    local('env/bin/pelican -s publishconf.py')
+    clean()
+    local('env/bin/pelican -s publishconf.py content')
 
 @hosts(production)
 def publish():
-    local('env/bin/pelican -s publishconf.py content')
+    preview()
 
     tmp_dir = '/home/russgray/apps/basildoncoder/blog'
     project.rsync_project(
