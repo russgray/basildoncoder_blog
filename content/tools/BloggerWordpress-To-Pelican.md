@@ -35,7 +35,7 @@ import process creates inline links though, so I wanted to fix that.
 Check your page interlinks to make sure the import process picked them up
 correctly. If not, edit them yourself to the following format:
 
-	[my link text][5]
+	[my link text]({filename}/path/to/my-post.md)
 
 Note the `{filename}` macro - that's what pelican will use to generate your
 links in the final html.
@@ -47,7 +47,7 @@ inline or reference, or toggle between them.
 
 	:::bash
 	for FILE in $(find content -type f -not -path "content/comments/*" -iname '*.md')
-	do 
+	do
 		formd -r < "$FILE" | sponge "$FILE"
 	done
 
@@ -148,5 +148,4 @@ You'll get output like this:
 [2]: http://blogger2wordpress.appspot.com
 [3]: http://blog.bstpierre.org/
 [4]: https://github.com/bstpierre/pelican-comments
-[5]: {filename}/path/to/blog-post.md
 [6]: https://drbunsen.github.io/formd/

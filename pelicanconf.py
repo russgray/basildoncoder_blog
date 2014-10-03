@@ -33,8 +33,15 @@ PLUGIN_PATHS = ['/opt/pelican-plugins']
 PLUGINS = ['pelican_comments', 'render_math', 'tipue_search', 'sitemap', 'extract_toc']
 ARTICLE_EXCLUDES = ['comments', 'pages']
 MD_EXTENSIONS = ['codehilite(css_class=highlight)', 'extra', 'subscript', 'toc']
+
+# templates
 DIRECT_TEMPLATES = (('index', 'tags', 'categories','archives', 'search', '404'))
-STATIC_PATHS = ['theme/images', 'images']
+
+# additional static files/directories
+STATIC_PATHS = ['theme/images', 'images', 'extra/robots.txt', ]
+EXTRA_PATH_METADATA = {
+    'extra/robots.txt': {'path': 'robots.txt'},
+    }
 
 SITEMAP = {
     'format': 'xml',
