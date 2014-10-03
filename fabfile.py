@@ -57,7 +57,7 @@ def reserve():
     serve()
 
 def preview():
-    local('pelican -s publishconf.py')
+    local('env/bin/pelican -s publishconf.py')
 
 @hosts(production)
 def publish():

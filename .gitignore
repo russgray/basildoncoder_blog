@@ -3,6 +3,7 @@ output
 cache
 .vagrant
 linkdoc
+logs
 
 *.pyc
 id_dsa_digitalocean.pem
