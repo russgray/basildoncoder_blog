@@ -2,7 +2,7 @@
 
 # install core packages
 apt-get update
-apt-get install -y vim-nox python python-dev python-virtualenv build-essential git libxml2-dev libxslt1-dev screen curl pandoc linklint fabric
+apt-get install -y vim-nox python python-dev python-virtualenv build-essential git libxml2-dev libxslt1-dev screen curl pandoc linklint fabric moreutils
 pip install requests
 
 
