@@ -52,12 +52,12 @@ Blog.
 
 # Profiling
 
-[Windows Performance Recorder]7] in conjunction with Windows Performance
-[Analyzer is an insanely powerful way of profiling performance of .Net
-[applications in production without the overhead of more traditional code
-[profilers. It is analogous to dtrace on *nix systems.
+[Windows Performance Recorder][7] in conjunction with Windows Performance
+Analyzer is an insanely powerful way of profiling performance of .Net
+applications running in production, without the overhead of more traditional
+code profilers. It is analogous to dtrace on *nix systems.
 
-For looking at kernel context switches (indicative of blocking calls and lock
+To look at kernel context switches (indicative of blocking calls and lock
 contention), open `Computation -> CPU Usage (Precise) -> Context Switch Count
 by Process, Thread`. Rearrange the columns so that `NewProcessName`,
 `NewThreadStack`, `ReadyingProcess`, and `ReadyThreadStack` are to the left of
@@ -67,10 +67,11 @@ can drill down into your code and see exactly where threads are being switched
 back in and what happened to allow them to continue (e.g. which line of code
 was blocking, and which line of code unblocked it).
 
-With a bit of practice, this is like having the Eye of freakin' Sauron glaring
-at your code for you. Coarse-grained locks deep in the .Net framework itself
-are dragged kicking and screaming into the sunlight. Awful connection pool
-management in your database driver is held up for all to see. No-one escapes.
+With a bit of practice, this is like having the *Eye of freakin' Sauron*
+glaring at your code for you. Coarse-grained locks deep in the .Net framework
+itself are dragged kicking and screaming into the sunlight. Awful connection
+pool management in your database driver is held up for all to see. No-one
+escapes.
 
 # Debugging
 
@@ -131,9 +132,9 @@ Enable DML:
 WinDbg is not what you'd call beginner-friendly. The following pages have some
 useful lists of commands in addition to those I've covered below.
 
-- http://windbg.info/doc/1-common-cmds.html
-- http://msdn.microsoft.com/en-us/library/bb190764.aspx
-- http://theartofdev.wordpress.com/windbg-cheat-sheet/
+- [Common WinDbg Commands (Thematically Grouped)][9]
+- [SOS.dll (SOS Debugging Extension)][10]
+- [WinDbg cheat sheet][11]
 
 ### Info
 
@@ -147,7 +148,7 @@ Command | Description | Example
 Command | Description
 --- | ---
 `!threads` | Display all threads
-`.shell -ci "!threads" findstr 15` | pipes output of !threads into findstr, useful for e.g. looking up a managed thread ID (OSID) to find the thread ID that can be used with `~s`
+`.shell -ci "!threads" findstr 15` | pipes output of `!threads` into `findstr`, useful for e.g. looking up a managed thread ID (OSID) to find the thread ID that can be used with `~s`
 `~22s` | switch debugger to thread ordinal 22
 `~~[12AB]s` | switch to managed thread ID 0x12AB
 `!pe` | dump exception on current thread
@@ -179,3 +180,6 @@ Command | Description
 [6]: http://kejser.org/setting-yourself-up-for-debugging/
 [7]: http://msdn.microsoft.com/en-us/library/windows/hardware/hh448205.aspx
 [8]: http://www.windowstipspage.com/symbol-server-path-windbg-debugging/
+[9]: http://windbg.info/doc/1-common-cmds.html
+[10]: http://msdn.microsoft.com/en-us/library/bb190764.aspx
+[11]: http://theartofdev.wordpress.com/windbg-cheat-sheet/
