@@ -38,7 +38,7 @@ MD_EXTENSIONS = ['codehilite(css_class=highlight)', 'extra', 'subscript', 'toc']
 DIRECT_TEMPLATES = (('index', 'tags', 'categories','archives', 'search', '404'))
 
 # additional static files/directories
-STATIC_PATHS = ['theme/images', 'images', 'extra/robots.txt', ]
+STATIC_PATHS = ['theme/images', 'images', 'extra/robots.txt', 'extra/Russell-Gray-CV.pdf']
 EXTRA_PATH_METADATA = {
     'extra/robots.txt': {'path': 'robots.txt'},
     }
