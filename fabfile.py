@@ -19,10 +19,10 @@ def reflinks(f):
     local('formd -r < {0} | sponge {0}'.format(f))
 
 def links():
-    local('linklint -quiet -no_anchors -doc linkdoc -root output -net /@')
+    local('linklint -quiet -no_anchors -doc linkdoc -root output -net /@ /drafts/@')
 
 def locallinks():
-    local('linklint -quiet -no_anchors -doc linkdoc -root output /@')
+    local('linklint -quiet -no_anchors -doc linkdoc -root output /@ /drafts/@')
 
 def clean():
     if os.path.isdir(DEPLOY_PATH):

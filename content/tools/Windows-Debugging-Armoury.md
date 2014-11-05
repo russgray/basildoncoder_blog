@@ -20,13 +20,10 @@ might create something similar for dealing with java on Linux at some point.
 - [SOSEX 4][2]
 - [Psscor4 Managed-Code Debugging Extension for WinDbg][3]
 
-Alternatively, you can download [my zip file][4] of these tools. They don't
-require installation, just copy it where you need it. Of course, if you don't
-trust me, get them from source. And get permission from your friendly sysadmin
-before putting this stuff on a production box.
+Alternatively, you can download [my zip file][4] of these tools. No installation needed, just copy it where you need it. Of course, if you don't trust me, get everything from source. And get permission from your friendly sysadmin before putting this stuff on a production box.
 
 # Set-up Symbols
-Create directories on a disk with a couple gig free space:
+Create directories on a disk with a couple of gigabytes free space:
 
 	mkdir C:\Symbols
 	mkdir C:\SymbolCache
@@ -45,17 +42,21 @@ associated PDB files in `C:\temp\PDB`:
 Add `C:\Program Files (x86)\Windows Kits\8.0\Debuggers\x86` to your path if
 you expect to use `symstore` frequently.
 
-For more information on symstore, check out the [symstore docs][5].aspx).
+For more information on symstore, check out the [symstore docs][5].
 
 Also see [Setting Yourself up for Debugging][6] at Thomas Kejser's Database
 Blog.
 
-# Profiling
+# ETW Profiling
+
+Event Tracing for Windows is a low-level, low-impact form of system tracing that lies dormant until activated with either xperf or Windows Performance Recorder. It is analogous to dtrace on *nix systems.
+
+## WPR/WPA
 
 [Windows Performance Recorder][7] in conjunction with Windows Performance
 Analyzer is an insanely powerful way of profiling performance of .Net
 applications running in production, without the overhead of more traditional
-code profilers. It is analogous to dtrace on *nix systems.
+code profilers.
 
 To look at kernel context switches (indicative of blocking calls and lock
 contention), open `Computation -> CPU Usage (Precise) -> Context Switch Count
@@ -72,6 +73,10 @@ glaring at your code for you. Coarse-grained locks deep in the .Net framework
 itself are dragged kicking and screaming into the sunlight. Awful connection
 pool management in your database driver is held up for all to see. No-one
 escapes.
+
+## Flame Graphs
+
+[Flame graphs][8] are a very useful visualisation of CPU usage broken down by stack trace. They were originally designed to process dtrace profiles, but [Bruce Dawson wrote a pre-processor][9] that converts xperf/WPR traces to a compatible format. Check out the linked blog posts for details.
 
 # Debugging
 
@@ -125,16 +130,16 @@ Enable DML:
 
 	.prefer_dml 1
 
-[Further symbol path info][8]
+[Further symbol path info][10]
 
 ## Using WinDbg
 
 WinDbg is not what you'd call beginner-friendly. The following pages have some
 useful lists of commands in addition to those I've covered below.
 
-- [Common WinDbg Commands (Thematically Grouped)][9]
-- [SOS.dll (SOS Debugging Extension)][10]
-- [WinDbg cheat sheet][11]
+- [Common WinDbg Commands (Thematically Grouped)][11]
+- [SOS.dll (SOS Debugging Extension)][12]
+- [WinDbg cheat sheet][13]
 
 ### Info
 
@@ -176,10 +181,12 @@ Command | Description
 [2]: http://www.stevestechspot.com/SOSEXV40NowAvailable.aspx
 [3]: http://www.microsoft.com/en-gb/download/details.aspx?id=21255
 [4]: https://www.dropbox.com/s/15a26wbldqrke3y/debugging-toolkit.zip
-[5]: http://msdn.microsoft.com/en-us/library/windows/desktop/ms681378\(v=vs.85\
+[5]: http://msdn.microsoft.com/en-us/library/windows/desktop/ms681417
 [6]: http://kejser.org/setting-yourself-up-for-debugging/
 [7]: http://msdn.microsoft.com/en-us/library/windows/hardware/hh448205.aspx
-[8]: http://www.windowstipspage.com/symbol-server-path-windbg-debugging/
-[9]: http://windbg.info/doc/1-common-cmds.html
-[10]: http://msdn.microsoft.com/en-us/library/bb190764.aspx
-[11]: http://theartofdev.wordpress.com/windbg-cheat-sheet/
+[8]: http://www.brendangregg.com/FlameGraphs/cpuflamegraphs.html
+[9]: http://randomascii.wordpress.com/2013/03/26/summarizing-xperf-cpu-usage-with-flame-graphs/
+[10]: http://www.windowstipspage.com/symbol-server-path-windbg-debugging/
+[11]: http://windbg.info/doc/1-common-cmds.html
+[12]: http://msdn.microsoft.com/en-us/library/bb190764.aspx
+[13]: http://theartofdev.wordpress.com/windbg-cheat-sheet/
