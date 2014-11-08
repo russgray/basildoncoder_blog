@@ -31,7 +31,7 @@
 
 {% block content %}
 {% from '_includes/_defaults.html' import LANDING_PAGE_ABOUT with context %}
-{% from '_includes/_defaults.html' import PROJECTS with context %}
+{% from '_includes/_defaults.html' import TWITTER_FEED with context %}
 <div class="row-fluid">
     {% if LANDING_PAGE_ABOUT and LANDING_PAGE_ABOUT.title %}
     {% set css_class = 'span10 offset2' %}
@@ -50,12 +50,38 @@
         {% set css_class = 'span8' %}
         {% endif %}
         <div class="{{css_class}}">
-            <header>
-            <h1 id="about-me">About me</h1>
-            </header>
-            <div class="article-content">
-                {{ LANDING_PAGE_ABOUT.details }}
+            <div>
+                <header>
+                <h1 id="about-me">About me</h1>
+                </header>
+                <div class="article-content">
+                    {{ LANDING_PAGE_ABOUT.details }}
+                </div>
             </div>
+
+            {% if FEATURED_POSTS and articles %}
+            <hr />
+            <div>
+                <header>
+                <h1 id="featured-posts">Featured Posts</h1>
+                </header>
+                <div class="recent-posts">
+                {% for article in articles %}
+                    {% if article.slug in FEATURED_POSTS %}
+                        <article>
+                            <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }} {%if article.subtitle %} <small> {{ article.subtitle }} </small> {% endif %} </a>
+
+                        <section>
+                            posted in
+                            <a href="{{ SITEURL }}/categories.html#{{ article.category.slug }}-ref">{{ article.category }}</a>
+                        </section>
+                    </article>
+                    {% endif %}
+                {% endfor %}
+                </div>
+            </div>
+            {% endif %}
+
         </div>
         {% endif %}
 
@@ -65,16 +91,36 @@
         {% set css_class = 'span4' %}
         {% endif %}
         <div class="{{css_class}}">
-            <header>
-            <h1 id="my-projects">My Projects</h1>
-            </header>
-            {% for project in PROJECTS %}
-            <ul class="list-all-articles">
-                <li>
-                <a href="{{ project.url }}" title="{{ project.name }}">{{ project.name }}</a> <span class="proj-desc">{{ project.description }}</span>
-                </li>
-            </ul>
-            {%endfor %}
+            <div>
+                <header>
+                <h1 id="my-projects">My Projects</h1>
+                </header>
+                {% for project in PROJECTS %}
+                <ul class="list-all-articles">
+                    <li>
+                    <a href="{{ project.url }}" title="{{ project.name }}">{{ project.name }}</a> <span class="proj-desc">{{ project.description }}</span>
+                    </li>
+                </ul>
+                {%endfor %}
+            </div>
+
+            {% if TWITTER_FEED %}
+            <hr />
+            <div>
+                <header>
+                <h1 id="twitter-feed">My Tweets</h1>
+                </header>
+                <a  class="twitter-timeline"
+                    href="{{ TWITTER_FEED.href }}"
+                    data-widget-id="{{ TWITTER_FEED.data_widget_id }}"
+                    data-chrome="{{ TWITTER_FEED.data_chrome }}"
+                    data-tweet-limit="{{ TWITTER_FEED.data_tweet_limit }}">
+                    Tweets by @{{ TWITTER_FEED.username }}</a>
+
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            </div>
+            {% endif %}
+
         </div>
         {% endif %}
     </div>

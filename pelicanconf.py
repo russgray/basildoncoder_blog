@@ -66,6 +66,14 @@ SOCIAL = (
 
 GOOGLE_PLUS_PROFILE_URL = 'https://plus.google.com/u/0/102559471807447493728'
 
+TWITTER_FEED = {
+    'href': 'https://twitter.com/russgray',
+    'data_widget_id': '519773559837573120',
+    'data_chrome': 'nofooter noheader transparent',
+    'data_tweet_limit': '3',
+    'username': 'russgray'
+}
+
 # Landing Page
 PROJECTS = [{
                 'name': 'Tagwager',
@@ -84,8 +92,14 @@ PROJECTS = [{
             },
         ]
 
+FEATURED_POSTS = [
+    'pg-wodehouse-method-of-refactoring',
+    'marshalling-variable-length-array-from',
+    'turbocharging-net-webservice-clients',
+]
+
 LANDING_PAGE_ABOUT = {
-        'title': '.Net by day, python come nightfall',
+        'title': '.Net by day, python by night',
         'details': """
 
             <div itemscope itemtype="http://schema.org/Person">
@@ -98,7 +112,7 @@ LANDING_PAGE_ABOUT = {
 
                <p>I work at <a href="http://www.livedrive.com/" title="Livedrive Internet"
             itemprop="affiliation">Livedrive</a>, on online cloud storage provider, as a
-            backend developer focussing on performance, profiling, and writing new
+            backend developer focussing on performance, profiling, and new
             features.</p>
 
             </div>

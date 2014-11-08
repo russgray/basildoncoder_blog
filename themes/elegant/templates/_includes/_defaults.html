@@ -145,3 +145,9 @@ PROJECTS = [{
 {% set PROJECTS = PROJECTS %}
 {% endif %}
 
+{% if not TWITTER_FEED %}
+{% set TWITTER_FEED = '' %}
+{% else %}
+{% set TWITTER_FEED = TWITTER_FEED %}
+{% endif %}
+
