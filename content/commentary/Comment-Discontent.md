@@ -2,6 +2,7 @@ Title: Comment Discontent
 Date: 2008-07-30 17:01
 Author: Russell Gray
 Slug: comment-discontent
+Tags: rants
 
 There seems to have been a recent [outbreak][1] [in][2] [blog][3] [posts][4]
 about [code commenting][5]. As is so often the case with topics such as this,

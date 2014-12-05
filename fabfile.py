@@ -15,6 +15,9 @@ production = 'russgray@188.226.200.128:22'
 env.key_filename = '/home/vagrant/.ssh/id_dsa_digitalocean.pem'
 dest_path = '/apps/basildoncoder/blog'
 
+def drafts():
+    local("grep -ri '^Status:[[:space:]]*draft' content/**/*.md")
+
 def reflinks(f):
     local('formd -r < {0} | sponge {0}'.format(f))
 

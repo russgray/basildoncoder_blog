@@ -2,6 +2,7 @@ Title: Look Before You Look Before You Leap
 Date: 2008-10-24 15:32
 Author: Russell Gray
 Slug: look-before-you-look-before-you-leap
+Tags: rants
 
 Generally, I try to avoid turning this blog into some sort of [snark][1]-fest
 about other programmers or blogs. I've disagreed with Jeff Atwood [once][2] or

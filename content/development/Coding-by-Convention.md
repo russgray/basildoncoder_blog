@@ -98,7 +98,7 @@ Ah, but surely the kind of forward-thinking proto-company that builds its
 product on RoR would never hire non-Ruby-savvy developers anyway? That might
 be the case if you drink the [37signals][4] Kool-Aid and think that any RoR
 company is by default über-smart and infallible, but in the real world it
-doesn't work like that; there are countless tiny non- technical companies out
+doesn't work like that; there are countless tiny non-technical companies out
 there with just one or two developers - I know, because I spent a few years
 working at one - and maybe their current developers are cool enough to use
 RoR, but when they inevitably leave and the tech-illiterate management hire a

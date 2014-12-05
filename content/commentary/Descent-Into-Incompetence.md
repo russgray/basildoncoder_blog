@@ -2,6 +2,7 @@ Title: Descent Into Incompetence
 Date: 2008-02-02 16:10
 Author: Russell Gray
 Slug: descent-into-incompetence
+Tags: rants
 
 I am fairly heavily involved with recruitment where I work, being the
 author of the technical test and phone screen questions we use for
