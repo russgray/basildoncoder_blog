@@ -2,7 +2,7 @@
 
 # install core packages
 apt-get update
-apt-get install -y vim-nox python python-dev python-virtualenv build-essential git libxml2-dev libxslt1-dev screen curl pandoc linklint fabric moreutils
+apt-get install -y vim-nox python python-dev python-virtualenv build-essential git libxml2-dev libxslt1-dev screen curl pandoc linklint fabric moreutils zlib1g-dev
 pip install requests
 
 
@@ -36,7 +36,7 @@ pushd /vagrant
 
 # create virtualenv
 if [ ! -d env ]; then
-    virtualenv env
+    virtualenv --always-copy env 
 fi
 
 env/bin/pip install -r requirements.txt

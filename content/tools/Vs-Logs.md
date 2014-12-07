@@ -3,7 +3,6 @@ Date: 2014-12-05T14:42:53
 Author: Russell Gray
 Slug: visual-studio-logs
 Tags: coding, .net
-Status: draft
 
 Suffering from the accursed slow Visual Studio startup problem (which really shouldn't happen on the beefy i7 with 16GB RAM and SSD I use at work), I wanted to dig a little deeper and diagnose it.
 
