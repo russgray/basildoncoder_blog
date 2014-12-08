@@ -33,14 +33,17 @@ ln -f -s /home/vagrant/formd/formd /usr/local/bin/formd
 # do work in app directory
 pushd /vagrant
 
+su vagrant
 
 # create virtualenv
 if [ ! -d env ]; then
     virtualenv --always-copy env 
 fi
 
-env/bin/pip install -r requirements.txt
+# install pelican-comments first so that any reference in requirements.txt is already satisfied
 env/bin/pip install git+git://github.com/bstpierre/pelican-comments#egg=pelican_comments
+env/bin/pip install -r requirements.txt
 curl -s https://raw.githubusercontent.com/hutchison/markdown.subscript/master/subscript.py -o env/lib/python2.7/site-packages/markdown/extensions/subscript.py
 
+exit
 popd

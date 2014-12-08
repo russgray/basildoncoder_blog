@@ -1,5 +1,5 @@
 Title: Visual Studio Logs
-Date: 2014-12-05T14:42:53
+Date: 2014-12-08T16:17:24
 Author: Russell Gray
 Slug: visual-studio-logs
 Tags: coding, .net
