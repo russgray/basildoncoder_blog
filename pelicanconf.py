@@ -99,7 +99,7 @@ FEATURED_POSTS = [
 ]
 
 LANDING_PAGE_ABOUT = {
-        'title': '.Net by day, python by night',
+        'title': 'Java by day, .Net and python by night',
         'details': """
 
             <div itemscope itemtype="http://schema.org/Person">
@@ -110,8 +110,8 @@ LANDING_PAGE_ABOUT = {
             href="https://twitter.com/russgray/" title="My Twitter profile"
             itemprop="url">@russgray</a> at twitter.</p>
 
-               <p>I work at <a href="http://www.livedrive.com/" title="Livedrive Internet"
-            itemprop="affiliation">Livedrive</a>, on online cloud storage provider, as a
+               <p>I work at <a href="https://www.patientsknowbest.com/" title="Patients Know Best"
+            itemprop="affiliation">PKB</a>, a healthcare startup, as a
             backend developer focussing on performance, profiling, and new
             features.</p>
 
