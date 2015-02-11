@@ -1,5 +1,6 @@
 Title: ConcurrentDictionary: GetOrAdd vs GetOrAdd - One Of These Things Is Not Like The Other
 Date: 2014-01-13 18:00
+Modified: 2015-02-11 10:28
 Author: Russell Gray
 Slug: concurrentdictionary-getoradd-vs
 Tags: .net, coding
@@ -43,5 +44,7 @@ I won't post any code here because I don't want to get into any licencing
 issues, but if you have Resharper or dotPeek you can easily decompile the
 framework and verify this behaviour yourself.
 
+*Update*: Now that the code is open source, I've been able to [fix this and get it merged][2]. Hurrah for open source!
 
 [1]: http://msdn.microsoft.com/en-us/library/dd287191(v=vs.110.aspx)
+[2]: https://github.com/dotnet/corefx/pull/631
