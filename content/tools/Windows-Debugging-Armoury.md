@@ -1,9 +1,8 @@
 Title: Windows Debugging Armoury
-Date:
+Date: 2015-02-11T11:12:56+00:00
 Author: Russell Gray
 Slug: windows-debugging-armoury
 Tags: coding, .net
-Status: draft
 
 Searching around the web will reveal a number of debugging setup guides. There
 are lots of little tips and tricks that you pick up through a career of
@@ -72,11 +71,11 @@ With a bit of practice, this is like having the *Eye of freakin' Sauron*
 glaring at your code for you. Coarse-grained locks deep in the .Net framework
 itself are dragged kicking and screaming into the sunlight. Awful connection
 pool management in your database driver is held up for all to see. No-one
-escapes.
+escapes. 
 
 ## Flame Graphs
 
-[Flame graphs][8] are a very useful visualisation of CPU usage broken down by stack trace. They were originally designed to process dtrace profiles, but [Bruce Dawson wrote a pre-processor][9] that converts xperf/WPR traces to a compatible format. Check out the linked blog posts for details.
+[Flame graphs][8] are a very useful visualisation of CPU usage broken down by stack trace. They were originally designed to process dtrace profiles, but [Bruce Dawson wrote a pre-processor][9] that converts xperf/WPR traces to a compatible format. Check out the linked blog posts for details. Note that you probably want to use WPA first to pin down short intervals of interest, as trying to generate a flamegraph of, say, 5 seconds duration on software doing 30k requests per second is a bit of a system killer to say the least.
 
 # Debugging
 
@@ -126,7 +125,7 @@ Toggle debug info with:
 	!sym noisy
 	!sym quiet
 
-Enable DML:
+Enable DML (hyperlinks symbols so you can navigate the object graph with the mouse):
 
 	.prefer_dml 1
 
@@ -166,9 +165,9 @@ Command | Description
 `!psscor4.syncblk` | run command for all threads
 `!eestack -short -EE` | todo
 `~*e!\<command\>` | run command for all threads
-`!psscor4.dumpallexceptions` | todo
-`!sosex.mframe` | set current frame for !mdv
-`!sosex.mdv` | display arguments and parameters for current frame
+`!psscor4.dumpallexceptions` | dumps every `System.Exception` or subclass on the heap
+`!sosex.mframe` | set current frame for `!mdv`. Use `!mk` to identify frames
+`!sosex.mdv` | display arguments and parameters for current stack frame
 
 ### Memory
 Command | Description
