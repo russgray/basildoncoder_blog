@@ -1,9 +1,8 @@
 Title: A Handy Settings Pattern
-Date: 2014-10-30T14:20:43
+Date: 2015-02-20T11:44:20+00:00
 Author: Russell Gray
 Slug: a-handy-settings-pattern
 Tags: coding, .net, patterns
-Status: draft
 
 .Net has a fairly nice [strongly-typed settings file][1], but unfortunately
 the most common pattern of access is the big fat static accessor
@@ -105,7 +104,7 @@ the settings interface.
     }
 
 Finally, in your composition root map the static accessor for this Settings
-class to the interface. In this example I'm using SimpleInjector.
+class to the interface. In this example I'm using [SimpleInjector][2].
 
     :::csharp
     var container = new Container();
@@ -135,4 +134,5 @@ the Settings class automatically (at least, Resharper does - not sure about
 vanilla Visual Studio).
 
 
-[1]: http://bitly/1DC4tKk
+[1]: http://bit.ly/1DC4tKk
+[2]: https://simpleinjector.org/
