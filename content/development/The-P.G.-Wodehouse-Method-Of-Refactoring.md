@@ -111,12 +111,12 @@ that's our 'picture rail'. Every week we reprint the classes we have been
 working on, and replace the old printouts. Then we move them up towards the
 string, in accordance with how happy we are with the view.
 
-Obviously, this doesn't replace all the other tools we have for evaluating
-code quality - e.g. the aforementioned metrics, unit tests, manual QA, and so
-on. It does, however, make for a brilliant way of tracking our
-*subjective*satisfaction with the class. **Software quality tools can never
-completely replace the gut instinct of a developer** - you might have massive
-test coverage, but that won't help with subjective measures such as [code
+Obviously, this doesn't replace all the other tools we have for evaluating code
+quality - e.g. the aforementioned metrics, unit tests, manual QA, and so on. It
+does, however, make for a brilliant way of tracking our *subjective*
+satisfaction with the class. **Software quality tools can never completely
+replace the gut instinct of a developer** - you might have massive test
+coverage, but that won't help with subjective measures such as [code
 smells][10]. With Wodehouse-style refactoring, we can now easily keep track of
 which code we are happy with, and which code we remain deeply suspicious of.
 
