@@ -12,7 +12,6 @@ DEPLOY_PATH = env.deploy_path
 
 # Remote server configuration
 production = 'russgray@188.226.200.128:22'
-env.key_filename = '/home/vagrant/.ssh/id_dsa_digitalocean.pem'
 dest_path = '/apps/basildoncoder/blog'
 
 def drafts():
@@ -72,14 +71,11 @@ def publish():
         remote_dir=tmp_dir,
         exclude=".DS_Store",
         local_dir=DEPLOY_PATH.rstrip('/') + '/',
-        delete=True,
         extra_opts='-c',
     )
-    run('sudo -u www-data rm -rf {}/*'.format(dest_path))
-    run('sudo -u www-data cp -r {}/* {}'.format(tmp_dir, dest_path))
-    run('sudo -u www-data chmod -R 744 {}'.format(dest_path))
-    run('sudo -u www-data chmod -R +X {}'.format(dest_path))
+    sudo('rsync -rtv {}/ {}/'.format(tmp_dir, dest_path), user='www-data', shell=False)
 
 @hosts(production)
 def r_uname():
     run('uname -a')
+
