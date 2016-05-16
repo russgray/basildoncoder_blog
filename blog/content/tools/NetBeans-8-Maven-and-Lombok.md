@@ -23,7 +23,7 @@ Here's what I did:
             <scope>provided</scope>
         </dependency>
 
-2. Add the maven compiler plugin for lombok. Note that I disable adding the generated code to the maven build path; the resons for this will be clear later:
+2. Add the maven compiler plugin for lombok. Note that I disable adding the generated code to the maven build path; the reasons for this will be clear later:
 
         :::xml
         <build>

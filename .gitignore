@@ -8,3 +8,4 @@ logs
 *.pyc
 id_dsa_digitalocean.pem
 .DS_Store
+roles/

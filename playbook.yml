@@ -1,0 +1,40 @@
+- hosts: all
+  become: yes
+  vars_files:
+    - vars/main.yml
+  roles:
+    - angstwad.docker_ubuntu
+  tasks:
+    - name: Add vagrant user to docker group.
+      user: name=vagrant groups=docker append=yes
+
+    - name: Install required system packages.
+      apt: pkg={{ item }} state=installed update-cache=yes
+      with_items: "{{ system_packages }}"
+
+    - name: Get dotfiles
+      git: repo=https://github.com/russgray/dotfiles.git dest=/home/vagrant/dotfiles
+
+    - name: Create screenrc symlink
+      file: src=/home/vagrant/dotfiles/screenrc dest=/home/vagrant/.screenrc state=link
+
+    - name: Add bash functions
+      blockinfile:
+        dest: /home/vagrant/.bashrc
+        block: |
+          dcleanup(){
+            docker rm -v $(docker ps --filter status=exited -q 2>/dev/null) 2>/dev/null
+            docker rmi $(docker images --filter dangling=true -q 2>/dev/null) 2>/dev/null
+          }
+
+    # - name: Check or build pelican image
+    #   docker_image: path="/vagrant/docker" name="russgray/pelican-docker" state=present
+
+    - name: Grab pelican image
+      docker: 
+        image: russgray/blog-builder 
+        state: present
+        pull: always
+
+    - name: Enabling ssh agent forwarding
+      lineinfile: dest=/etc/ssh/ssh_config line="ForwardAgent yes"

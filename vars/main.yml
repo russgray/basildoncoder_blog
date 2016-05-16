@@ -1,0 +1,6 @@
+nodejs_version: "0.12"
+nodejs_forever: false
+
+system_packages:
+  - git
+  - fabric
