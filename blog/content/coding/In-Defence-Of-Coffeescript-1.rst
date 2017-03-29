@@ -1,8 +1,10 @@
-Title: In Defence Of Coffeescript
-Author: Russell Gray
-Slug: in-defence-of-coffeescript
-Tags: coding, javascript, coffeescript, react, gulp
-Status: draft
+In Defence Of Coffeescript
+##########################
+
+:authors: Russell Gray
+:slug: in-defence-of-coffeescript-1
+:tags: coding, javascript, coffeescript, react, gulp
+:status: draft
 
 It seems quite trendy these days to bash coffeescript as an unnecessary
 abstraction, proposing instead to use javascript directly. I would agree
@@ -25,7 +27,8 @@ everywhere you look (this *is* node, after all).
 It is totally possible to write your gulpfile in coffeescript with a
 simple bootstrapper in gulpfile.js. I have to say I prefer this:
 
-    :::coffeescript
+.. code-block:: coffeescript
+
     gulp.task 'js:minify', ['browserify'], ->
         gulp.src './output/react-monitorbox.js'
             .pipe plumber()
@@ -35,7 +38,8 @@ simple bootstrapper in gulpfile.js. I have to say I prefer this:
 
 to this:
 
-    :::javascript
+.. code-block:: javascript
+
     gulp.task('js:minify', ['browserify'], function() {
         return gulp.src('./output/react-monitorbox.js')
             .pipe(plumber())
@@ -51,7 +55,8 @@ write markup in your script, which gets transpiled to raw javascript API
 calls. Unsurprisingly the raw JS is a bit ugly, which is why Facebook
 hide it behind a DSL.
 
-    :::javascript
+.. code-block:: javascript
+
     var CommentBox = React.createClass({
         render: function() {
             return (
@@ -62,10 +67,25 @@ hide it behind a DSL.
         }
     });
 
-    :::coffeescript
+.. code-block:: coffeescript
+
     CommentBox = React.createClass
         render: ->
             R.div className:"commentBox",
                 'Hello, world! I am a CommentBox.'
 
+The chemical formula for pure water is |H2O| so |f1|, |f2|... |fn|.
+
+
+.. math::
+
+    \frac{2 \pm \sqrt{7}}{3}
+
+
 http://neugierig.org/software/blog/2014/02/react-jsx-coffeescript.html
+
+.. |H2O| replace:: H\ :sub:`2`\ O
+.. |f1| replace:: f\ :sub:`1`\ 
+.. |f2| replace:: f\ :sub:`2`\ 
+.. |fn| replace:: f\ :sub:`n`\ 
+

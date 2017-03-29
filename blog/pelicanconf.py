@@ -36,7 +36,7 @@ ARTICLE_EXCLUDES = ['comments', 'pages']
 MD_EXTENSIONS = ['codehilite(css_class=highlight)', 'extra', 'subscript', 'toc']
 
 # templates
-DIRECT_TEMPLATES = (('index', 'tags', 'categories','archives', 'search', '404'))
+DIRECT_TEMPLATES = (('index', 'tags', 'categories', 'archives', 'search', '404'))
 
 # additional static files/directories
 STATIC_PATHS = ['theme/images', 'images', 'extra/robots.txt', 'extra/Russell-Gray-CV.pdf']

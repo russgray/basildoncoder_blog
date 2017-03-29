@@ -5,6 +5,7 @@ VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box = "ubuntu/wily64"
+  config.ssh.forward_agent = true
 
   config.vm.provision "ansible_local" do |ansible|
     ansible.verbose = "v"

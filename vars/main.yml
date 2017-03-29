@@ -4,3 +4,4 @@ nodejs_forever: false
 system_packages:
   - git
   - fabric
+  - python-matplotlib

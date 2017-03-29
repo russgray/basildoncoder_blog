@@ -12,6 +12,10 @@
       apt: pkg={{ item }} state=installed update-cache=yes
       with_items: "{{ system_packages }}"
 
+    - name: Install rst2pdf
+      pip:
+        name: rst2pdf
+
     - name: Get dotfiles
       git: repo=https://github.com/russgray/dotfiles.git dest=/home/vagrant/dotfiles
 
