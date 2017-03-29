@@ -5,6 +5,7 @@ RUN apt-get update \
     && apt-get -y install \
         build-essential \
         git \
+        libffi-dev \
         libpython2.7-dev \
         libssl-dev \
         libxml2-dev \
