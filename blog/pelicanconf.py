@@ -33,7 +33,16 @@ RELATIVE_URLS = True
 PLUGIN_PATHS = ['/opt/pelican-plugins']
 PLUGINS = ['pelican_comments', 'render_math', 'tipue_search', 'sitemap', 'extract_toc', 'neighbors']
 ARTICLE_EXCLUDES = ['comments', 'pages']
-MD_EXTENSIONS = ['codehilite(css_class=highlight)', 'extra', 'subscript', 'toc']
+MARKDOWN = {
+    'extension_configs': {
+        'markdown.extensions.codehilite': {'css_class': 'highlight'},
+        'markdown.extensions.extra': {},
+        'markdown.extensions.subscript': {},
+        'markdown.extensions.toc': {},
+        'markdown.extensions.meta': {},
+    },
+    'output_format': 'html5',
+}
 
 # templates
 DIRECT_TEMPLATES = (('index', 'tags', 'categories', 'archives', 'search', '404'))

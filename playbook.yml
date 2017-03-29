@@ -8,6 +8,9 @@
     - name: Add vagrant user to docker group.
       user: name=vagrant groups=docker append=yes
 
+    - name: Add ubuntu user to docker group.
+      user: name=ubuntu groups=docker append=yes
+
     - name: Install required system packages.
       apt: pkg={{ item }} state=installed update-cache=yes
       with_items: "{{ system_packages }}"

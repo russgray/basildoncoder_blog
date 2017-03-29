@@ -6,6 +6,7 @@ RUN apt-get update \
         build-essential \
         git \
         libpython2.7-dev \
+        libssl-dev \
         libxml2-dev \
         libxslt1-dev \
         linklint \
