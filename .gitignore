@@ -9,3 +9,13 @@ logs
 id_dsa_digitalocean.pem
 .DS_Store
 roles/
+
+# sphinx stuff (for VS Code previews)
+/_build
+/_static
+/_templates
+/make.bat
+/Makefile
+/conf.py
+/index.rst
+.vscode/settings.json
