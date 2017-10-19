@@ -1,0 +1,8 @@
+sudo: required
+
+services:
+  - docker
+
+before_install:
+  - docker pull russgray/blog-builder
+  - docker run --rm -v `pwd`/blog:/blog russgray/blog-builder pelican -s publishconf.py content
