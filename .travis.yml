@@ -5,4 +5,6 @@ services:
 
 before_install:
   - docker pull russgray/blog-builder
+
+install:
   - docker run --rm -v `pwd`/blog:/blog russgray/blog-builder pelican -s publishconf.py content
